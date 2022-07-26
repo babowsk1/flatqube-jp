@@ -1,37 +1,37 @@
 ---
-description: Learn the basics of FlatQube to better understand the underlying processes.
+description: FlatQubeの基本を学ぶことで、その背景にあるプロセスをより深く理解できます。
 ---
 
-# How it works
+# 仕組み
 
-## Basics
+## 基本
 
-FlatQube is an automated liquidity protocol inspired by the leading market solutions. It is based on a constant product formula and offers a non-custodial, decentralized, censorship-resistant and secure way to provide liquidity and exchange pairs of tokens.
+FlatQubeは、主要マーケットソリューションから着想を得た自動流動性プロトコルです。一定のプロダクト式に基づいており、ノンカストディアル、分散型、検閲に強い安全な方法で流動性を提供し、トークンペアを交換できます。
 
-Unlike Uniswap or other Ethereum-based DEXes, FlatQube works on the [Everscale network](https://everscale.network) and benefits from its asynchronous execution, high throughput, and fast finality.
+Uniswapや他のEthereumベースのDEXとは異なり、FlatQubeは[Everscaleネットワーク](https://everscale.network/)上で機能しているため、その非同期処理、ハイスループット、高速ファイナリティのメリットを享受できます。
 
-FlatQube is open-source software licensed under [Apache 2.0](https://github.com/broxus/ton-dex/blob/master/LICENSE).
+FlatQubeは、[Apache 2.0](https://github.com/broxus/ton-dex/blob/master/LICENSE)の下でライセンスされたオープンソースソフトウェアです。
 
-## Liquidity pools
+## 流動性プール
 
-FlatQube operates through a collection of smart contracts, the principal of which, [_the pair_](https://github.com/broxus/ton-dex/blob/master/contracts/DexPair.sol), manages a liquidity pool made up of reserves of two [TIP-3.1 tokens](../tokens/concepts/tokens-we-use.md#tokens-standard).
+FlatQubeはスマートコントラクトの集合体で運営されており、その主体である[ペア](https://github.com/broxus/ton-dex/blob/master/contracts/DexPair.sol)は、2つの[TIP-3.1トークン](../tokens/concepts/tokens-we-use.md#tokens-standard)の埋蔵量からなる流動性プールを管理しています。
 
-Anyone can become a liquidity provider (LP) for a pool by depositing an equivalent value of each underlying token in return for pool tokens (LP-tokens). These tokens track pro-rata LP shares of the total reserves and can be redeemed for the underlying assets at any time.
-
-{% hint style="info" %}
-See also: [How to calculate the amount of LP tokens](../pools/how-to/calculate-the-amount-of-lp-tokens.md)
-{% endhint %}
-
-Unlike other DEXes, due to the peculiarities of Everscale, FlatQube uses an intermediate contract, [_the DEX account_](https://github.com/broxus/ton-dex/blob/master/contracts/DexAccount.sol), to accumulate the position before provision. An LP should deposit both underlying assets to their DEX account to supply liquidity to the pool.
+プールトークン(LPトークン)と引き換えに、各基本トークンを相当数を預けることで、誰でもプールの流動性プロバイダー(LP)になることができます。これらのトークンは、総埋蔵量に比例したLPシェアを追跡し、いつでも原資産と交換できます。
 
 {% hint style="info" %}
-FlatQube supports one-sided liquidity provision by automatically exchanging the required part of the provided asset in the pool. [Read more](../pools/how-to/add-liquidity.md#one-sided-liquidity-provision)
+参照：[LPトークン量の計算方法](../pools/how-to/calculate-the-amount-of-lp-tokens.md)
 {% endhint %}
 
-## The math behind the curtains
+FlatQubeは、Everscaleの特殊性のおかげで、他のDEXとは異なり、提供前のポジションを蓄積するために[DEXアカウント](https://github.com/broxus/ton-dex/blob/master/contracts/DexAccount.sol)という中間契約を使用します。LP(流動性プロバイダー)はプールに流動性を供給するために、DEXアカウントに両方の原資産を預ける必要があります。&#x20;
 
-Pairs act as automated market makers, standing ready to accept one token for the other as long as the “constant product” formula is preserved. This formula, most simply expressed as `x * y = k`, states that trades must not change the product (`k`) of a pair’s reserve balances (`x` and `y`). Because `k` remains unchanged from the reference frame of a trade, it is often referred to as the _invariant_. This formula has the desirable property that larger trades (relative to reserves) execute at exponentially worse rates than smaller ones.
+{% hint style="info" %}
+FlatQubeはプール内に供給された資産のうち、必要な部分を自動的に交換することで、片面的な流動性提供をサポートします。[続きを読む](../pools/how-to/add-liquidity.md#one-sided-liquidity-provision)&#x20;
+{% endhint %}
 
-In practice, FlatQube applies a 0.30% fee to trades, which increases the reserves and, consequently, the invariant. It serves as a deferred profit to LPs, which they get when they burn pool tokens to withdraw their portion of the total reserves.
+## カーテンの裏に隠された計算
 
-By design, the relative price of assets changes only through trading, leading to arbitrage opportunities. This mechanism ensures that DEX prices always trend toward a market-clearing price.
+ペアは自動化されたマーケットメーカーとして機能し、「定量的計算式」が守られている限り、一方のトークンと他方のトークンを受け入れる準備ができています。この式は`x * y = k`であり、取引に関わらず、ペアの準備金残高（`xと` `y`）の積（`k`）は一定です。`k`は取引の基準フレームから変化しないため、_不変量_と呼ばれています。この式には、(準備金に対して)大きな取引は小さな取引より、指数関数的に悪いレートで処理されるという望ましい性質があります。
+
+実際、FlatQubeは取引手数料を0.30%にすることで積立金を増やし、結果的に不変量が増加します。これはLPの繰延利益として機能し、LPがプールトークンをバーンして、総発行量のうち自分の取り分を引き出す際に受け取ります。
+
+このため、資産の相対価格は取引によってのみ変化し、裁定取引の機会を得られます。このような仕組みにより、DEXの価格は、常に市場清算価格に向かって推移します。

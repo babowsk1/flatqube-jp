@@ -1,6 +1,6 @@
 ---
-description: Details about the interface of the Tokens section.
+description: トークンセクションのインターフェースに関する詳細です。
 ---
 
-# Interface
+# インターフェース
 

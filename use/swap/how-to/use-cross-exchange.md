@@ -1,9 +1,9 @@
-# Use cross-exchange
+# クロスエクスチェンジの使用
 
-When you choose tokens to exchange, if there is not enough liquidity in the pool corresponding to these pairs, FlatQube will automatically offer to make a cross exchange.\
-Keep in mind that since you are dealing with two pools at once, your [**slippage tolerance**](../concepts/slippage-tolerance.md), as well as [**liquidity provider fees**](../concepts/fees.md), will double.
+交換するトークンを選択する際、そのペアに対応するプールに十分な流動性がない場合、FlatQubeは自動的にクロスエクスチェンジを提案します。\
+一度に2つのプールでトランザクションを行うため、[**許容スリッページ**](../concepts/slippage-tolerance.md)や[**流動性プロバイダー手数料**](../concepts/fees.md)が2倍になりますので、ご注意ください。
 
-The process of conducting a transaction does not differ from a[ **regular swap** ](make-a-basic-swap.md)- Click **Swap**, then **Confirm** and **confirm your transaction** in EVER Wallet.
+トランザクションの手順は[**通常のスワップ**](make-a-basic-swap.md)と変わりません。\[**スワップ**]、\[**確定**]をクリックして、EVER Walletで**トランザクションを確定させます**。
 
 ![](<../../../.gitbook/assets/image (199).png>)
 

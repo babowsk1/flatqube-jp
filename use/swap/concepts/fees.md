@@ -1,9 +1,9 @@
-# Fees
+# 手数料
 
-When making any swap, you need to pay some commissions:
+どんなスワップを行う場合でも、ある程度の手数料を支払う必要があります：
 
-* First, there is the Everscale **blockchain fee** that you pay when interacting with the contracts of the network.\
-  Fees are one of the ways in which validators are rewarded for their work: fees from all transactions that have been included in newly created blocks are distributed among all participating validators.\
-  Everscale network fees are negligible and are limited to a few cents when making swaps.
-* Also, you pay a commission of 0.3% of the transaction amount to [providers ](../../getting-started/roles.md#liquidity-providers)that [provide liquidity](../../pools/how-to/add-liquidity.md) to the [pool ](../../pools/)of tokens that you exchange (**Liquidity Provider Fee**).\
-  The amount of the commission is evenly distributed among all liquidity providers depending on their share in this pool, and they can take this reward by [removing their liquidity](../../pools/how-to/withdraw-liquidity.md) (burning LP tokens).
+* まず、ネットワークのコントラクトとやり取りする場合にEverscale**ブロックチェーン手数料**がかかります。\
+  手数料は、バリデータが行う作業に対する報酬の1つです。新しく生成されたブロックに含まれる全トランザクションの手数料は、参加している全バリデータに分配されます。\
+  Everscaleのネットワーク手数料はごくわずかで、スワップを行う際に数セント程かかります。
+* また、交換するトークンの[プール](../../pools/)に[流動性を提供する](../../pools/how-to/add-liquidity.md)[プロバイダー](../../getting-started/roles.md#liquidity-providers)には、トランザクションの0.3%を手数料として支払います。(**流動性プロバイダー手数料**)\
+  手数料は、このプールシェアに応じて全ての流動性プロバイダーに均等に分配され、プロバイダーは[流動性を削除する](../../pools/how-to/withdraw-liquidity.md)(LPトークンをバーンする)ことで、この報酬を受け取れます。

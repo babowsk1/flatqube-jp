@@ -1,8 +1,8 @@
 # TVL
 
-**TVL** (Total Value Locked) displays the dollar value of all tokens locked in all relevant FlatQube pairs.
+**TVL**(預かり資産)は、関連するFlatQubeペアでロックされているトークンをドルで表示しています。
 
-To switch the graph to TVL, click the corresponding button on the graph.\
-You can switch between chart display modes: by hours (**H**) and by days (**D**) for more convenient tracking of TVL changes.
+グラフをTVLに切り替えるには、グラフ上のTVLボタンをクリックします。\
+グラフの表示モードは、時間足（**H**）と日足（**D**）で切り替えることができ、TVLの変化をより便利に把握することができます。
 
 ![](<../../../../.gitbook/assets/image (174).png>)

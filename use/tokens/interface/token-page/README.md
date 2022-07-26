@@ -1,36 +1,34 @@
 ---
-description: >-
-  Select one of the tokens in the Tokens section to go to that token's page.
-  Below you will find a description of all blocks on this page.
+description: トークンセクションで任意のトークンを1つ選択すると、そのトークンページに移動します。以下はこのページにある各項目の説明です。
 ---
 
-# Token page
+# トークンページ
 
-The page of any token is divided into several blocks, let's consider each of them.
+どのトークンページも、いくつかの項目に分かれているので、それぞれについて考えてみましょう。
 
-### Upper block
+### 最初の項目
 
 ![](<../../../../.gitbook/assets/image (82).png>)
 
-The following functions are available in this block:\
-[**Token price**](price.md) chart\
-[**Volume** ](trading-volume.md)chart\
-[**TVL** ](../../../pairs/interface/pair-page/tvl.md)chart\
-[**Add liquidity**](../../../pools/how-to/add-liquidity.md) \*\*\*\* - click to go to the page for adding liquidity paired with this token\
-[**Trade** ](../../../swap/)- swap this token\
-[**Open in explorer**](open-in-explorer.md) - click on the arrow in the upper right corner of the top block to go to the token page in the explorer
+ここでは、次の機能が利用いただけます：\
+[**トークン価格**](price.md)チャート\
+[**ボリューム**](trading-volume.md)チャート \
+[**TVL**](../../../pairs/interface/pair-page/tvl.md)チャート\
+[**流動性の追加**](../../../pools/how-to/add-liquidity.md) \*\*\*\* - クリックすると、このトークンとペアになった流動性を追加するページに移動します。\
+[**取引**](../../../swap/) - このトークンをスワップします\
+[**エクスプローラーで開く**](open-in-explorer.md) - チャートの上にある矢印をクリックすると、エクスプローラー上のトークンページに移動します。
 
-Also on the right side of this block you can see information about:\
+また、左側の項目には以下の情報が記載されています：\
 [**TVL** ](tvl.md)\*\*\*\*\
-\*\*\*\*[**Trading volume**](trading-volume.md) for the last 24 hours\
-[**Trading volume**](trading-volume.md) for the last 7 days\
-**Number of transactions** in the last 24 hours
+\*\*\*\*過去24時間の[**取引量**](trading-volume.md)\
+過去7日間の[**取引量**](trading-volume.md)\
+過去24時間の**トランザクション数**
 
-### [Pairs block](pairs.md)
+### [ペア一覧](pairs.md)
 
 ![](<../../../../.gitbook/assets/image (114).png>)
 
-### [Transactions block](transactions.md)
+### [トランザクション一覧](transactions.md)
 
 ![](<../../../../.gitbook/assets/image (73).png>)
 

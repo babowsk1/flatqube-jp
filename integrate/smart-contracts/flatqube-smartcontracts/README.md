@@ -1,7 +1,7 @@
-# FlatQube Smart contracts
+# FlatQubeスマートコントラクト
 
-FlatQube is a smart contract system consisting of many libraries.
+FlatQubeは、多くのライブラリから構成されるスマートコントラクトシステムです。
 
-These smart contracts define the logic for managing dex pool, managing liquidity inside the pair’s pool, deploying and updating new pairs and accounts, swapping evers to tip 3 or tip 3 to ever, creating vault and much more which is described sections below.
+これらのスマートコントラクトは、Dexプールの管理、ペアプール内の流動性管理、新しいペアやアカウントのデプロイと更新、eversからtip3、tip3からeverへのスワップ、ヴォールトの作成など、様々なことを規定しています。下記のセクションでご説明をしています。
 
 {% embed url="https://github.com/broxus/ton-dex/tree/master/contracts" %}

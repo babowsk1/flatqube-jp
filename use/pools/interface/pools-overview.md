@@ -1,17 +1,17 @@
-# Pools Overview
+# プールについて
 
-By going to the Pools section, you will find yourself on the **Pools overview** page.\
-All your favorite pools are displayed here.\
-Clicking on <mark style="color:orange;">one of these pools</mark> will take you to the [**Pool page**](pool-page/).
+プールセクションに移動すると、**プールの概要**ページが表示され、\
+お気に入りのプールは全てここでご確認いただけます。\
+<mark style="color:orange;">任意のプールを1つ</mark>クリックすると、[プールページ](pool-page/)が表示されます。
 
-Also, on the right side of the screen there are buttons to go to the section for <mark style="color:green;">**creating a new position and withdrawing liquidity**</mark>.
+また、画面の右側には<mark style="color:green;">**新規**</mark><mark style="color:green;">**ポジションを作成したり、流動性を削除する**</mark>ボタンがあります。
 
-In addition to the name of the pool, it displays the number of LP tokens that make up your [locked liquidity](../how-to/add-liquidity.md), as well as the total amount of tokens you [locked](../how-to/create-new-position.md) as the left and right sides of the pair.
+プールの名称に加え、[流動性をロックした](../how-to/add-liquidity.md)LPトークン数、[ロックした](../how-to/create-new-position.md)トークンの総量がペアで表示されます。&#x20;
 
 ![](<../../../.gitbook/assets/image (41).png>)
 
-### No favorites pools?
+### お気に入りのプールがありませんか？
 
-You can [add a pool to your favorites](../../pairs/interface/pair-page/add-to-favorites.md) in the [Pairs section](../../pairs/).
+[ペアセクション](../../tokens/interface/token-page/pairs.md)で[プールをお気に入りに登録する](../../pairs/interface/pair-page/add-to-favorites.md)ことができます。
 
 ![](<../../../.gitbook/assets/image (34).png>)

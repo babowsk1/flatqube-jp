@@ -1,26 +1,27 @@
 ---
-description: How to change the slippage percentage?
+description: 許容スリッページの割合を変える方法とは？
 ---
 
-# Configure slippage tolerance
+# 許容スリッページの設定
 
-When making a swap, FlatQube users have the option to change the **Slippage tolerance**. Recall that **slippage tolerance** is the difference between the expected price of the token and its price at the time of the transaction. By changing this parameter, you can set the maximum slippage when making a transaction. That is, the transaction will not go through if the price of the token at the time of its completion changes by more than the specified percentage.
+スワップを行う際、FlatQubeユーザーは**許容スリッページ**を変更できます。**許容スリッページ**は、トークンの予想価格とトランザクション時の価格差でしたね。この限度幅を変更することで、トランザクションを行う際の最大スリッページ値を設定することができます。トランザクション完了時のトークン価格が指定した割合以上変動した場合、トランザクションは成立しません。
 
-So how do you manage slippage tolerance? It's very simple.
+では、どのように許容スリッページを管理するのでしょうか。とても簡単です。
 
-Go to the Swap section and [connect your wallet](../../getting-started/how-to-connect-a-wallet.md) to FlatQube if you haven't already.
+スワップセクションに移動し、まだFlatQubeにウォレットを接続していない場合は[接続](../../getting-started/how-to-connect-a-wallet.md)してください。
 
 ![](<../../../.gitbook/assets/image (19).png>)
 
-In the upper-right part of the swap window, you can see a gear⚙️\*\*.\*\* This is a link to **Transaction Settings.**\
-\*\*\*\*Here you can set **slippage tolerance:**
+スワップ画面の右上にある歯車⚙️\*\*\*は、**トランザクション設定**へのリンクです。\
+\*\*\*\*ここで、**許容スリッページ**を設定できます：
 
 ![](<../../../.gitbook/assets/image (131).png>)
 
-You can choose one of the offered percentages, or enter it manually:
+提示された割合を選択するか、手動で入力します：
 
 ![](<../../../.gitbook/assets/image (155).png>)
 
-When making a swap, you will see that the **Slippage tolerance** will change:
+スワップを行う際、**許容スリッページ**が変更されたことを\
+ご確認いただけます：
 
 ![](<../../../.gitbook/assets/image (216).png>)

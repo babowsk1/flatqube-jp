@@ -1,25 +1,24 @@
-# Pool economics
+# プールエコノミクス
 
-Each FlatQube liquidity pool is a trading venue for a [pair ](../tokens/interface/token-page/pairs.md)of TIP-3.1 tokens.\
-When a [pool contract is created](../pairs/how-to/create-new-pair.md), its balances for each token are 0; in order for the pool to begin facilitating trades, someone must seed it with an initial deposit for each token.\
-This first liquidity provider is the one who sets the initial price of the pool. They are incentivized to deposit an equal _value_ of both tokens into the pool. To understand why, consider a case where the first liquidity provider deposits tokens at a ratio different from the current market rate. This immediately creates a profitable arbitrage opportunity, which is likely to be exploited by an external party.
+FlatQubeの各流動性プールは、TIP-3.1トークンの[ペア](../tokens/interface/token-page/pairs.md)に対する取引所です。\
+[プールコントラクトが作成](../pairs/how-to/create-new-pair.md)されると、各トークンの残高は0になります。プールが取引を促進し始めるためには、誰かがプールに各トークンの初期デポジットを行う必要があります。\
+この最初の流動性プロバイダーは、プールの初期価格を設定する人で、両方のトークンも同じ値でプールに預けるインセンティブがあります。その理由を理解するために、最初の流動性プロバイダーが現在の市場レートと異なる比率でトークンを預けた場合を考えてみましょう。これは、ちなみに有益な裁定取引の機会を生み出し、外部の関係者がこれを利用する可能性が高いです。
 
-When other liquidity providers add to an existing pool, they must deposit pair tokens proportional to the current price. If they don’t, the liquidity they added is at risk of being arbitraged as well. If they believe the current price is not correct, they may arbitrage it to the level they desire, and add liquidity at that price.
+他の流動性プロバイダーが既存のプールに追加する場合、現在の価格に比例したペアトークンを預け流必要があります。そうしないと、追加した流動性も裁定されるリスクがあるからです。現在の価格が正しくないと思えば、流動性プロバイダーは価格を自分たちの望む水準に裁定し、その価格で流動性を追加することができます。
 
-As we’ve mentioned, a liquidity pool is a bunch of funds deposited into a smart contract by liquidity providers. When you’re executing a trade on FlatQube you’re executing a trade against the liquidity in the liquidity pool. For the buyer to buy, there doesn’t need to be a seller at that particular moment, only sufficient liquidity in the pool.
+これまで述べてきたように、流動性プールとは、流動性プロバイダーがスマートコントラクトに預けた資金のことです。FlatQubeで取引を行うときは、流動性プールの流動性を担保に取引を実行することになります。買い手が買うには、その時点で売り手がいる必要はなく、プール内に十分な流動性があれば良いのです。
 
-When you’re buying a coin on FlatQube, there isn’t a seller on the other side in the traditional sense. Instead, your activity is managed by the algorithm that governs what happens in the pool. In addition, pricing is also determined by this algorithm based on the trades that happen in the pool.
+FlatQubeでコインを購入する場合、従来の意味での売り手は存在しません。その代わり、あなたの活動はプールで何が起こるかを管理するアルゴリズムによって管理されます。さらに、価格設定もこのアルゴリズムによって、プール内で発生した取引に基づいて決定されます。
 
-### LP tokens
+### LPトークン
 
-Whenever liquidity is [deposited ](how-to/add-liquidity.md)into a pool, unique tokens known as **LP tokens** are minted and sent to the provider's address. These tokens represent a given liquidity provider's contribution to a pool. The proportion of the pool's liquidity provided determines the number of liquidity tokens the provider receives.\
+流動性がプールに[預けられる](how-to/add-liquidity.md)と、**LPトークン**と呼ばれる独自トークンがミントされ、プロバイダーのアドレスに送信されます。これらのトークンは、流動性プロバイダーのプールへの貢献度を表しています。プールへの流動性提供の割合によって、プロバイダーが受け取る流動性トークンの数が決まります。\
 \
-Whenever a trade occurs, a 0.3% [liquidity provider fee](../swap/concepts/fees.md) is charged to the transaction sender. This fee is distributed _pro-rata_ to all LPs in the pool upon completion of the swap.
+取引が発生するたびに、0.3%の[流動性プロバイダー手数料](../swap/concepts/fees.md)がトランザクション送信者に請求されます。この手数料は、スワップ完了時にプール内の全LPに比例して配分されます。
 
-To retrieve the underlying liquidity, plus any fees accrued, liquidity providers must ["burn" their liquidity tokens](how-to/withdraw-liquidity.md), effectively exchanging them for their portion of the liquidity pool, plus the proportional fee allocation.
+流動性プロバイダーは流動性と手数料を受け取るために、[流動性トークンを「バーン」](how-to/withdraw-liquidity.md)して、流動性プールの一部と比例配分の手数料と交換します。
 
-As liquidity tokens are themselves tradable assets, liquidity providers may sell, transfer, or otherwise use their liquidity tokens in any way they see fit.
+流動性トークンは、それ自体が取引可能な資産であるため、流動性プロバイダーはその流動性トークンを販売、譲渡、その他どのようにでも利用することができます。
 
-Since liquidity is very important, FlatQube has a special interface to encourage liquidity providers - [**Farming**](../farming/). You can lock your **LP tokens** in the appropriate farming pools for rewards.
+流動性はとても重要なため、FlatQubeは流動性プロバイダーを促進するために特別なインターフェース、[**ファーミング**](../farming/)を用意しています。**LPトークン**を適切なファーミングプールにロックし、リワードを得ることができます。
 
-\\

@@ -1,6 +1,6 @@
-# Pairs API
+# ペアAPI
 
-{% swagger method="post" path="/pairs" baseUrl="https://api.flatqube.io/v1" summary="Pairs data" %}
+{% swagger method="post" path="/pairs" baseUrl="https://api.flatqube.io/v1" summary="ペアデータ" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -23,24 +23,24 @@
 {% endswagger-response %}
 {% endswagger %}
 
-This function is used to get all Pairs data by\
+この機能は、全てのペアデータを取得するために使用されます。\
 \
-It can be used for representing data specific to each currency in detail.
+各通貨の固有データを詳細に表示することができます。
 
-### Request parameters
+### リクエストパラメータ
 
-Body required. Data used for Postman tests:
+ボディが必要です。ポストマンテストに使用するデータです：
 
-| Field name          | Example value                                                              | Comment                                     |
-| ------------------- | -------------------------------------------------------------------------- | ------------------------------------------- |
-| `currencyAddress`   | `0:f2679d80b682974e065e03bf42bbee285ce7c587eb153b41d761ebfd954c45e1`       | `address of the currency for the left pair` |
-| `currencyAddresses` | `0:f2679d80b682974e065e03bf42bbee285ce7c587eb153b41d761ebfd954c45e1`       | `list of addresses`                         |
-| `limit`             | `0`                                                                        | `number of pairs that should be retrieved`  |
-| `offset`            | `0`                                                                        |                                             |
-| `ordering`          | `tvlascending`                                                             | `order by pair’s TVL ascending/descending`  |
-| `tvlAmountGe`       | `8955040.156573434959`                                                     | `highest TVL amount`                        |
-| `tvlAmountLe`       | `8955043.156573434959`                                                     | `lowest TVL amount`                         |
-| `whiteListUri`      | `https://raw.githubusercontent.com/broxus/ton-assets/master/manifest.json` | `path to a white list`                      |
+| フィールド名              | 例の値                                                                        | 説明            |
+| ------------------- | -------------------------------------------------------------------------- | ------------- |
+| `currencyAddress`   | `0:f2679d80b682974e065e03bf42bbee285ce7c587eb153b41d761ebfd954c45e1`       | 左ペアの通貨アドレス    |
+| `currencyAddresses` | `0:f2679d80b682974e065e03bf42bbee285ce7c587eb153b41d761ebfd954c45e1`       | アドレス一覧        |
+| `limit`             | `0`                                                                        | 取得すべきペア数      |
+| `offset`            | `0`                                                                        |               |
+| `ordering`          | `tvlascending`                                                             | ペアのTVL(昇順・降順) |
+| `tvlAmountGe`       | `8955040.156573434959`                                                     | 最高TVL量        |
+| `tvlAmountLe`       | `8955043.156573434959`                                                     | 最低TVL量        |
+| `whiteListUri`      | `https://raw.githubusercontent.com/broxus/ton-assets/master/manifest.json` | ホワイトリストへのパス   |
 
 ```
 {
@@ -57,35 +57,35 @@ Body required. Data used for Postman tests:
 }
 ```
 
-### Response fields explanation
+### レスポンス欄の解説
 
-| Field name        | Example value                                                        | Comment                                                |
-| ----------------- | -------------------------------------------------------------------- | ------------------------------------------------------ |
-| `count`           | `0`                                                                  | number of pairs displayed on one page                  |
-| `offset`          | `0`                                                                  |                                                        |
-| `pairs`           |                                                                      | list of pairs with following info:                     |
-| `fee24h`          | `184.89949`                                                          | total amount of fees (in USD) in the last 24h          |
-| `fee7d`           | `1531.12412`                                                         | total amount of fees (in USD) in the last 7 days       |
-| `feeAllTime`      | `5886.2023`                                                          | total amount of fees (in USD) EVER                     |
-| `leftLocked`      | `22564291945792668`                                                  | tvl of the left pair (token) in USD                    |
-| `leftPrice`       | `0.234234123`                                                        | price (in USD) of the left pair                        |
-| `meta`            |                                                                      | object containing following data:                      |
-| `base`            | `WEVER`                                                              | left token name (ie. WEVER)                            |
-| `baseAddress`     | `0:a49cd4e158a9a15555e624759e2e4e766d22600b7800d891e46f9291f044a93d` | root address of the left token                         |
-| `counter`         | `BRIDGE`                                                             | right token name (ie. BRIDGE)                          |
-| `counterAddress`  | `0:f2679d80b682974e065e03bf42bbee285ce7c587eb153b41d761ebfd954c45e1` | root address of the right token                        |
-| `fee`             | `0.300`                                                              | fees for trading between left and right token          |
-| `poolAddress`     | `0:83b88abbcd562c8d8dc4cab30ec1ded86a4ded99000ca02425715e5cec754f06` | address of the pool of left and right pair             |
-| `rightLocked`     | `565424319668420`                                                    | tvl of the right pair (token) in USD                   |
-| `rightPrice`      | `9.306709686682`                                                     | price (in USD) of the left pair                        |
-| `tvl`             | `8955040.156573434959`                                               | TVL in the pair’s pool                                 |
-| `tvlChange`       | `3.26`                                                               | TVL change (percentage) in the pool for the last 24h   |
-| `volume24h`       | `61614.202233211332`                                                 | trading volume of the pair in the last 24h (in USD)    |
-| `volume7d`        | `563110.817462570605`                                                | trading volume of the pair in the last 7 days (in USD) |
-| `volumeChange24h` | `85.03`                                                              | trading volume change (percentage) in the last 24h     |
-| `totalCount`      | `1`                                                                  | total number of pairs that satisfies search parameters |
+| フィールド名            | 例の値                                                                  | 説明                          |
+| ----------------- | -------------------------------------------------------------------- | --------------------------- |
+| `count`           | `0`                                                                  | 1ページに表示されるペア数               |
+| `offset`          | `0`                                                                  |                             |
+| `pairs`           |                                                                      | 次のデータを含むペア一覧：               |
+| `fee24h`          | `184.89949`                                                          | 過去24時間の手数料総額(米ドル)           |
+| `fee7d`           | `1531.12412`                                                         | <p>過去7日間の手数料総額<br>(米ドル)</p> |
+| `feeAllTime`      | `5886.2023`                                                          | EVER手数料総額(米ドル)              |
+| `leftLocked`      | `22564291945792668`                                                  | 左ペア(トークン)のTVL(米ドル)          |
+| `leftPrice`       | `0.234234123`                                                        | 左ペアの価格(米ドル)                 |
+| `meta`            |                                                                      | 次のデータを含むオブジェクト：             |
+| `base`            | `WEVER`                                                              | 左トークンの名称(例：WEVER)           |
+| `baseAddress`     | `0:a49cd4e158a9a15555e624759e2e4e766d22600b7800d891e46f9291f044a93d` | 左トークンのルートアドレス               |
+| `counter`         | `BRIDGE`                                                             | 右トークンの名称(例：BRIDGE)          |
+| `counterAddress`  | `0:f2679d80b682974e065e03bf42bbee285ce7c587eb153b41d761ebfd954c45e1` | 右トークンのルートアドレス               |
+| `fee`             | `0.300`                                                              | 左/右トークンの取引手数料               |
+| `poolAddress`     | `0:83b88abbcd562c8d8dc4cab30ec1ded86a4ded99000ca02425715e5cec754f06` | 左右ペアのプールアドレス                |
+| `rightLocked`     | `565424319668420`                                                    | 右ペア(トークン)のTVL(米ドル)          |
+| `rightPrice`      | `9.306709686682`                                                     | 右ペアの価格(米ドル)                 |
+| `tvl`             | `8955040.156573434959`                                               | ペアプールのTVL                   |
+| `tvlChange`       | `3.26`                                                               | 過去24時間におけるプール内TVL変化率        |
+| `volume24h`       | `61614.202233211332`                                                 | 過去24時間におけるペアの取引量(米ドル)       |
+| `volume7d`        | `563110.817462570605`                                                | 過去7日間におけるペアの取引量(米ドル)        |
+| `volumeChange24h` | `85.03`                                                              | 過去24時間の取引量変化率               |
+| `totalCount`      | `1`                                                                  | 検索パラメータを満たすペアの総数            |
 
-### Example
+### 例
 
 ```
 app.post('/pairs', (req, res) => {
@@ -113,7 +113,7 @@ app.post('/pairs', (req, res) => {
   })
 ```
 
-{% swagger method="post" path="/pairs/address/{address}" baseUrl="https://api.flatqube.io/v1" summary="Dex pair data info" %}
+{% swagger method="post" path="/pairs/address/{address}" baseUrl="https://api.flatqube.io/v1" summary="Dexペアデータ情報" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -146,40 +146,40 @@ app.post('/pairs', (req, res) => {
 {% endswagger-response %}
 {% endswagger %}
 
-This function is used to get pair data info by liquidity pool address.
+この機能は、流動性プールアドレスからペアデータ情報を取得するためのものです。
 
-It can be used for presenting a pair with all the details about it in the desired pool.
+特定のプールにあるペアの詳細を表示するために使用します。
 
-### Request parameters
+### リクエストパラメータ
 
-Address parameter required - represents the pool address of a specific pair.\
-_Value used for testing is pool WEVER/BRIDGE address: `0:83b88abbcd562c8d8dc4cab30ec1ded86a4ded99000ca02425715e5cec754f06`_
+アドレスパラメータ、つまり、特定のペアのプールアドレスが必要です。\
+_テストに使用するWEVER/BRIDGEのプールアドレスです：`0:83b88abbcd562c8d8dc4cab30ec1ded86a4ded99000ca02425715e5cec754f06`_
 
-### Response field explanation
+### レスポンス欄の解説
 
-| Field name        | Example value                                                        | Comment                                                |
-| ----------------- | -------------------------------------------------------------------- | ------------------------------------------------------ |
-| `meta`            | _\`\`_                                                               | object containing the following data:                  |
-| `base`            | _`WEVER`_                                                            | left token name (ie. WEVER)                            |
-| `baseAddress`     | `0:a49cd4e158a9a15555e624759e2e4e766d22600b7800d891e46f9291f044a93d` | root address of the left token                         |
-| `counter`         | `BRIDGE`                                                             | right token name (ie. BRIDGE)                          |
-| `counterAddress`  | `0:f2679d80b682974e065e03bf42bbee285ce7c587eb153b41d761ebfd954c45e1` | root address of the right token                        |
-| `fee`             | `0.3000`                                                             | fees for trading between left and right token          |
-| `poolAddress`     | `0:83b88abbcd562c8d8dc4cab30ec1ded86a4ded99000ca02425715e5cec754f06` | address of the pool containing left and right pair     |
-| `tvl`             | `11992480.952892429456`                                              | TVL in the pair’s pool                                 |
-| `tvlChange`       | `1.22`                                                               | TVL change (percentage) in the pool for the last 24h   |
-| `leftLocked`      | `25795814233390122`                                                  | TVL of the left pair (token) in USD                    |
-| `leftPrice`       | `0.2324501340486766469128429809`                                     | price (in USD) of the left pair                        |
-| `rightLocked`     | `644766509092723`                                                    | TVL of the right pair (token) in USD                   |
-| `rightPrice`      | `9.299863426349`                                                     | price (in USD) of the left pair                        |
-| `volume24h`       | `68293.598448021590`                                                 | trading volume of the pair in the last 24h (in USD)    |
-| `volumeChange24h` | `-44.98`                                                             | trading volume change (percentage) in the last 24h     |
-| `volume7d`        | `1549070.057378500757`                                               | trading volume of the pair in the last 7 days (in USD) |
-| `fee24h`          | `205.053510628491`                                                   | total amount of fees (in USD) in the last 24h          |
-| `fee7d`           | `4637.831319664494`                                                  | total amount of fees (in USD) in the last 7 days       |
-| `feeAllTime`      | `18789.418763913485`                                                 | total amount of fees (in USD) EVER                     |
+| フィールド名            | 例の値                                                                  | 説明                    |
+| ----------------- | -------------------------------------------------------------------- | --------------------- |
+| `meta`            | _\`\`_                                                               | 次のデータを含むオブジェクト：       |
+| `base`            | _`WEVER`_                                                            | 左トークンの名称(例：WEVER)     |
+| `baseAddress`     | `0:a49cd4e158a9a15555e624759e2e4e766d22600b7800d891e46f9291f044a93d` | 左トークンのルートアドレス         |
+| `counter`         | `BRIDGE`                                                             | 右トークンの名称(例：BRIDGE)    |
+| `counterAddress`  | `0:f2679d80b682974e065e03bf42bbee285ce7c587eb153b41d761ebfd954c45e1` | 右トークンのルートアドレス         |
+| `fee`             | `0.3000`                                                             | 左/右トークンの取引手数料         |
+| `poolAddress`     | `0:83b88abbcd562c8d8dc4cab30ec1ded86a4ded99000ca02425715e5cec754f06` | 左右ペアのプールアドレス          |
+| `tvl`             | `11992480.952892429456`                                              | ペアプールのTVL             |
+| `tvlChange`       | `1.22`                                                               | 過去24時間におけるプール内TVL変化率  |
+| `leftLocked`      | `25795814233390122`                                                  | 左ペア(トークン)のTVL(米ドル)    |
+| `leftPrice`       | `0.2324501340486766469128429809`                                     | 左ペアの価格(米ドル)           |
+| `rightLocked`     | `644766509092723`                                                    | 右ペア(トークン)のTVL(米ドル)    |
+| `rightPrice`      | `9.299863426349`                                                     | 右ペアの価格(米ドル)           |
+| `volume24h`       | `68293.598448021590`                                                 | 過去24時間におけるペアの取引量(米ドル) |
+| `volumeChange24h` | `-44.98`                                                             | 過去24時間の取引量変化率         |
+| `volume7d`        | `1549070.057378500757`                                               | 過去7日間におけるペアの取引量(米ドル)  |
+| `fee24h`          | `205.053510628491`                                                   | 過去24時間の手数料総額(米ドル)     |
+| `fee7d`           | `4637.831319664494`                                                  | 過去7日間の手数料総額(米ドル)      |
+| `feeAllTime`      | `18789.418763913485`                                                 | EVER手数料総額(米ドル)        |
 
-### Example
+### 例
 
 ```
  app.post('/pairs/address/:address', (req, res) => {
@@ -197,7 +197,7 @@ _Value used for testing is pool WEVER/BRIDGE address: `0:83b88abbcd562c8d8dc4cab
   })
 ```
 
-{% swagger method="post" path="/pairs/cross_pairs" baseUrl="https://api.flatqube.io/v1" summary="Dex cross pairs data" %}
+{% swagger method="post" path="/pairs/cross_pairs" baseUrl="https://api.flatqube.io/v1" summary="Dexクロスペアデータ" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -230,48 +230,48 @@ _Value used for testing is pool WEVER/BRIDGE address: `0:83b88abbcd562c8d8dc4cab
 {% endswagger-response %}
 {% endswagger %}
 
-This function is needs to get all cross pairs data.
+この機能は、全てのクロスペアデータを取得するために必要です。
 
-It can be used anywhere where certain details about one currency and how it affects the other one in the pair and vice versa is needed.
+これは、ある通貨に関する詳細と、それがもう一方の通貨にどのように影響するか、またはその逆が必要な場合にどこでも使用できます。
 
-### Request parameters
+### リクエストパラメータ
 
-Body required. Data used for Postman tests:
+ボディが必要です。ポストマンテストに使用するデータです：
 
-| Field name            | Example value                                                        | Comment                                                                                                        |
-| --------------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| `fromCurrencyAddress` | `0:a49cd4e158a9a15555e624759e2e4e766d22600b7800d891e46f9291f044a93d` | currency address for which to retrieve cross pairs                                                             |
-| `toCurrencyAddresses` | `0:f2679d80b682974e065e03bf42bbee285ce7c587eb153b41d761ebfd954c45e1` | currency address/addresses we are checking weather it is a pair with currency in fromCurrencyAddress parameter |
+| フィールド名                | 例の値                                                                  | 説明                                      |
+| --------------------- | -------------------------------------------------------------------- | --------------------------------------- |
+| `fromCurrencyAddress` | `0:a49cd4e158a9a15555e624759e2e4e766d22600b7800d891e46f9291f044a93d` | クロスペアを取得する通貨アドレス                        |
+| `toCurrencyAddresses` | `0:f2679d80b682974e065e03bf42bbee285ce7c587eb153b41d761ebfd954c45e1` | 通貨アドレスパラメータから、その通貨を含むペアであるかどうかを確認するアドレス |
 
-### Response fields explanation:
+### レスポンス欄の解説
 
-| Field name        | Example value                                                        | Comment                                                                      |
-| ----------------- | -------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| `pairs`           |                                                                      | a list of pairs based on the given addresses including details of the pairs: |
-| `meta`            |                                                                      | object containing following data:                                            |
-| `base`            | `WEVER`                                                              | left token name (ie. WEVER)                                                  |
-| `baseAddress`     | `0:a49cd4e158a9a15555e624759e2e4e766d22600b7800d891e46f9291f044a93d` | root address of the left token                                               |
-| `counter`         | `BRIDGE`                                                             | right token name (ie. BRIDGE)                                                |
-| `counterAddress`  | `0:f2679d80b682974e065e03bf42bbee285ce7c587eb153b41d761ebfd954c45e1` | root address of the right token                                              |
-| `fee`             | `0.300`                                                              | fees for trading between left and right token                                |
-| `poolAddress`     | `0:83b88abbcd562c8d8dc4cab30ec1ded86a4ded99000ca02425715e5cec754f06` | address of the pool containing left and right pair                           |
-| `tvl`             | `11992480.952892429456`                                              | TVL in the pair’s pool                                                       |
-| `tvlchange`       | `1.22`                                                               | TVL change (percentage) in the pool for the last 24h                         |
-| `leftLocked`      | `25795814.233390122000`                                              | TVL of the left pair (token) in USD                                          |
-| `leftPrice`       | `0.2322839661557624874057319495`                                     | price (in USD) of the left pair                                              |
-| `rightLocked`     | `644766.509092723000`                                                | TVL of the right pair (token) in USD                                         |
-| `rightPrice`      | `9.293215382388`                                                     | price (in USD) of the right pair                                             |
-| `volume24h`       | 68293.598448021590                                                   | trading volume of the pair in the last 24h (in USD)                          |
-| `volume7d`        | `1549070.057378500757`                                               | trading volume of the pair in the last 7 days (in USD)                       |
-| `volumechange24h` | `-44.98`                                                             | trading volume change (percentage) in the last 24h                           |
-| `fee24h`          | `205.053510628491`                                                   | total amount of fees (in USD) in the last 24h                                |
-| `fee7d`           | `4637.831319664494`                                                  | total amount of fees (in USD) in the last 7 days                             |
-| `feeAllTime`      | `18789.418763913485`                                                 | total amount of fees (in USD) EVER                                           |
-| `offset`          | `0`                                                                  |                                                                              |
-| `count`           | `10`                                                                 | number of pairs to display per page                                          |
-| `totalCount`      | `1`                                                                  | total number of pairs retrieved                                              |
+| フィールド名            | 例の値                                                                  | 説明                         |
+| ----------------- | -------------------------------------------------------------------- | -------------------------- |
+| `pairs`           |                                                                      | ペアの詳細が含まれているアドレスに基づいたペア一覧： |
+| `meta`            |                                                                      | 次のデータを含むオブジェクト：            |
+| `base`            | `WEVER`                                                              | 左トークンの名称(例：WEVER)          |
+| `baseAddress`     | `0:a49cd4e158a9a15555e624759e2e4e766d22600b7800d891e46f9291f044a93d` | 左トークンのルートアドレス              |
+| `counter`         | `BRIDGE`                                                             | 右トークンの名称(例：BRIDGE)         |
+| `counterAddress`  | `0:f2679d80b682974e065e03bf42bbee285ce7c587eb153b41d761ebfd954c45e1` | 右トークンのルートアドレス              |
+| `fee`             | `0.300`                                                              | 左/右トークンの取引手数料              |
+| `poolAddress`     | `0:83b88abbcd562c8d8dc4cab30ec1ded86a4ded99000ca02425715e5cec754f06` | 左右ペアのプールアドレス               |
+| `tvl`             | `11992480.952892429456`                                              | ペアプールのTVL                  |
+| `tvlchange`       | `1.22`                                                               | 過去24時間におけるプール内TVL変化率       |
+| `leftLocked`      | `25795814.233390122000`                                              | 左ペア(トークン)のTVL(米ドル)         |
+| `leftPrice`       | `0.2322839661557624874057319495`                                     | 左ペアの価格(米ドル)                |
+| `rightLocked`     | `644766.509092723000`                                                | 右ペア(トークン)のTVL(米ドル)         |
+| `rightPrice`      | `9.293215382388`                                                     | 右ペアの価格(米ドル)                |
+| `volume24h`       | 68293.598448021590                                                   | 過去24時間におけるペアの取引量(米ドル)      |
+| `volume7d`        | `1549070.057378500757`                                               | 過去7日間におけるペアの取引量(米ドル)       |
+| `volumechange24h` | `-44.98`                                                             | 過去24時間の取引量変化率              |
+| `fee24h`          | `205.053510628491`                                                   | 過去24時間の手数料総額(米ドル)          |
+| `fee7d`           | `4637.831319664494`                                                  | 過去7日間の手数料総額(米ドル)           |
+| `feeAllTime`      | `18789.418763913485`                                                 | EVER手数料総額(米ドル)             |
+| `offset`          | `0`                                                                  |                            |
+| `count`           | `10`                                                                 | 1ページに表示されるペア数              |
+| `totalCount`      | `1`                                                                  | 取得したペア数                    |
 
-### Example
+### 例
 
 ```
 app.post('/pairs/cross_pairs', (req, res) => {
@@ -293,7 +293,7 @@ app.post('/pairs/cross_pairs', (req, res) => {
   })
 ```
 
-{% swagger method="post" path="/pairs/left/{left}/right/{right}" baseUrl="https://api.flatqube.io/v1" summary="Pair data" %}
+{% swagger method="post" path="/pairs/left/{left}/right/{right}" baseUrl="https://api.flatqube.io/v1" summary="ペアデータ" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -326,41 +326,41 @@ app.post('/pairs/cross_pairs', (req, res) => {
 {% endswagger-response %}
 {% endswagger %}
 
-This function is used to get pair data info by token root addresses. It can be used anywhere where details about the pairs are used and should be retrieved using their root addresses.
+この機能は、トークンルートアドレスからペアデータ情報を取得するために使用されます。ペアの詳細が使用され、ペアのルートアドレスを使って取得されるべき場合であれば、どこでも使用可能です。
 
-### Request parameters
+### リクエストパラメータ
 
-Left and right parameter required - represents address of a specific currency.\
-Value used for testing are WEVER and BRIDGE addresses (respectively) :\
-left = `0:a49cd4e158a9a15555e624759e2e4e766d22600b7800d891e46f9291f044a93d`\
-\`\`right = `0:f2679d80b682974e065e03bf42bbee285ce7c587eb153b41d761ebfd954c45e1`
+左右のパラメータ、つまり特定の通貨アドレスが必要です。\
+テストに使用する_WEVERとBRIDGE_の各アドレスです：\
+左 = `0:a49cd4e158a9a15555e624759e2e4e766d22600b7800d891e46f9291f044a93d`\
+\`\`右 = `0:f2679d80b682974e065e03bf42bbee285ce7c587eb153b41d761ebfd954c45e1`
 
-### Response field explanation:
+### レスポンス欄の解説
 
-| Field name        | Example value                                                        | Comment                                                                      |
-| ----------------- | -------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| `pairs`           |                                                                      | a list of pairs based on the given addresses including details of the pairs: |
-| `meta`            |                                                                      | object containing following data:                                            |
-| `base`            | `WEVER`                                                              | left token name (ie. WEVER)                                                  |
-| `baseAddress`     | `0:a49cd4e158a9a15555e624759e2e4e766d22600b7800d891e46f9291f044a93d` | root address of the left token                                               |
-| `counter`         | `BRIDGE`                                                             | right token name (ie. BRIDGE)                                                |
-| `counterAddress`  | `0:f2679d80b682974e065e03bf42bbee285ce7c587eb153b41d761ebfd954c45e1` | root address of the right token                                              |
-| `fee`             | `0.300`                                                              | fees for trading between left and right token                                |
-| `poolAddress`     | `0:83b88abbcd562c8d8dc4cab30ec1ded86a4ded99000ca02425715e5cec754f06` | address of the pool containing left and right pair                           |
-| `tvl`             | `11992480.952892429456`                                              | TVL in the pair’s pool                                                       |
-| `tvlchange`       | `1.22`                                                               | TVL change (percentage) in the pool for the last 24h                         |
-| `leftLocked`      | `25795814.233390122000`                                              | TVL of the left pair (token) in USD                                          |
-| `leftPrice`       | `0.2322839661557624874057319495`                                     | price (in USD) of the left pair                                              |
-| `rightLocked`     | `644766.509092723000`                                                | TVL of the right pair (token) in USD                                         |
-| `rightPrice`      | `9.293215382388`                                                     | price (in USD) of the right pair                                             |
-| `volume24h`       | 68293.598448021590                                                   | trading volume of the pair in the last 24h (in USD)                          |
-| `volume7d`        | `1549070.057378500757`                                               | trading volume of the pair in the last 7 days (in USD)                       |
-| `volumechange24h` | `-44.98`                                                             | trading volume change (percentage) in the last 24h                           |
-| `fee24h`          | `205.053510628491`                                                   | total amount of fees (in USD) in the last 24h                                |
-| `fee7d`           | `4637.831319664494`                                                  | total amount of fees (in USD) in the last 7 days                             |
-| `feeAllTime`      | `18789.418763913485`                                                 | total amount of fees (in USD) EVER                                           |
+| フィールド名            | 例の値                                                                  | 説明                         |
+| ----------------- | -------------------------------------------------------------------- | -------------------------- |
+| `pairs`           |                                                                      | ペアの詳細が含まれているアドレスに基づいたペア一覧： |
+| `meta`            |                                                                      | 次のデータを含むオブジェクト：            |
+| `base`            | `WEVER`                                                              | 左トークンの名称(例：WEVER)          |
+| `baseAddress`     | `0:a49cd4e158a9a15555e624759e2e4e766d22600b7800d891e46f9291f044a93d` | 左トークンのルートアドレス              |
+| `counter`         | `BRIDGE`                                                             | 右トークンの名称(例： BRIDGE)        |
+| `counterAddress`  | `0:f2679d80b682974e065e03bf42bbee285ce7c587eb153b41d761ebfd954c45e1` | 右トークンのルートアドレス              |
+| `fee`             | `0.300`                                                              | 左/右トークンの取引手数料              |
+| `poolAddress`     | `0:83b88abbcd562c8d8dc4cab30ec1ded86a4ded99000ca02425715e5cec754f06` | 左右ペアのプールアドレス               |
+| `tvl`             | `11992480.952892429456`                                              | ペアプールのTVL                  |
+| `tvlchange`       | `1.22`                                                               | 過去24時間におけるプール内TVL変化率       |
+| `leftLocked`      | `25795814.233390122000`                                              | 左ペア(トークン)のTVL(米ドル)         |
+| `leftPrice`       | `0.2322839661557624874057319495`                                     | 左ペアの価格(米ドル)                |
+| `rightLocked`     | `644766.509092723000`                                                | 右ペア(トークン)のTVL(米ドル)         |
+| `rightPrice`      | `9.293215382388`                                                     | 右ペアの価格(米ドル)                |
+| `volume24h`       | 68293.598448021590                                                   | 過去24時間におけるペアの取引量(米ドル)      |
+| `volume7d`        | `1549070.057378500757`                                               | 過去7日間におけるペアの取引量(米ドル)       |
+| `volumechange24h` | `-44.98`                                                             | 過去24時間の取引量変化率              |
+| `fee24h`          | `205.053510628491`                                                   | 過去24時間の手数料総額(米ドル)          |
+| `fee7d`           | `4637.831319664494`                                                  | 過去7日間の手数料総額(米ドル)           |
+| `feeAllTime`      | `18789.418763913485`                                                 | EVER手数料総額(米ドル)             |
 
-### Example
+### 例
 
 ```
 app.post('/pairs/left/:left/right/:right', (req, res) => {
@@ -379,7 +379,7 @@ app.post('/pairs/left/:left/right/:right', (req, res) => {
   })
 ```
 
-{% swagger method="post" path="/pairs/left/{left}/right/{right}/ohlcv" baseUrl="https://api.flatqube.io/v1" summary="Ohlcv Pair data" %}
+{% swagger method="post" path="/pairs/left/{left}/right/{right}/ohlcv" baseUrl="https://api.flatqube.io/v1" summary="Ohlcvペアデータ" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -402,26 +402,26 @@ app.post('/pairs/left/:left/right/:right', (req, res) => {
 {% endswagger-response %}
 {% endswagger %}
 
-This function needs to get ohlcv pair data info by token root addresses.\
+この機能は、トークンルートアドレスからohlcvペアのデータ情報を取得するために必要です。\
 \
-It can be used ie. for graphic representation of price change of the right pair compared to the value of the left pair over a certain period of time (ie. 1 WEVER = 0.02245627 BRIDGE).
+例えば、ある一定期間における左ペアの値と比較した、右ペアの値の変化をグラフィックで表示することができます。(例：1 WEVER = 0.02245627 BRIDGE)
 
-### Request parameters
+### リクエストパラメータ
 
-Left parameter required - represents the address of a specific currency.\
-Value used for testing is WEVER address: `0:a49cd4e158a9a15555e624759e2e4e766d22600b7800d891e46f9291f044a93d`
+左のパラメータ、つまり特定の通貨アドレスが必要です。\
+テストに使用するWEVERのアドレスです：`0:a49cd4e158a9a15555e624759e2e4e766d22600b7800d891e46f9291f044a93d`
 
-Right parameter required - represents the address of a specific currency.\
-Value used for testing is BRIDGE address:\
+右のパラメータ、つまり特定の通貨アドレスが必要です。\
+テストに使用するBRIDGEのアドレスです：\
 `0:f2679d80b682974e065e03bf42bbee285ce7c587eb153b41d761ebfd954c45e1`
 
-Data used for Postman tests:
+ポストマンテストに使用するデータです：
 
-| Field name  | Example value   | Comment                                                                                                           |
-| ----------- | --------------- | ----------------------------------------------------------------------------------------------------------------- |
-| `from`      | `1646741858511` | Date time in UNIX format for the start of timeframe (ie. 1646741858511 or March 8, 2022 12:17:38.511 PM GMT time) |
-| `timeframe` | `H1`            | desired timeframe to retrieve prices data, could be set for hours, days, etc. (“H1”, “D1”...)                     |
-| `to`        | `1647346658513` | date time in UNIX format for the end of timeframe (ie. 1647346658513 or March 15, 2022 12:17:38.513 PM)           |
+| フィールド名      | 例の値             | 説明                                                                |
+| ----------- | --------------- | ----------------------------------------------------------------- |
+| `from`      | `1646741858511` | 期間の開始日時(UNIX形式)(例：1646741858511 または2022年3月8日午後12時17分38秒511 GMT時間) |
+| `timeframe` | `H1`            | 価格データの取得期間を時間と日で設定(“H1”, “D1”...)                                 |
+| `to`        | `1647346658513` | 期間の開始日時(UNIX形式)(例：1647346658513または2022年3月15日午後12時17分38秒513)       |
 
 ```
 {
@@ -431,20 +431,20 @@ Data used for Postman tests:
 }
 ```
 
-### Response field explanation
+### レスポンス欄の解説
 
-| Field name       | Example value      | Comment                                                                                                                                                                        |
-| ---------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `close`          | `0.025131270323`   | Value of the currency (in USD) in the last moment of given timeframe                                                                                                           |
-| `closeTimestamp` | `1647275606000`    | Date time for the “close” value in UNIX format                                                                                                                                 |
-| `high`           | `0.025131270323`   | The highest currency price in the given timeframe                                                                                                                              |
-| `low`            | `0.024980850704`   | The lowest currency price in the given timeframe                                                                                                                               |
-| `open`           | `0.024984390565`   | Value of the currency (in USD) in the first moment of the given timeframe                                                                                                      |
-| `openTimestamp`  | `1647274428000`    | Date time for the “open” value in UNIX format                                                                                                                                  |
-| `timeStamp`      | `1647273600000`    | date time in UNIX format, the round value of openTimestamp (ex. openTimeStamp is March 8, 2022 11:25:48 PM, timeStamp will be March 8, 2022 11:00:00 PM when converted to GMT) |
-| `volume`         | `249.621417263132` | Trading volume (in USD) for the given currency between openTimeStamp and closeTimeStamp)                                                                                       |
+| フィールド名           | 例の値                | 説明                                                                                                  |
+| ---------------- | ------------------ | --------------------------------------------------------------------------------------------------- |
+| `close`          | `0.025131270323`   | 指定期間の終了時間時点での通貨価値(米ドル)                                                                              |
+| `closeTimestamp` | `1647275606000`    | 終値の日時(UNIX形式)                                                                                       |
+| `high`           | `0.025131270323`   | 指定期間内における最高通貨価格                                                                                     |
+| `low`            | `0.024980850704`   | 指定期間内における最低通貨価格                                                                                     |
+| `open`           | `0.024984390565`   | 指定期間の開始時間時点での通貨価値(米ドル)                                                                              |
+| `openTimestamp`  | `1647274428000`    | 始値の日時(UNIX形式)                                                                                       |
+| `timeStamp`      | `1647273600000`    | オープンタイムスタンプのラウンド値(UNIX形式)(例：オープンタイムスタンプが2022年3月8日午後11時25分48秒の場合、GMTに変換すると2022年3月8日午後11時00分00秒になります) |
+| `volume`         | `249.621417263132` | 開始時刻と終了時刻間における指定通貨の取引量(米ドル)                                                                         |
 
-### Example
+### 例
 
 ```
  app.post('/pairs/left/:left/right/:right/ohlcv', (req, res) => {

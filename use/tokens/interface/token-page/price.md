@@ -1,5 +1,5 @@
-# Price
+# 価格
 
-First, on a token's page, you can view the token's **price** chart. This is the price at which this token is traded on FlatQube. You can switch between chart display modes: by hours (**H**) and by days (**D**) for more convenient tracking of price changes.
+まず、トークンページでは、そのトークンの**価格**チャートを見ることができます。これは、このトークンがFlatQube上で取引されている際の価格です。チャートの表示方法は、時間足（**H**）と日足（**D**）で切り替えることができ、より便利に価格の変動を把握することができます。
 
 ![](<../../../../.gitbook/assets/image (79).png>)

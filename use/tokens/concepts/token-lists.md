@@ -1,15 +1,15 @@
-# Token lists
+# トークン一覧
 
-As the Everscale ecosystem continues to evolve, we continue to see an exponential increase in the number of TIP-3.1 tokens issued. As the rate of issuance of tokens increases, it becomes increasingly difficult for users to filter high-quality legitimate tokens from fraud, fakes, and duplicates. To solve this problem, there are Token Lists - standards for creating a list of tokens.
+Everscaleのエコシステムが進化を続ける中、TIP-3.1トークンの発行数が指数関数的に増加し続けています。トークンの発行数が増えるにつれ、ユーザーが高品質の正規トークンを詐欺、偽物、重複からフィルタリングすることは、ますます難しくなっています。この問題を解決するために、トークン一覧が存在します。
 
-Without a listing, the utility of an asset is greatly reduced. Unlisted assets often cannot be transferred, sold or used in any other way. For all intents and purposes, "unregistered assets" do not exist. Lists of tokens will allow you to immediately recognize and interact with new TIP-3.1 tokens as soon as they are deployed.
+一覧がなければ、資産の有用性は大幅に低下します。多くの場合、未登録の資産は転送、販売、その他の利用ができません。どう考えても、「未登録の資産」は存在しません。トークン一覧があれば、新しいTIP-3.1トークンがデプロイされるとすぐに認識し、やりとりできるようになります。
 
-Token lists leverage the strengths of decentralized blockchains like Everscale—the many high-quality projects and communities, their ability to share public infrastructure, and the ease of interoperability between them.
+トークン一覧は、Everscaleのような分散型ブロックチェーンの強みである、多数の質の高いプロジェクトやコミュニティ、公共インフラの共有能力、それらの間の相互運用性の容易さを活用しています。
 
-The idea is simple: any project that maintains a list of tokens makes that list public. Thus, these projects tie their reputation to published lists.
+トークン一覧を管理するプロジェクトは、その一覧を公開します。したがって、これらのプロジェクトは、公開された一覧に自分たちの評判を結びつけています。
 
-Another important benefit of lists is the speed with which new assets can be discovered and used. If a new resource is released by an authoritative project, the project can simply update its own list, and any interface (or maintainer of the aggregate list) that subscribes to that list can automatically import it in real-time.
+一覧のもう1つ重要な利点は、新しい資産を発見して利用するスピードです。信頼性のあるプロジェクトから新しいリソースがリリースされた場合、そのプロジェクトは自身の一覧を更新するだけで、その一覧に登録しているインターフェース(または集約リストの管理者)は、自動的にリアルタイムでそれをインポートすることができます。
 
 {% hint style="info" %}
-At the moment, lists of tokens have not yet been implemented and you can only [add custom tokens](../how-to/add-custom-token.md) manually through the token selection interface.
+現時点では、トークン一覧はまだ実装されておらず、トークン選択インターフェースを通じて手動で[カスタムトークンを追加する](../how-to/add-custom-token.md)ことしかできません。
 {% endhint %}

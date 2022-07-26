@@ -1,6 +1,6 @@
-# Open in explorer
+# エクスプローラーで開く
 
-Click on the arrow in the upper right part of the first block of the page to go to the page of this token in the explorer.
+グラフの上にある矢印をクリックすると、エクスプローラーでこのトークンのページを開けます。
 
 ![](<../../../../.gitbook/assets/image (140).png>)
 

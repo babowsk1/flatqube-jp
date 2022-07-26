@@ -1,31 +1,31 @@
-# Deposit farm tokens
+# ファームトークンの預け入れ
 
-### Choose farming pool
+### ファーミングプールを選択する
 
-In order to start farming, you need to select one of the pools from the list in the Farming section.
+ファーミングを始めるには、ファーミングセクションの一覧からプールを1つ選択する必要があります。
 
 {% content-ref url="../interface/farming-pools.md" %}
 [farming-pools.md](../interface/farming-pools.md)
 {% endcontent-ref %}
 
-### Get LP tokens
+### LPトークンを取得する
 
-After you have decided on the choice of the pool, you need to get LP tokens of the corresponding pair.\
-To do this, you need to add liquidity to the pool of this pair.
+プールを選択したら、対応するペアのLPトークンを取得します。 \
+これを行うには、このペアのプールに流動性を追加する必要があります。
 
 {% content-ref url="../../pools/how-to/add-liquidity.md" %}
 [add-liquidity.md](../../pools/how-to/add-liquidity.md)
 {% endcontent-ref %}
 
-### Deposit LP tokens
+### LPトークンを預け入れる
 
-Let's assume that we already have the corresponding tokens on the balance.\
-In this case, we can start yield farming.
+すでに対応するトークンが残高にあると仮定しましょう。 \
+この場合、イールドファーミングを開始することができます。
 
-1. Go to the [page of the desired Farming pool](../interface/farm-page-user/).
-2. In the Farming balance block, enter the amount of LP tokens that you want to lock in farming.
-3. Click **Deposit** and confirm transaction in EVER Wallet.
-4. After the transaction is completed, the pool page will change and you will see a new block - [My farming performance](../interface/farm-page-user/#my-farming-performance-and-farming-balances).
+1. [目的のファーミングプールのページ](../interface/farm-page-user/)に移動します。
+2. ファーミング残高項目で、ファーミングにロックしたいLPトークンの量を入力します。
+3. \[預け入れる]をクリックし、EVER Walletでトランザクションを確定させます。
+4. トランザクション完了後、プールのページが変わり、\[[自分のファーミングパフォーマンス](../interface/farm-page-user/#my-farming-performance-and-farming-balances)]という新しい項目が表示されます。
 
 ![(1)](<../../../.gitbook/assets/image (166).png>)
 

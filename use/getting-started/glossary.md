@@ -1,68 +1,68 @@
 ---
-description: This page explains the terminology used in the FlatQube pages.
+description: FlatQubeのページで使用されている用語について解説しています。
 ---
 
-# Glossary
+# 用語解説
 
-## **Swap**
+## **スワップ**
 
-Exchange operation.
+交換作業のこと。
 
-## **Token**
+## **トークン**
 
-A type of crypto asset. There are two main types of tokens on FlatQube:
+仮想資産の一種であり、FlatQubeのトークンは、大きく分けて2種類あります：
 
-* **Native tokens** are presented in the [**Tokens** section](../tokens/). All of them have a certain price. You can buy, sell and exchange them, as well as provide liquidity to pools through them.
-* **LP tokens** are a confirmation of the liquidity locked by the user in a certain [pool ](../pools/)and they can be used for [liquidity farming](../farming/).
+* **ネイティブトークン**については、[**トークン**セクション](../tokens/)でご紹介しています。これらには、全て一定の価格が設定されています。それらを売買したり、交換したり、それらを通じてプールに流動性を提供することも可能です。
+* **LPトークン**は、ユーザーが特定の[プール](../pools/)に流動性をロックしたという証明書のようなものであり、[流動性ファーミング](../farming/)に使用されることがあります。
 
-## **Farming**
+## **ファーミング**
 
-Yield farming or liquidity mining is a way of earning through rewards by **providing liquidity** (as **LP tokens**) to **farming pools**.
+イールドファーミングや流動性マイニングとは、**ファーミングプール**に**流動性**(**LPトークン**として)**を提供する**ことでリワードを得る方法です。
 
-## **Farming pool**
+## **ファーミングプール**
 
-A special smart contract that distributes the provided amount proportionally to everyone who staked a specific LP token on this contract.
+このスマートコントラクトに特定のLPトークンをステークした人全員に、預けた額を相対的に分配する特別なスマートコントラクトのことです。
 
-## **Liquidity pool**
+## **流動性プール**
 
-A collection of funds locked in a smart contract. Users called "**liquidity providers"** add two tokens in a certain proportion to a pool to create a market. As a confirmation of the provided liquidity, providers receive **LP tokens** that they can use in **Farming pools**.
+スマートコントラクトに預けられた暗号資産トークンの集まりです。「**流動性プロバイダー**」と呼ばれるユーザーは、ペアになった2つのトークンを一定の割合でプールに追加し、マーケットを形成します。提供された流動性の証明として、プロバイダーは**ファーミングプール**で使用できる**LPトークン**を受け取ります。
 
-## **Pair**
+## **ペア**
 
-A pair of tokens that form a liquidity pool.
+流動性プールを形成するペアになったトークンのことです。
 
-## **Vesting**
+## **権利確定**
 
-Essentially, vesting on FlatQube is a formula for progressively unlocking farming rewards over time.
+FlatQubeの権利確定(ベスティング)は、基本的に時間の経過とともにファーミングリワードが徐々にアンロックされる方式です。
 
-## **Volume**
+## **ボリューム**
 
-The trading volume (total number of exchanges) in USD for a certain period of time.
+一定期間における総取引量(米ドル)です。
 
-## **TVL**
+## **預かり資産**
 
-The total value locked - is the value of assets locked by liquidity providers in a particular pool.
+預かり資産(TVL)とは、流動性プロバイダーが特定のプールに預け入れた資産の価値です。
 
-## **Account**
+## **アカウント**
 
-The personal smart contract of the liquidity provider, which they use to deposit tokens into the pool.
+流動性プロバイダーの個人的スマートコントラクトで、トークンをプールに預けるために使用されます。
 
-## **Vault**
+## **Vault(ヴォールト)**
 
-A dedicated smart contract that stores all tokens deposited to the DEX.
+DEXに預けられたトークンを全て保管する専用スマートコントラクトのこと。
 
-## **Builder**
+## **ビルダー**
 
-FlatQube interface that allows users to create their own tokens.
+ユーザーが独自のトークンを作成できるFlatQubeインターフェースのこと。
 
-## **Explorer**
+## **エクスプローラー**
 
-A [graphic user interface](https://tonscan.io) designed to allow users to analyze the Everscale blockchain.
+Everscaleブロックチェーンをユーザーが分析できるように設計された[グラフィックユーザーインターフェイス](https://everscan.io/)です。
 
-A blockchain explorer is like a search engine that reveals information about the past and current state of a blockchain.
+ブロックチェーンエクスプローラーは、ブロックチェーンの過去や現在の状態に関する情報を明らかにする検索エンジンのようなものです。
 
-Through its interface, a user can browse information about blocks that have been added to the blockchain, transactions and messages that have occurred, account balances, and information about tokens.
+ブロックチェーンに追加されたブロック、発生したトランザクションやメッセージ、アカウント残高、トークンに関する情報などを、そのインターフェースを通じて閲覧できます。
 
-## **Slippage tolerance**
+## **許容スリッページ**
 
-The difference between the expected price of the token and its price at the time of the transaction. By changing this parameter, you can set the maximum slippage when making a transaction. The transaction will not go through if the price of the token at the time of its completion changes by more than the specified percentage.
+トークンの予想価格とトランザクション時の価格差です。この限度幅を変更することで、トランザクションを行う際の最大スリッページ値を設定することができます。トランザクション完了時のトークン価格が指定した割合以上変動した場合、取引は成立しません。

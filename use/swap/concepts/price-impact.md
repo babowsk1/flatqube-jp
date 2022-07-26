@@ -1,11 +1,11 @@
-# Price impact
+# プライスインパクト
 
-**Price impact** is an expression used to describe the correlation between an incoming order and the price change of the underlying asset caused by the trade.
+**プライスインパクト(価格変動量)**とは、新規取引とその取引による原資産の価格変動との相関関係を表すために使われる表現です。
 
-Buy trades push the price of the asset up, while sell trades do the opposite. The degree of price change as a result of trading largely depends on the liquidity of the affected trading pair. More liquid trading pairs will have less of an impact on price than pairs with lower trading volumes.
+買い取引は資産価格を押し上げ、売り取引は価格を押し下げます。取引の結果、価格がどの程度変化するかは、影響を受ける取引ペアの流動性に大きく左右されます。流動性の高い取引ペアは、取引量の少ないペアに比べて価格への影響が小さくなります。
 
-Traders, especially those who trade in markets with limited liquidity or make large trades, should be aware of the impact their trading has on the price of an asset. Their second buy will be more expensive on average than their first because of their market power.
+トレーダー、特に流動性が限られた市場で取引する人や、大規模な取引を行う人は、自分の取引が資産価格に与える影響に注意する必要があります。2回目の買い取引は、そういった方々が与える市場支配力により、平均して最初の取引よりも高くなります。
 
-During each of your swaps, you can see the impact of the loss on the price of the token.
+スワップを行なっている間、トークン価格に与える損失影響をご確認いただけます。
 
-In order to avoid a sudden change in the price of the current when making your swap, there is a [slippage tolerance](slippage-tolerance.md) parameter that allows you to set the maximum possible change in price and does not allow a transaction to be executed if this percentage is exceeded.
+スワップを行う際に通貨の価格が急激に変化しないように、[許容スリッページ](slippage-tolerance.md)設定が設けられており、指定した割合以上変動した場合、取引は成立しません。

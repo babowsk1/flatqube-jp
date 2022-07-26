@@ -1,7 +1,7 @@
-# Trading volume
+# 取引量
 
-**Trading volume** is the number of tokens of this pair that have participated in exchanges **(**[**Swaps**](transactions.md)**)** in dollar terms.
+**取引量**とは、取引所([**Swaps**](transactions.md))にあるこのペアのトークン数(ドル)です。
 
-To switch the chart to the **Trading volume** display, click the <mark style="color:purple;">corresponding button on the chart</mark>. You can switch between chart display modes: <mark style="color:green;">by hours (</mark><mark style="color:green;">**H**</mark><mark style="color:green;">) and by days (</mark><mark style="color:green;">**D**</mark><mark style="color:green;">)</mark> for more convenient tracking of changes in trading volume.
+チャートを**取引量表示**に切り替えるには、<mark style="color:purple;">チャートの\[ボリューム]ボタン</mark>をクリックしてください。チャートの表示方法は、<mark style="color:green;">時間足(</mark><mark style="color:green;">**H**</mark><mark style="color:green;">)や日足(</mark><mark style="color:green;">**D**</mark><mark style="color:green;">)</mark>に切り替えることができ、より便利に取引量の変化をご確認いただけます。
 
 ![](<../../../../.gitbook/assets/image (134).png>)

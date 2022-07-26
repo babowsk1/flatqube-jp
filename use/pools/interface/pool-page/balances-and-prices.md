@@ -1,11 +1,12 @@
-# Balances and prices
+# 残高と価格
 
-Directly below the name of the pool, the <mark style="color:green;">price of tokens</mark> in relation to each other is displayed. Clicking on one of them will take you to the [swap interface](../../../swap/).\
-Below are 3 <mark style="color:orange;">**Your balance**</mark> blocks:
+プール名称の真下には、各<mark style="color:green;">トークンの価格</mark>が表示されています。\
+そのうちの1つをクリックすると、[スワップインターフェース](../../../swap/)に移動します。\
+その下には、3つの<mark style="color:orange;">**残高**</mark>項目があります：
 
-* **Total balance** displays the total amount of LP tokens of this pair associated with your DEX account - whether they are locked in [Farming pools](farming-pools.md) or are directly on the balance of the wallet. **Total LP breakdown** shows the amount of tokens that [make up your liquidity.](../../how-to/add-liquidity.md)\
-  **Share** is your percentage of the liquidity locked in the pool, from its total amount (TVL of the pool).
-* **The Wallet balance** displays information about the locked liquidity, which is directly on the balance of your DEX account in the form of LP tokens.
-* **Locked in farming pools** shows information about your LP tokens locked in the [farming pools](../../../farming/interface/farming-pools.md) of this pair (farming tokens).
+* **総残高** - **** DEXアカウントに紐付いている、このペアのLPトークン総量です。これには、[ファーミングプール](farming-pools.md)にロックされている、またはウォレットの残高にあるものも含まれています。**LP合計内訳**は、あなたの[流動性を構成する](../../how-to/add-liquidity.md)トークンの量を示しています。 \
+  **シェア** - そのプールにロックされている流動性の合計量に対する割合です。(プールの合計ロック額)
+* **ウォレット残高**には、ロックされた流動性に関する情報が表示されます。これは、LPトークン形式でDEXアカウントの残高に直接表示されます。
+* **ファーミングプールにロック中** - この項目では、[ファーミングプール](../../../farming/interface/farming-pools.md)にロックされたこのペアのLPトークンに関する情報を表示しています。(ファーミングトークン)
 
 ![](<../../../../.gitbook/assets/image (15).png>)

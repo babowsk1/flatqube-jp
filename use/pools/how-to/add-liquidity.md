@@ -1,61 +1,61 @@
-# Add liquidity
+# 流動性の追加
 
-Please note that this section assumes that you have already provided liquidity to the required pool. Otherwise, the process will be different - go to the [**new position page**](create-new-position.md).
+このセクションは、必要なプールへの流動性がすでに提供されていることを前提としています。そうでない場合は、操作が異なりますので、[**新規ポジション**](create-new-position.md)のページに移動してください。
 
-## Simple liquidity provision
+## シンプルな流動性提供
 
-To add tokens to an existing position, go to the [Pools section](../), then go to the [page of the desired pool](../interface/pool-page/) by clicking on the appropriate pair and clicking <mark style="color:red;">**Add Liquidity**</mark>.
+既存ポジションにトークンを追加するには、[プールセクション](../)に移動し、該当するペアをクリックして[目的のプールのページ](../interface/pool-page/)に移動し、\[<mark style="color:red;">**流動性を追加**</mark>]をクリックします。&#x20;
 
-After that, you will be taken to the page for adding liquidity to the pool.
+その後、プールに流動性を追加するためのページが表示されます。&#x20;
 
 ![](<../../../.gitbook/assets/image (177).png>)
 
-On this page, you can add liquidty to the pool of this pair.\
+このページでは、このペアのプールに流動性を追加することができます。\
 \
-Recall that you do not need to have both tokens in equal proportion on your balance, since FlatQube has an automatic exchange function that allows you to provide [**one-sided liquidity**](add-liquidity.md#one-sided-liquidity-provision).
+FlatQubeには自動交換機能があり、[**片側に流動性を提供する**](add-liquidity.md#one-sided-liquidity-provision)ことができるため、残高に両方のトークンが同じ割合で存在している必要はありません。
 
-#### Adding liquidity (using the WEVER/USDC pair as an example)
+#### 流動性の追加(WEVER/USDCペアを例に)
 
-To get started, enter the amount of tokens you wish to **add to the pool**.\
-You can enter the amount of either the left or right tokens, and the required amount of the second token will be calculated automatically at the current FlatQube rate.
+まずは、**プールに追加したい**トークンの数量を入力します。\
+左右どちらかのトークンの数量を入力すると、2つ目のトークンの必要量が現在のFlatQubeレートで自動計算されます。
 
 ![](<../../../.gitbook/assets/image (52).png>)
 
-After entering the amount, you will see how much your [**Pool share**](../pool-economics.md) will change, as well as the ratio of the price of tokens.
+数量を入力すると、あなたの[**プールシェア**](../pool-economics.md)変化割合とトークンの価格比率が表示されます。
 
-Now you need to deposit tokens. Click Deposit and confirm the transaction in EVER Wallet.
+ここで、トークンを預け入れる必要があります。\[預け入れる]をクリックし、EVER Walletでトランザクションを確定させます。
 
 ![](<../../../.gitbook/assets/image (208).png>)
 
-After a successful deposit of the left token, do the same for the right one:
+左トークンの預け入れに成功したら、右トークンも同じように預け入れます。
 
 ![](<../../../.gitbook/assets/image (59).png>)
 
-And here we are almost at the finish line - now it is necessary to produce **Supply**.\
-This operation will also require confirmation.
+まもなく操作が完了します。流動性の**提供**を行うために必要です。\
+この操作も確認が必要です。
 
 ![](<../../../.gitbook/assets/image (127).png>)
 
-After you successfully complete the Supply process, you will see a **Supply receipt window.**
+流動性の提供処理が正常に完了すると、**提供に関する画面**が表示されます。
 
-Here you will see the current **Pool share** and the percentage by which it was increased by this transaction, as well as the number of received [**LP tokens.**](calculate-the-amount-of-lp-tokens.md)\*\*\*\*
+ここには、現在の**プールシェア**と、このトランザクションで増加した割合、受け取った[**LPトークン**](calculate-the-amount-of-lp-tokens.md)の数が表示されます。
 
 ![](<../../../.gitbook/assets/image (124).png>)
 
-## One-sided liquidity provision
+## 片側の流動性供給
 
-FlatQube has an automatic exchange feature that also allows you to provide one-way liquidity.
+FlatQubeには自動交換機能があり、片側の流動性を提供することも可能です。
 
-In order to provide liquidity using only one of the tokens, enable **Auto Exchange** and enter the amount of one of the tokens.
+片方のトークンだけを使って流動性を提供するには、**自動交換機能**を有効にし、どちらか一方のトークン数量を入力します。
 
 ![](<../../../.gitbook/assets/image (104).png>)
 
-The next steps you need to take are identical to those in the [**first example**](add-liquidity.md#adding-liquidity-on-the-example-of-the-wever-usdc-pair), the only difference being that after depositing the token, you will immediately be taken to **Supply**.
+次のステップは、[**最初の例**](add-liquidity.md#adding-liquidity-on-the-example-of-the-wever-usdc-pair)と同じです。唯一の違いは、トークンを預けた後、すぐに流動性の**提供**に移動することです。
 
 ![](<../../../.gitbook/assets/image (92).png>)
 
-After you successfully complete the Supply process, you will see a **Supply receipt window.**
+流動性の提供処理が正常に完了すると、**提供に関する画面**が表示されます。
 
-Here you will see the current **Pool share** and the percentage by which it was increased by this transaction, as well as the number of received [**LP tokens.**](calculate-the-amount-of-lp-tokens.md)\*\*\*\*
+ここには、現在の**プールシェア**と、このトランザクションで増加した割合、受け取った[**LPトークンの数**](calculate-the-amount-of-lp-tokens.md)が表示されます。
 
 ![](<../../../.gitbook/assets/image (58).png>)

@@ -1,20 +1,20 @@
-# Transfer ownership
+# 所有権の移転
 
-You can transfer ownership of the token you created to any [Dex account](../../pools/how-to/connect-dex-account.md). To do this, you need to use the **Transfer ownership** interface.
+作成したトークンの所有権を、任意の[Dexアカウント](../../pools/how-to/connect-dex-account.md)に移転することができます。これを行うには、**所有権の移転**インターフェイスを使用する必要があります。
 
-Go to the [Builder section](../) and then to the [token page](../interface/token-page.md).\
-On the right, in the <mark style="color:green;">**Actions block**</mark>, click **Transfer**.
+[ビルダーセクション](../)に移動し、[トークンページ](../interface/token-page.md)に移動します。 \
+右側の［<mark style="color:green;">**操作**</mark>］ブロックにある［**移転**］をクリックします。
 
 {% hint style="info" %}
-Please note that this action is irreversible and after the transfer of ownership is completed, you will not be able to manage this token.
+なお、この措置は不可逆的であり、所有権移転が完了した後は、このトークンを管理することができなくなりますのでご注意ください。
 {% endhint %}
 
 ![](<../../../.gitbook/assets/image (108).png>)
 
-Enter the address of the new owner of the token and click **Confirm**. Then click **Confirm transaction** in your EVER Wallet and wait for the transfer to complete.
+トークンの新しい所有者アドレスを入力し、\[**確認**]をクリックします。次に、EVER Walletで\[トランザクションを確定する]をクリックし、移転が完了するのを待ちます。
 
 ![](<../../../.gitbook/assets/image (85).png>)
 
-At the end of the process, the token will disappear from the [**Builder section**](../) of the previous owner of the token and will be sent to the <mark style="color:green;">**current owner**</mark>:
+処理が終了すると、トークンの前所有者の[**ビルダーセクション**](../)からトークンが消え、<mark style="color:green;">**新しい所有者**</mark>に送信されます：
 
 ![](<../../../.gitbook/assets/image (63).png>)

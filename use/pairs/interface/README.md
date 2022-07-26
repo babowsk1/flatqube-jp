@@ -1,6 +1,6 @@
 ---
-description: Details about the interface of the Pairs section.
+description: ペアセクションのインターフェースに関する詳細です。
 ---
 
-# Interface
+# インターフェース
 

@@ -1,89 +1,89 @@
 ---
-description: The DexAccount defines the logic for managing inside of the dex pool.
+description: Dexアカウントとは、Dexプール内を管理するためのロジックを規定しているものです。
 ---
 
-# DexAccount
+# Dexアカウント
 
-Smart contract responsible for managing user transactions (withdraw/deposit tokens, withdraw/deposit liquidity, add pair, exchange) inside of the dex pool.
+Dexプール内で行われるユーザートランザクション(トークンの引き出し/預け入れ、流動性の追加/削除、ペアの追加/交換)を管理するスマートコントラクトです。
 
-Derives following classes and interfaces: _DexContractBase, IDexAccount, IAcceptTokensTransferCallback, IUpgradableByRequest, IResetGas_
+次のクラスやインターフェースを継承しています：_DexContractBase, IDexAccount, IAcceptTokensTransferCallback, IUpgradableByRequest, IResetGas_
 
-## Getters
+## ゲッター
 
 ### getRoot
 
-Gets root address of the specific dex root.
+特定のDexルートのルートアドレスを取得します。
 
 ```solidity
 function getRoot() override external view responsible returns (address)
 ```
 
-**Return values:**
+**リターン値:**
 
-| Type    | Description                           |
+| タイプ     | 説明                                    |
 | ------- | ------------------------------------- |
 | address | Address of the account's root address |
 
 ### getOwner
 
-Gets the account owner.
+アカウントの所有者を取得します。
 
 ```solidity
 function getOwner() override external view responsible returns (address) 
 ```
 
-**Return values:**
+**リターン値:**
 
-| Type    | Description                    |
-| ------- | ------------------------------ |
-| address | Address of the account’s owner |
+| タイプ     | 説明            |
+| ------- | ------------- |
+| address | アカウント所有者のアドレス |
 
 ### getVersion
 
-Gets the current version of the account.
+アカウントの現在のバージョンを取得します。
 
 ```solidity
 function getVersion() override external view responsible returns (uint32)
 ```
 
-**Return values**
+**リターン値**
 
-| Type   | Description     |
-| ------ | --------------- |
-| uint32 | Current version |
+| タイプ    | 説明       |
+| ------ | -------- |
+| uint32 | 現在のバージョン |
 
 ### getVault
 
-Gets the vault of the account.
+アカウントのヴォールトを取得します。
 
 ```solidity
 function getVault() override external view responsible returns (address)
 ```
 
-**Return values:**
+**リターン値:**
 
-| Type    | Description          |
-| ------- | -------------------- |
-| address | Address of the vault |
+| タイプ     | 説明         |
+| ------- | ---------- |
+| address | ヴォールトのアドレス |
 
 ### getWalletData
 
-Use token\_root to check whether the specified token exists in wallets list, if it does returns wallet address and it’s balance, if not, returns 0 for address and balance respectively.
+token\_rootを使用して、指定されたトークンがウォレット一覧に存在するかどうかを調べ、存在する場合はウォレットのアドレスと残高をリターンし、存在しない場合はアドレスと残高にそれぞれ0をリターンします。
 
 ```solidity
 function getWalletData(address token_root) override external view responsible returns (address wallet, uint128 balance)
 ```
 
-**Parameters:**
+**パラメータ:**
 
-| Name        | Type    | Description        |
-| ----------- | ------- | ------------------ |
-| token\_root | address | token root address |
+| 名称          | タイプ     | 説明          |
+| ----------- | ------- | ----------- |
+| token\_root | address | トークンルートアドレス |
 
-| Name    | Type    | Description                            |
-| ------- | ------- | -------------------------------------- |
-| wallet  | address | Wallet address for the specified token |
-| balance | uint128 | Token balance in the wallet            |
+| 名称      | タイプ     | 説明               |
+| ------- | ------- | ---------------- |
+| wallet  | address | 指定トークンのウォレットアドレス |
+| balance | uint128 | ウォレット内のトークン残高    |
 
 ### getWallets
 
@@ -91,13 +91,13 @@ function getWalletData(address token_root) override external view responsible re
 function getWallets() external view returns (mapping(address => address))
 ```
 
-Gets list of all the token wallets for this account.
+このアカウントの全トークンウォレット一覧を取得します。
 
-**Return value:**
+**リターン値:**
 
-| Type    | Description                                                 |
-| ------- | ----------------------------------------------------------- |
-| address | List of all token wallets addresses for the certain account |
+| タイプ     | 説明                       |
+| ------- | ------------------------ |
+| address | 特定のアカウントのトークンウォレットアドレス一覧 |
 
 ### getBalances
 
@@ -105,10 +105,10 @@ Gets list of all the token wallets for this account.
 function getBalances() external view returns (mapping(address => uint128))
 ```
 
-Gets list of all the token balances for this account
+このアカウントの全トークン残高一覧を取得します
 
-**Return value:**
+**リターン値:**
 
-| Type    | Description                                                                     |
-| ------- | ------------------------------------------------------------------------------- |
-| uint128 | List of all token balances from different token wallets for the certain account |
+| タイプ     | 説明                                |
+| ------- | --------------------------------- |
+| uint128 | 特定のアカウントの様々なトークンウォレットの全てのトークン残高一覧 |

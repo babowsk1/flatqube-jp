@@ -1,6 +1,6 @@
-# Transactions API
+# トランザクションAPI
 
-{% swagger method="post" path="/transactions" baseUrl="https://api.flatqube.io/v1" summary="Transactions data" %}
+{% swagger method="post" path="/transactions" baseUrl="https://api.flatqube.io/v1" summary="トランザクションデータ" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -33,61 +33,60 @@
 {% endswagger-response %}
 {% endswagger %}
 
-This function needs to get Transactions data of a certain user filtered by required parameters.\
-It can be used anywhere where a list of transactions should be shown and filtered using body parameters.
+この機能は、必要なパラメータでフィルタリングされた特定ユーザーのトランザクションデータを取得するために必要です。
 
-### Request parameters
+### リクエストパラメータ
 
-Body required. Data used for Postman tests:
+ボディが必要です。ポストマンテストに使用するデータです：
 
-| Field name          | Example value                                                              | Comment                                                                                              |
-| ------------------- | -------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| `createdAtGe`       | `0`                                                                        | Date time in UNIX format to filter all transaction that were created after or during that date time  |
-| `createdAtLe`       | `0`                                                                        | Date time in UNIX format to filter all transaction that were created before or during that date time |
-| `currencyAddress`   | `0:a49cd4e158a9a15555e624759e2e4e766d22600b7800d891e46f9291f044a93d`       | Root address of the left currency in transaction pair                                                |
-| `currencyAddresses` | `0:a49cd4e158a9a15555e624759e2e4e766d22600b7800d891e46f9291f044a93d`       | Root address/addresses of a right currency in transaction pair                                       |
-| `eventType`         | `swaplefttoright`                                                          | Type of the transaction (swap, add, remove)                                                          |
-| `leftAmountGe`      | `0.194319663088308553962886430`                                            | Amounts that are greater or equal to the given value of the left transaction pair                    |
-| `leftAmountLe`      | `9.029870729776`                                                           | Amounts that are less or equal to the given value of the left transaction pair                       |
-| `limit`             | `0`                                                                        | Amount limitation                                                                                    |
-| `offset`            | `0`                                                                        |                                                                                                      |
-| `ordering`          | `blocktimeascending`                                                       | Order transactions by time ascending or descending                                                   |
-| `poolAddress`       | `0:83b88abbcd562c8d8dc4cab30ec1ded86a4ded99000ca02425715e5cec754f06`       | Address of the pair’s pool                                                                           |
-| `rightAmountGe`     | `7.029870729776`                                                           | Amounts that are greater or equal to the given value of the right transaction pair                   |
-| `rightAmountLe`     | `9.029870729776`                                                           | Amounts that are less or equal to the given value of the right transaction pair                      |
-| `timestampBlockGe`  | `0`                                                                        | Filter timestamp of the blocks that are greater or equal to this value                               |
-| `timestampBlockLe`  | `0`                                                                        | Filter timestamp of the blocks that are less or equal to this value                                  |
-| `tvGe`              | `8955040.156573434959`                                                     | Filter transactions with total value greater than or equal to this value                             |
-| `tvLe`              | `8955043.156573434959`                                                     | Filter transactions with total value less than or equal to this value                                |
-| `userAddress`       | `0:3aeefed73a08979d5f7d489e7fe06f0d20a433e27f81b70a4e2e0d7f3968ede8`       | Address of the user initiating transactions                                                          |
-| `whiteListUri`      | `https://raw.githubusercontent.com/broxus/ton-assets/master/manifest.json` | Path to a white list                                                                                 |
+| フィールド名              | 例の値                                                                        | 説明                                          |
+| ------------------- | -------------------------------------------------------------------------- | ------------------------------------------- |
+| `createdAtGe`       | `0`                                                                        | UNIX形式の日時で、その日時の後または間に作成されたトランザクションをフィルタリング |
+| `createdAtLe`       | `0`                                                                        | UNIX形式の日時で、その日時の前または間に作成されたトランザクションをフィルタリング |
+| `currencyAddress`   | `0:a49cd4e158a9a15555e624759e2e4e766d22600b7800d891e46f9291f044a93d`       | トランザクションペアにおける左通貨のルートアドレス                   |
+| `currencyAddresses` | `0:a49cd4e158a9a15555e624759e2e4e766d22600b7800d891e46f9291f044a93d`       | トランザクションペアにおける右通貨のルートアドレス                   |
+| `eventType`         | `swaplefttoright`                                                          | トランザクションタイプ(スワップ、追加、削除)                     |
+| `leftAmountGe`      | `0.194319663088308553962886430`                                            | トランザクションペアの左が指定値以上                          |
+| `leftAmountLe`      | `9.029870729776`                                                           | トランザクションペアの左が指定値以下                          |
+| `limit`             | `0`                                                                        | 数量制限                                        |
+| `offset`            | `0`                                                                        |                                             |
+| `ordering`          | `blocktimeascending`                                                       | トランザクション時間(昇順・降順)                           |
+| `poolAddress`       | `0:83b88abbcd562c8d8dc4cab30ec1ded86a4ded99000ca02425715e5cec754f06`       | ペアのプールアドレス                                  |
+| `rightAmountGe`     | `7.029870729776`                                                           | トランザクションペアの右が指定値以上                          |
+| `rightAmountLe`     | `9.029870729776`                                                           | トランザクションペアの右が指定値以下                          |
+| `timestampBlockGe`  | `0`                                                                        | この値以上のブロックのフィルタータイムスタンプ                     |
+| `timestampBlockLe`  | `0`                                                                        | この値以下のブロックのフィルタータイムスタンプ                     |
+| `tvGe`              | `8955040.156573434959`                                                     | 合計額がこの値以上のトランザクションをフィルタリング                  |
+| `tvLe`              | `8955043.156573434959`                                                     | 合計額がこの値以下のトランザクションをフィルタリング                  |
+| `userAddress`       | `0:3aeefed73a08979d5f7d489e7fe06f0d20a433e27f81b70a4e2e0d7f3968ede8`       | トランザクションを開始するユーザーのアドレス                      |
+| `whiteListUri`      | `https://raw.githubusercontent.com/broxus/ton-assets/master/manifest.json` | ホワイトリストへのパス                                 |
 
-### Response explanation
+### レスポンス欄の解説
 
-| Field name        | Example value                                                        | Comment                                           |
-| ----------------- | -------------------------------------------------------------------- | ------------------------------------------------- |
-| `count`           | 10                                                                   | Amount of transactions shown per page             |
-| `offset`          | 0                                                                    |                                                   |
-| `totalCount`      | 4132                                                                 | Number of all transactions required               |
-| `transactions`    | -                                                                    | Date time in UNIX format of transaction formation |
-| `createdAt`       | `1649965461706`                                                      | Date time in UNIX format of transaction formation |
-| `eventType`       | `deposit`                                                            | Type of transaction (swap, add, remove)           |
-| `fee`             | `null`                                                               | Transaction fee                                   |
-| `feeCurrency`     | `null`                                                               | Currency of the transaction fee                   |
-| `left`            | `WEVER`                                                              | Left pair currency                                |
-| `leftAddress`     | `0:a49cd4e158a9a15555e624759e2e4e766d22600b7800d891e46f9291f044a93d` | Left pair root address                            |
-| `leftValue`       | `915417342444`                                                       | Left pair value                                   |
-| `messageHash`     | `c264d77bf677742d3d0c8065b92d1bf6137444917e20fafebe9a6b7f3376bd24`   | Hash code of the transaction message              |
-| `poolAddress`     | `0:83b88abbcd562c8d8dc4cab30ec1ded86a4ded99000ca02425715e5cec754f06` | Address of the pair’s pool                        |
-| `right`           | `BRIDGE`                                                             | Right pair currency                               |
-| `rightAddress`    | `0:f2679d80b682974e065e03bf42bbee285ce7c587eb153b41d761ebfd954c45e1` | Right pair root address                           |
-| `rightValue`      | `22933551212`                                                        | Right pair value                                  |
-| `timestampBlock`  | `1649965452`                                                         | Date time of block formation                      |
-| `transactionHash` | `49bf48242de460facac859896ad9987d065d8bb15395f14ca907020cff32aba9`   | Hash of the transaction                           |
-| `tv`              | `421.597659752853`                                                   | Total value in transaction (in USD)               |
-| `userAddress`     | `0:b2475c0716d754fba88eb28e12b45e6f636729f96270aebb859730af86182cf4` | Address of the user that created the transaction  |
+| フィールド名            | 例の値                                                                  | 説明                      |
+| ----------------- | -------------------------------------------------------------------- | ----------------------- |
+| `count`           | 10                                                                   | 1ページに表示されるトランザクション数     |
+| `offset`          | 0                                                                    |                         |
+| `totalCount`      | 4132                                                                 | 必要な全トランザクション数           |
+| `transactions`    | -                                                                    | 取引成立日時(UNIX形式)          |
+| `createdAt`       | `1649965461706`                                                      | 取引成立日時(UNIX形式)          |
+| `eventType`       | `deposit`                                                            | トランザクションタイプ(スワップ、追加、削除) |
+| `fee`             | `null`                                                               | トランザクション手数料             |
+| `feeCurrency`     | `null`                                                               | トランザクション手数料の通貨          |
+| `left`            | `WEVER`                                                              | 右ペアの通貨                  |
+| `leftAddress`     | `0:a49cd4e158a9a15555e624759e2e4e766d22600b7800d891e46f9291f044a93d` | 左ペアのルートアドレス             |
+| `leftValue`       | `915417342444`                                                       | 左ペア値                    |
+| `messageHash`     | `c264d77bf677742d3d0c8065b92d1bf6137444917e20fafebe9a6b7f3376bd24`   | トランザクションメッセージのハッシュコード   |
+| `poolAddress`     | `0:83b88abbcd562c8d8dc4cab30ec1ded86a4ded99000ca02425715e5cec754f06` | ペアプールのアドレス              |
+| `right`           | `BRIDGE`                                                             | 右ペアの通貨                  |
+| `rightAddress`    | `0:f2679d80b682974e065e03bf42bbee285ce7c587eb153b41d761ebfd954c45e1` | 右ペアのルートアドレス             |
+| `rightValue`      | `22933551212`                                                        | 右ペア値                    |
+| `timestampBlock`  | `1649965452`                                                         | ブロック生成日時                |
+| `transactionHash` | `49bf48242de460facac859896ad9987d065d8bb15395f14ca907020cff32aba9`   | トランザクションのハッシュ           |
+| `tv`              | `421.597659752853`                                                   | 取引金額合計(米ドル)             |
+| `userAddress`     | `0:b2475c0716d754fba88eb28e12b45e6f636729f96270aebb859730af86182cf4` | トランザクションを作成したユーザーのアドレス  |
 
-### Example
+### 例
 
 ```
  app.post('/transactions', (req, res) => {

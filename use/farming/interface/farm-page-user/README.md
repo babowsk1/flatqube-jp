@@ -1,36 +1,36 @@
-# Farm page (user)
+# ファームページ (ユーザー)
 
-In order to go to the Farming pool page, you need to click on one of the pools in the [Farming section.](../../)
+ファーミングプールページに移動するには、[ファーミングセクション](../../)にあるいずれかのプールを1つクリックする必要があります。
 
-The farming pool page displays detailed information about that pool.\
-Let's take a closer look at each block of this page using the wEVER/BRIDGE farming pool as an example.
+ファーミングプールページには、そのプールに関する詳細情報が表示されています。\
+wEVER/BRIDGEファーミングプールを例にとって、このページの各項目を詳しく見ていきましょう。
 
-### [My farming performance and Farming balances](farming-perfomance-and-balances.md)
+### [自分のファーミングパフォーマンスと残高](farming-perfomance-and-balances.md)
 
-This blocks displays information about your [**balances** ](farming-perfomance-and-balances.md)in this farming pool.
+このブロックには、このファーミングプールの[**残高**](farming-perfomance-and-balances.md)に関する情報が表示されています。
 
 ![](<../../../../.gitbook/assets/image (51).png>)
 
-### [Farming pool statistics](statistics.md)
+### [ファーミングプールの統計](statistics.md)
 
-This block displays the [statistics ](statistics.md)of this Farming pool, as well as a graph of its TVL and APR.
+ここでは、このファーミングプールの[統計情報](statistics.md)やTVLとAPRのグラフを表示しています。&#x20;
 
 ![](<../../../../.gitbook/assets/image (175).png>)
 
-### [Farming speed changes](../../concepts/farming-speed.md)
+### [ファーミングスピードの変更](../../concepts/farming-speed.md)
 
-This block displays the current [Farming Speed](../../concepts/farming-speed.md), as well as the history of its changes.
+ここでは、現在の[ファーミングスピード](../../concepts/farming-speed.md)とその変更履歴を表示しています。
 
 ![](<../../../../.gitbook/assets/image (76).png>)
 
-### [Details](farm-information.md)
+### [詳細情報](farm-information.md)
 
-This block displays information about the [vesting ](../../concepts/vesting.md)of this farming pool, as well as the addresses of contracts.
+ここでは、このファーミングプールの権利確定に関する情報、およびコントラクトアドレスを表示しています。
 
 ![](<../../../../.gitbook/assets/image (3).png>)
 
-### [Transactions](transactions.md)
+### [トランザクション](transactions.md)
 
-This block displays information about the latest [transactions ](transactions.md)in this farming pool.
+ここでは、このファーミングプールにおける最新の[トランザクション](transactions.md)情報を表示しています。
 
 ![](<../../../../.gitbook/assets/image (137).png>)

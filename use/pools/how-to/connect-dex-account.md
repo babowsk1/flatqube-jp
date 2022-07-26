@@ -1,6 +1,6 @@
-# Connect DEX account
+# DEXアカウントの接続
 
-When you [add liquidity](add-liquidity.md) to a particular pool for the first time, you will need to connect your DEX account to that pool. To do this, click **Connect pool** and confirm the transaction to your EVER Wallet.\
-After the transaction is completed, you will be able to interact with the liquidity of this pool.
+プールに初めて[流動性を追加する](add-liquidity.md)場合、そのプールにDEXアカウントを接続する必要があります。これを行うには、\[**プールを接続**]をクリックし、EVER Wallet へのトランザクションを確定させます。 \
+トランザクションが完了すると、このプールの流動性とやり取りできるようになります。
 
 ![](<../../../.gitbook/assets/image (89).png>)

@@ -1,8 +1,6 @@
 ---
-description: >-
-  Find the answers to the most frequently asked questions about swaps at
-  FlatQube.
+description: FlatQubeでのスワップについて、よくご質問頂くこととその回答をご紹介します。
 ---
 
-# How to
+# 方法
 

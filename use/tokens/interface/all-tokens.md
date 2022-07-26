@@ -1,17 +1,17 @@
 ---
-description: About the main page of the Tokens section.
+description: トークンセクションのメインページについて
 ---
 
-# All tokens
+# 全てのトークン
 
-By going to the Tokens section, you will see a list of tokens used on FlatQube.
+トークンセクションに進むと、FlatQubeで使用されているトークンが一覧表示されます。
 
 ![](<../../../.gitbook/assets/image (94).png>)
 
-Here you have the following options:
+ここでは、以下のオプションがあります：
 
-**Sort tokens by TVL** - click on _TVL_ in the upper right corner of the token sheet to sort them by [TVL](token-page/tvl.md).
+**トークンをTVL順で並べ替え** - 一覧表の右上にあるTVLをクリックすると、[TVL](token-page/tvl.md)順に並べ替えることができます。
 
-**Switch between pages** - in the lower right corner, by clicking on the arrows, you can switch between token pages.
+**ページの切り替え** - 右下の矢印をクリックすると、トークンページを切り替えれます。
 
-**Go to a token page** - click on one of the tokens to go to that [token page](token-page/) with detailed information about it.
+**トークンページへの移動** - 任意のトークンを1つクリックすると、そのトークンの詳細情報が記載された[トークンページ](token-page/)に移動します。&#x20;

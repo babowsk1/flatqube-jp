@@ -1,48 +1,48 @@
 ---
-description: Learn how LP tokens are minted against the provided liquidity
+description: 提供された流動性に対して、LPトークンがどのようにミントされるかを見てみましょう
 ---
 
-# Calculate the amount of LP tokens
+# LPトークン量の計算
 
-## Initial supply
+## 初期供給
 
-When you create a new liquidity pool and deposit liquidity in it, you get the initial amount of LP tokens used as a benchmark for all consequent supplies. Let's look at an example to understand the initial minting process better.
+新しい流動性プールを作成し、そこに流動性を預けると、その後に供給されるLPトークンの基準として使用されるLPトークンの初期量が得られます。最初のミント手順をよりよく理解するために、例を見てみましょう。
 
-Imagine you are creating a pool of 1,000,000 APPLE and 200 CUCUMBER tokens, which have the following precision (number of digital places after the comma):
+1,000,000APPLEと200CUCUMBERトークンのプールを作成すると仮定して、以下の精度(カンマの後の桁数)を有するとします。
 
-* APPLE - 6 digits (0.000 000)
-* CUCUMBER - 12 digits (0.000 000 000 000)
+* APPLE - 6桁 (0.000 000)
+* CUCUMBER - 12桁 (0.000 000 000 000)
 
-As Everscale smart contracts operate in integer numbers, they perceive the number of tokens as one big number joining together the integer part and the fraction up to the precision. In other words, 1 APPLE is saved as 1,000,000 in the smart contract, whereas 1 CUCUMBER token is 1,000,000,000,000.
+Everscaleのスマートコントラクトは整数で動作するため、トークンの数量は整数部分と、その精度までの端数を合わせた1つの大きな数字として認識されます。つまり、スマートコントラクトでは1APPLEは1,000,000として保存され、1CUCUMBERトークンは1,000,000,000となります。
 
-So in our example, 1,000,000 APPLE tokens turn into 1,000,000,000,000 in smart contract memory, and 200 CUCUMBERs into 200,000,000,000,000.
+つまりこの例では、1,000,000 APPLEトークンは、スマートコントラクトのメモリー内で1,000,000,000,000となり、200 CUCUMBERは200,000,000,000となります。
 
-Next, the contract takes the biggest number of those two (i.e., 200,000,000,000,000) and divides it by LP-token precision (9 digits) to issue LP tokens. It means that at the end of the pool creation, you will get 200,000 FLATQUBE-LP-APPLE-CUCUMBER tokens.
+次に、コントラクトはそのうちの最も大きな数(例:200,000,000,000,000)を取り、その数をLPトークンの精度(9桁)で割ってLPトークンを発行します。つまり、プール作成終了時に、200,000 FLATQUBE-LP-APPLE-CUCUMBERトークンを取得できるのです。
 
-## Subsequent supplies
+## 後続の供給
 
-All subsequent supplies operate on the proportion of newly provided liquidity compared to (a) the current liquidity level in the pool and (b) the total supply of LP tokens.
+その後の供給は、(a)プール内の現在の流動性レベルと(b)LPトークンの総供給量を比較して、新たに提供された流動性割合で動作します。
 
-Let's imagine we decided to add 200,000 APPLE and 40 CUCUMBER tokens.
+例えば、200,000 APPLEと40 CUCUMBERトークンを追加するとしましょう。
 
-In such a case, the contract will calculate the amount of LP tokens to mint following this formula:
+このような場合、コントラクトはこの式に従ってミントするLPトークンの量を計算します：
 
 $$
 LP_{issue}=LP_{current} × max(\frac{SupplyLeft_{new}}{SupplyLeft_{old}},\frac{SupplyRight_{new}}{SupplyRight_{old}})
 $$
 
-So in our case, it will be:
+そのため、私たちの場合は下記のようになります：
 
 $$
 LP_{issue}=200,000\times max\big(\frac{200,000,000,000}{1,000,000,000,000},\frac{40,000,000,000,000}{200,000,000,000,000}\big)=50,000
 $$
 
-The total LP-token supply in our example will result in:
+この例では、LPトークンの総供給量になります：
 
 $$
 LP_{new}=LP_{old}+LP_{issue}=200,000+50,000=250,000
 $$
 
 {% hint style="warning" %}
-Please note that the balance between tokens in the pool will change after each swap. So you will need to provide a different number of pool tokens to get the same number of LP-tokens.
+なお、プール内にあるトークン間の残高は、スワップごとに変化します。そのため、同じ数のLPトークンを得るためには、異なる数のプールトークンを提供する必要があります。
 {% endhint %}

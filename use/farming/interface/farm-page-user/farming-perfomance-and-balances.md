@@ -1,42 +1,42 @@
-# Farming perfomance and balances
+# ファーミングパフォーマンスと残高
 
-### My farming perfomance
+### 自分のファーミングパフォーマンス
 
-This block displays information about your funds locked in this farm pool.
+ここでは、このファームプールにロックされたあなたの資金に関する情報を表示しています。
 
-**Farming balance** displays the price of all your [locked ](../../how-to/deposit-farm-tokens.md)farming tokens in this pool at the moment in dollar terms.
+**ファーミング残高**には、このプールに[ロックされている](../../how-to/deposit-farm-tokens.md)ファーミングトークンの現時点価格(米ドル)が表示されています。
 
-**The breakdown of LP** tokens displays the amount of tokens that make up your LP at the moment. This number changes depending on the ratio of the prices of these tokens to each other.
+**LPトークンの内訳**は、現時点であなたのLPを構成するトークンの量を表示しています。この数字は、これらのトークンの価格比率によって変化します。
 
-**LP token** is the amount of locked LP tokens you are using to farm[ ](../../how-to/deposit-farm-tokens.md)in this farming pool.
+**LPトークン**は、このファーミングプールでファーミングする際に使用しているロックされたLPトークンの量です。
 
-**Share in farming pool** displays the percentage of your farming LPs from the total number locked in this farming pool. At the same time, it is a percentage of the total reward that you will receive at any given time.\
-Let's say the **farming speed** of pool is 0.1$ per second and your Share in the farming pool is 10%. In this case, every second, 10% of $0.1 is transferred to [vesting ](../../concepts/vesting.md)and, accordingly, your **Entitled reward**, and your profitability is $0.01 per second or $36 per hour.\\
+**ファーミングプールでのシェア**は、このファーミングプールにロックされている総数における、あなたのファーミングLPの割合を表示しています。また、任意の時点で受け取れる合計リワード割合でもあります。\
+例えば、プールの**ファーミングスピード**が毎秒0.1ドルで、ファーミングプールにおけるあなたのシェアが10％だとします。この場合、毎秒0.1ドルの10%が[権利確定](../../concepts/vesting.md#f5e5)に移行し、それに応じてあなたの**権利付きリワード**も移行し、あなたの収益性は毎秒0.01ドル、1時間当たり36ドルになります。
 
 ![](<../../../../.gitbook/assets/image (112).png>)
 
-**History balance** displays the price of the tokens that make up your LP at the time of the last [Withdraw ](../../how-to/withdraw-farm-tokens.md)or [Deposit ](../../how-to/deposit-farm-tokens.md)of LP tokens in dollars.
+**履歴残高**では、LPトークンを最後に[引き出し](../../how-to/withdraw-farm-tokens.md)又は[預け入れた](../../how-to/deposit-farm-tokens.md)時点で、LPを構成しているトークン価格をドルで表示しています。&#x20;
 
-**History LP breakdown** displays the exact number of tokens that were [locked ](../../how-to/deposit-farm-tokens.md)in the form of LP at the time of the last [Withdraw ](../../how-to/withdraw-farm-tokens.md)or [Deposit ](../../how-to/deposit-farm-tokens.md)of LP tokens.
+**LP履歴内訳**では、LPトークンを最後に[引き出し](../../how-to/withdraw-farm-tokens.md)又は[預け入れた](../../how-to/deposit-farm-tokens.md)時点でのLPの形で[ロック](../../how-to/deposit-farm-tokens.md)されたトークンの正確な数を表示しています。
 
 ![](<../../../../.gitbook/assets/image (198).png>)
 
-**Reward Balance** displays the amount of tokens earned at the moment that are [available for claim](../../how-to/claim-reward.md) or are still in [vesting ](../../concepts/vesting.md)in USD equivalent. \*\*\*\*
+**リワード残高**には、現時点で獲得したトークンのうち、[請求可能](../../how-to/claim-reward.md)なもの又は[権利確定](../../concepts/vesting.md#f5e5)前のものが米ドルで表示されています。
 
-**Unclaimed reward** displays the number of tokens available for [claiming ](../../how-to/claim-reward.md)at the moment\*\*.\*\*
+**未請求リワード**には、現在[請求](../../how-to/claim-reward.md)可能なトークンの数が表示されています。&#x20;
 
-**Entitle reward** displays the number of [vested ](../../concepts/vesting.md)tokens you have earned.
+**権利確定リワード**には、獲得した[権利確定済み](../../concepts/vesting.md)トークン数が表示されています。
 
-**Vesting end date** displays the date and time when all tokens currently in [vesting ](../../concepts/vesting.md)will be available for [Claim](../../how-to/claim-reward.md). Obviously, as long as you keep farming, this date will shift.
+**権利確定日**では、現在[権利確定](../../concepts/vesting.md)しているトークンが[請求](../../how-to/claim-reward.md)できるようになる日時を表示しています。当然ながら、ファーミングを続ける限りこの日付は変更されます。&#x20;
 
 ![](<../../../../.gitbook/assets/image (138).png>)
 
-### Farming balance
+### ファーミング残高
 
-This block contains the functionality of interaction with your LP tokens and rewards.
+ここでは、あなたのLPトークンとリワードのインタラクション機能が表示されています。
 
-<mark style="color:orange;">**Deposit**</mark> allows you to[ lock LP tokens in this farming pool](../../how-to/deposit-farm-tokens.md), allowing you to increase your Share and thus your percentage of the reward received.
+<mark style="color:orange;">**預け入れ**</mark>では、[このファーミングプールにLPトークンをロックする](../../how-to/deposit-farm-tokens.md)ことができ、あなたのシェア率と受け取るリワード割合を増加させることができます。
 
-<mark style="color:green;">**Withdraw**</mark> allows you to [claim ](../../how-to/claim-reward.md)the earned tokens available for this (Claim Reward), as well as [withdraw your LP tokens](../../how-to/withdraw-farm-tokens.md) from this farming pool (Withdraw LP tokens).
+<mark style="color:green;">**引き出し**</mark>では、獲得したトークンを[請求](../../how-to/claim-reward.md)したり(リワードの請求)、このファーミングプールからLPトークンを削除することができます。
 
 ![](<../../../../.gitbook/assets/image (194).png>)

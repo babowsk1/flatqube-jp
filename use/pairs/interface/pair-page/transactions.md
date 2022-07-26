@@ -1,23 +1,23 @@
-# Transactions
+# トランザクション
 
-At the bottom of the **Pair** page is the Transactions block. All transactions are displayed here
+**ペア**ページの下部には、トランザクション一覧があり、全トランザクションがここに表示されます。
 
-This block displays all transactions associated with this pair.
+ここでは、このペアに関連する全てのトランザクションを表示しています。
 
-On the right side of this block, you can sort transactions by <mark style="color:orange;">their type</mark>:\
-**Swaps** - exchanges of the left token of the pair for the right one or vice versa\
-**Adds** - adding liquidity to the pool of this pair\
-**Removes** - removing liquidity from the pool of this pair
+また、トランザクションを下記の<mark style="color:orange;">種類別</mark>に分けて閲覧することも可能です：\
+**スワップ** - ペアの左側のトークンを右側のトークンに交換する(又はその逆)\
+**追加** - このペアのプールに流動性を追加する\
+**削除** - このペアのプールから流動性を削除する
 
 ![](<../../../../.gitbook/assets/image (18).png>)
 
-Below you can see several columns with transaction information:
+トランザクション情報を示す以下の項目が表示されています：
 
-**Total value** - the total amount of the deal in dollar terms.\
-**Left and right token** - the number of corresponding tokens involved in the transaction.\
-**Account** - the address of the account from which this transaction was made.\
-**Time** - the time elapsed since the transaction was made.
+**総額** - ドル換算した取引合計額です\
+**左/右トークン** - トランザクションに関わるトークンの数です\
+**アカウント** - このトランザクションを行ったアカウントアドレスです\
+**時間** - トランザクションが行われた時点からの経過時間です
 
-By clicking on one of the transactions, you will open its page in the blockchain explorer.
+任意のトランザクションを1つクリックすると、ブロックチェーンエクスプローラーにそのページが表示されます。
 
 ![](<../../../../.gitbook/assets/image (71).png>)

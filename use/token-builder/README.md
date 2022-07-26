@@ -1,9 +1,6 @@
 ---
-description: >-
-  FlatQube offers a simple and convenient Everscale tokens builder. Learn how to
-  use it
+description: FlatQubeは、シンプルで便利なEverscaleトークンビルダーを提供しています。使い方はこちら
 ---
 
-# Token builder
+# トークンビルダー
 
-B

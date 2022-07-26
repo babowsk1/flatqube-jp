@@ -1,23 +1,23 @@
-# Statistics
+# 統計
 
-### Farming pool statistics
+### ファーミングプールの統計
 
-This block displays the current statistics of this farming pool.
+ここでは、このファーミングプールの現在の統計情報を表示しています。
 
-On the left you can see the following values:
+左側には、以下の値が表示されています：
 
-**TVL** (Tota value locked) - the total amount of tokens [locked](../../how-to/deposit-farm-tokens.md) in this farming pool in dollar terms.
+**TVL** - このファーミングプールに[ロックされている](../../how-to/deposit-farm-tokens.md)トークン合計額(米ドル)。
 
-**LP token and LP breakdown** express the TVL in terms of LP tokens and tokens of the pair, respectively.
+**LPトークンとLP内訳**は、それぞれLPトークンとペアトークンでTVLを表しています。
 
-**APR** - the annual return of the pool at the moment.
+**APR** - 現時点でのプール年率。
 
-**Remain reward balance** - the number of tokens available to reward farmers.
+**リワード残量** - ファーマーに与えるリワード用トークンの数。
 
-**Farming speed, sec** - the reward that is distributed to all farmers of this pool every second. Your **Share** means the percentage you get of that number every second.
+**ファーミングスピード(秒)** - このプールの全ファーマーに1秒ごとに分配されるリワード。 あなたの**シェア**率に応じて1秒ごとに得られる数量が異なります。
 
 ![](<../../../../.gitbook/assets/image (72).png>)
 
-The graph on the right shows the change in **TVL** or **APR**, depending on the <mark style="color:green;">display mode</mark>. \ You can also change the display mode to easily track changes: <mark style="color:red;">**By hour (1H) or by day (1D)**</mark><mark style="color:red;">.</mark>
+右のグラフは、<mark style="color:green;">表示モード</mark>によって**TVL**または**APR**の変化を示しています。また、表示モード(<mark style="color:red;">**時間足や日足**</mark>)を変更することで、変化を簡単に把握することができます。
 
 ![](<../../../../.gitbook/assets/image (33).png>)

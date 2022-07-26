@@ -1,12 +1,11 @@
 ---
 description: >-
-  Learn about FlatQube - a decentralized AMM exchange powered by the Everscale
-  blockchain that combines all the best of popular DeFi applications in one
-  platform.
+  FlatQubeとは - 人気の高いDeFiアプリケーションの長所を 1
+  つのプラットフォームに集約させ、Everscaleブロックチェーンを活用した分散型AMM取引所です。
 ---
 
-# Welcome to FlatQube
+# FlatQubeへようこそ
 
-FlatQube DEX, developed by [Broxus](https://broxus.com), is a decentralized digital asset exchange providing users with a convenient means of exchanging their cryptocurrency. The DEX also provides users with plenty of passive income options through its farming and staking mechanisms. Its underlying network, Everscale, is making decentralized finance (DeFi) an affordable yet inclusive space for all.
+[Broxus](https://broxus.com)が開発したFlatQube DEXは、分散型デジタル資産取引所で、ユーザーに仮想通貨を交換する便利な手段を提供しています。また、DEXはファーミングやステーキングの仕組みを通じて、ユーザーに多くのパッシブインカム(いわゆる不労所得)の選択肢を提供しています。その基盤となるネットワークであるEverscaleによって、分散型金融(DeFi)を全ての人にとって手頃でありながら包括的な空間にしています。&#x20;
 
-[Farming ](use/farming/)and [vesting ](use/farming/concepts/vesting.md)mechanisms on FlatQube include a wide variety of [pools ](use/pools/)with some of the highest APY rates in DeFi.
+FlatQubeでの[ファーミング](use/farming/)と[権利確定](use/farming/concepts/vesting.md)の仕組みには、DeFiの中でも最も高いAPYレートを誇る様々な[プール](use/pools/)があります。

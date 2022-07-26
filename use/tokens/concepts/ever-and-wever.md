@@ -1,16 +1,16 @@
-# EVER and wEVER
+# EVERとwEVER
 
-**EVER** is Everscale's blockchain native token. This token is used when interacting with any contract on the network. It is with EVER that you pay the commission for any transaction.
+**EVER**は、Everscaleのブロックチェーンネイティブトークンです。このトークンは、ネットワーク上のあらゆるコントラクトとやり取りする際に使用されます。どのようなトランザクションでも、EVERで手数料を支払います。
 
-The **Wrapped EVER** project allows Everscale's EVER token to be used as a TIP-3.1 compliant token.
+**Wrapped EVER**プロジェクトは、EverscaleのEVERトークンをTIP-3.1準拠トークンとして使用できるようにするものです。
 
-Wrapped EVER works pretty much the same as Wrapped Ether.\
-Minting and burning takes place on the Everscale network. Anyone can mint wEVER by locking EVER in the Vault contract. Also, wEVER can be burned to get EVER.
+Wrapped EVERは、Wrapped Etherとほとんど同じように機能します。\
+ミンティングとバーニングは、Everscaleネットワーク上で行われます。Vault(ヴォールト)コントラクトにEVERを預け入れることで、誰でもwEVERをミントすることができます。wEVERをバーンして、EVERを取得することも可能です。
 
-Use the [Wrappedever.io](https://wrappedever.io) interface to convert EVER to wEVER and vice versa.
+[Wrappedever.io](https://wrappedever.io)インターフェイスを使って、EVERをwEVERに、またはその逆に変換できます。
 
 {% hint style="info" %}
-Now EVER can be used on FlatQube. Your default balance will now be your cumulative balance of wEVER and EVER. These tokens can be swapped for any other TIP-3.1 tokens and you can also use them individually on the DEX if you wish.
+EVERがFlatQubeでお使いいただけるようになりました。デフォルト残高は、wEVERとEVERの累積残高になります。これらのトークンは、他のTIP-3.1トークンと交換することもできますし、ご希望であればDEXで個別に使用することも可能です。
 {% endhint %}
 
 {% embed url="https://wrappedever.io" %}

@@ -1,85 +1,84 @@
-# Vesting
+# 権利確定
 
-## Vesting <a href="#f5e5" id="f5e5"></a>
+## 権利確定 <a href="#f5e5" id="f5e5"></a>
 
-As previously mentioned, rewards for farming are accrued constantly, but they do not immediately become available for withdrawal. The distribution of rewards on [**FlatQube**](https://flatqube.io) is done in accordance with a **Vesting** mechanism.
+前述の通り、ファーミングのリワードは常に発生しますが、すぐに引き出せるわけではありません。[**FlatQube**](https://flatqube.io)のリワード分配は、**権利確定**という仕組みに従って行われます。
 
-**Vesting** is a market oversupply management tool that was created as a result of increased TVL and farming speed. The essence of vesting is to reduce the pressure on the price of tokens and encourage more long-term investors.
+**権利確定**とは、TVLとファーミングスピードが増加した結果生まれた市場の供給過剰管理ツールです。権利確定の本質は、トークン価格への圧力を軽減し、より多くの長期投資家を奨励することです。
 
-Essentially, vesting on [**FlatQube**](https://flatqube.io) is a formula for progressively unlocking a liquidity provider’s rewards over time.
+[**FlatQube**](https://flatqube.io)における権利確定とは、流動性プロバイダーのリワードを時間の経過とともに徐々に解除するための方式です。
 
-Each farming pool has several parameters related directly to vesting (the values ​​of these parameters can be found on the page of each pool):\
-**Vesting Ratio, Vesting Period, Vesting end date.**
+各ファーミングプールには、権利確定に直接関係するいくつかのパラメータがあります (次のようなパラメータの値は、各プールのページでご確認いただけます):\
+**権利確定率**、**権利確定期間**、**権利確定終了日**
 
-And the rewards themselves are indicated as **Unclaimed reward** and **Entitled reward**.
+そして、リワードそのものは、**未請求リワード**と**権利付きリワード**と表示されています。
 
-We are going to break down what each of these terms means.
+それぞれの用語の意味を分解してご説明します。
 
-**Vesting ratio** is the percentage of the reward that will be sent to vesting, and **Vesting period** is the time frame during which vesting will take place.
+**権利確定率**とは、権利確定に充てられるリワードの割合で、**権利確定期間**とは権利確定が行われる期間です。
 
-**Vesting end date** is the date at which all rewards that have accumulated in vesting will be unlocked.
+**権利確定終了日**は、権利確定で蓄積されたリワードが全て解除される日です。
 
-**Entitled reward** is a parameter that shows the number of tokens that are in vesting and not available for withdrawal (Claim) at the moment. These tokens are gradually unlocked, and when they become available to withdraw they will be shown in the **Unclaimed reward** column.
+**権利付きリワード**は、現時点で権利確定済みで引き出し(請求)できないトークンの数を示すパラメータです。これらのトークンは徐々に解除され、引き出しが可能になると、**未請求リワード**欄に表示されるようになります。
 
-The accumulation of **Unclaimed rewards** from the amount locked in vesting (**Entitled reward**), begins immediately once they are received and ends once the **Vesting period** has expired.
+**未請求リワード**の蓄積は、権利確定した額(**権利付きリワード**)から、受け取った時点で直ちに開始され、**権利確定期間**が満了した時点で終了します。
 
-For example, if the **Vesting ratio** is 100% and the **Vesting period** is 120 days, it means that 50% of all tokens received as rewards will be sent to the user over the course of 110 days (these tokens will be displayed in the **Unclaimed reward** section). The remaining tokens will be sent over the course of the next 130 days.
+例えば、**権利確定率**が100％で、**権利確定期間**が120日の場合、リワードとして受け取ったトークンの50％が110日間に渡ってユーザーに送られます。(これらのトークンは、**未請求リワード**セクションに表示されます) 残りのトークンは、次の130日間にわたって送信されます。
 
-The rewards that are not yet available and that will be unlocked over the course of 120 days will be displayed in the **Entitled reward** section. Below we are going to take a look at how this works.
+まだ入手できず、120日間かけて解除されるリワードは、**権利付きリワード**のセクションに表示されます。以下で、この仕組みを見ていきましょう。
 
-In layman’s terms, every day 1/120th of the rewards that have accumulated in Entitled reward are sent to Unclaimed reward. Accordingly, every second 1/(60\*60\*24\*120) of the **Entitled reward** is unlocked.
+平たく言うと、毎日権利付きリワードに溜まっているリワードの1/120が未請求リワードに送られます。従って、毎秒1/(60_60_24\*120)の**未請求リワード**が解除されることになります。
 
-It is important to note that the share of unlocked funds is calculated from the current Entitled reward balance while your liquidity is locked in the farming pool, but once you decide to withdraw your LP tokens, the remaining Entitled reward balance will be unlocked in even shares every second. Put simply, the balance of the **Entitled reward** will be transferred to the **Unclaimed reward** in equal shares within 120 days from the moment the LP tokens are withdrawn from the farming pool.
+注意すべきは、流動性がファーミングプールにロックされている間は、現在の権利付きリワードの残高から解除される取り分が計算されますが、LPトークンの引き出しを決定すると、残りの権利付きリワードの残高は1秒ごとに均等に解除されるということです。簡単に言えば、**権利付きリワード**の残高はLPトークンがファーミングプールから引き出された瞬間から120日以内に、**未請求リワード**に均等に送られます。
 
-We highlight that the **Vesting end date** will constantly change until you withdraw your liquidity from a farming pool.\
-This happens because rewards are received every second and instantly blocked and then sent to vesting in the form of **Entitled rewards** for future unlocking evenly over the next 120 days.
+あなたがファーミングプールから流動性を削除するまで、**権利確定終了日**は常に変化します。\
+これは、リワードが毎秒送られては瞬時にブロックされ、今後の解除用に**権利付きリワード**で権利確定に充てられ、120日間にわたって徐々に解除されるために起こるものです。
 
-When LP tokens are withdrawn from a farming pool, the **Entitled reward** will continue to be unblocked and sent to your **Unclaimed reward** over the course of 120 days and the number of your **Entitled Reward** will not increase.
+LPトークンがファーミングプールから削除されると、**権利付きリワード**は120日間かけて解除され、**未請求リワード**に送られ続け、あなたの**権利付きリワード**の数は増えません。
 
-Example 1: you have LP tokens in farming and you receive 1 wEVER every second. Your total reward after the first second is 1 wEVER, after the 2nd second is 2 wEVER, after the 3rd second is 3 wEVER, and so on.
+例1：あなたがファーミングでLPトークンを持っていて、1秒ごとに1WEVERを受け取っているとします。1秒後のリワードは1 WEVER、2秒後のリワードは2WEVER、3秒後のリワードは3 WEVERというようになります。
 
-Accordingly, your **Unclaimed reward**, which gets unlocked progressively, after the 2nd second is equal to the following:
+したがって、2秒後に徐々に解除される**未請求リワード**は次のようになります：
 
-![(1) after the 2nd second](https://miro.medium.com/max/394/0\*nvkSZbnX8UQGpz7G)
+![(1) 2秒後](https://miro.medium.com/max/394/0\*nvkSZbnX8UQGpz7G)
 
-![(2) after the 3rd second](https://miro.medium.com/max/362/0\*dkVWQ5aWeWAVLUVB)
+![(2) 3秒後](https://miro.medium.com/max/362/0\*dkVWQ5aWeWAVLUVB)
 
-![(3) after the 4th second](https://miro.medium.com/max/392/0\*C4yDdi8gRQm0OlUF)
+![(3) 4秒後](https://miro.medium.com/max/392/0\*C4yDdi8gRQm0OlUF)
 
-and the total **Unclaimed reward**, after the 4th second is equal to (1) + (2) + (3)
+そして、4秒後の**未請求リワード**の合計は、(1) + (2) + (3)に相当します。
 
-Example 2:
+例2:
 
-Let’s stay you have withdrawn your tokens from a farming pool and at that moment you had an **Entitled reward** of 10 wEVER. From the moment you withdrew your funds, your **Entitled reward** will no longer increase. This means that every second you will receive 10/(60\*60\*24\*120) wEVER and you will receive the remaining reward over the course of 120 days.
+例えば、あなたがファーミングプールからトークンを削除し、その時点で10wEVERの**権利付きリワード**を持っていたとします。資金を引き出した瞬間から、あなたの**権利付きリワード**は増加しなくなります。従って、毎秒10/(60_60_24\*120)WEVERを受け取り、残りのリワードは120日間かけて受け取ることになります。
 
-Here is a graph to illustrate:
+以下のグラフでご説明します：
 
 ![](https://miro.medium.com/max/1400/0\*PFBNKSshe6ypwe5f)
 
-Vesting graph displaying a **Vesting ratio** of 100% and a **Vesting period** of 120 days
+**権利確定率**100％、**権利確定期間**120日の権利確定グラフ
 
-This is a vesting graph with a **Vesting ratio** of 100% and a **Vesting period** of 120 days. The graph displays a **Vesting Period** of 120 days — after 120 days, your LP tokens are withdrawn, and the **Entitled reward** earned during this time continues to be unlocked and transferred to the **Unclaimed reward**.
+これは、**権利確定率**100％、**権利確定期間**120日の権利確定グラフです。このグラフでは、**権利確定期間**が120日となっていますが、120日を過ぎるとLPトークンは削除され、この間に獲得した**権利付きリワード**は引き続き解除され、**未請求リワード**に振り替えられます。&#x20;
 
-At all times we have the following 2 parameters:
+常時、以下の2つのパラメータを用意しています：
 
-1\. **Entitled reward** — total of locked rewards
+1\. **権利付きリワード** — ロックされたリワードの合計
 
-2\. **Unclaimed reward** — total of unlocked rewards
+2\. **未請求リワード** — 解除されたリワードの合計
 
-To calculate the Unclaimed we have a few additional parameters:
+未請求を計算するために、いくつかの追加パラメータがあります：
 
-* now (the current time)
-* lCT — lastClaimTime (time of the last claim)
-* vP- vestingPeriod
-* pVI — partlyVestedInterval (partial vesting period)
-* fVI — fullVestedInterval (entire vesting period)
+* now (現在時刻)
+* lCT — lastClaimTime (最終請求の時刻)
+* vP- 権利確定期間
+* pVI — partlyVestedInterval (部分的な権利確定期間)
+* fVI — fullVestedInterval (権利確定期間全体)
 
-Depending on how much time has passed since the last **Claim**, there are 2 scenarios for when more or less than the vesting period has passed.
+最終**請求**からの経過時間によって、権利確定期間より長い場合と短い場合向けに2つのシナリオがあります。
 
-If less has passed, the calculations must be made according to F1.
+少ない場合は、F1方式で計算する必要があります。
 
-If more has passed, you need to calculate the required value using the F2 system. In fact, all you have to do is simply cut off part of the amount that was completely unlocked, and for the remaining, use the function from F1.
+それ以上経過している場合は、F2方式で必要額を計算する必要があります。実際には、完全に解除された金額の一部をカットし、残りはF1の機能を使えば良いだけです。
 
 ![](https://miro.medium.com/max/1344/0\*H2hu9nxnyjBiJYI0)
 
-\\

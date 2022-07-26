@@ -1,8 +1,6 @@
 ---
-description: >-
-  Learn all about the FlatQube yield farming program, a tool that allows you to
-  earn by providing liquidity.
+description: 流動性を提供して稼ぐツール、FlatQubeイールドファーミングプログラムの全てをご紹介します。
 ---
 
-# Farming
+# ファーミング
 

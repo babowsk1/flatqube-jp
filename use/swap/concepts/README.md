@@ -1,6 +1,6 @@
 ---
-description: Better understand the concepts used in FlatQube swaps.
+description: FlatQubeのスワップで使用されるコンセプトの理解を深めましょう。
 ---
 
-# Concepts
+# コンセプト
 

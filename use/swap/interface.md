@@ -1,30 +1,30 @@
 ---
-description: Overview of the Swap interface
+description: スワップインターフェースの概要
 ---
 
-# Interface
+# インターフェース
 
-So, we've come to the Swap section. Let's examine each element of the interface in detail.
+さて、スワップセクションまで来ました。インターフェイスをもっと詳しく見ていきましょう。
 
 ![](../../.gitbook/assets/Interface.png)
 
-In the upper right part of the swap window, you can see a gear⚙️\*\*.\*\* This is a link to **Transaction Settings.**\
-\*\*\*\*Here you can set the [**slippage tolerance**](how-to/configure-slippage-tolerance.md).
+スワップ画面の右上にある歯車⚙️\*\*\*は、**トランザクション設定**へのリンクです。\
+\*\*\*\*ここで、[**許容スリッページ**](how-to/configure-slippage-tolerance.md)を設定できます。
 
 ![](<../../.gitbook/assets/Gear (1).png>)
 
-**From** - is the amount of tokens that will be converted into a certain amount of other tokens - **To.**\
-\*\*\*\*Click on **Max** to select all exchangeable tokens.
+**上段に**交換するトークンの数量を入力し、**交換したい通貨量**(新規取得したい通貨量)を下段に入力します。\
+\*\*\*\*\[**最大**]をクリックすると、交換可能なトークンが全て選択されます。
 
 ![](<../../.gitbook/assets/image (55).png>)
 
-After selecting a certain amount of tokens in **From** or **To**, a few more informative lines will appear:
+**上段**と**下段**のトークン量が入力されると、さらにいくつかの情報が表示されます。
 
-* \*\*\*\*[**Slippage tolerance**](how-to/configure-slippage-tolerance.md) \*\*\*\* - it is the difference between the expected price of the token and its price at the time of the transaction. By changing this parameter, you can set the maximum slippage when making a transaction. That is, the transaction will not go through if the price of the token at the time of its completion changes by more than the specified percentage.
-* **Minimum receive -** the minimum amount of tokens you will receive, taking into account Slippage tolerance
-* **Price impact** - the change in the price of the underlying asset caused by this swap.
-* **Liquidity Provider Fee** - the amount of tokens that will be distributed in the form of a commission among all users (Liquidity providers) who provided liquidity to the pool of the pair you are exchanging.
-* **Optimal price** is the ratio of the price of the tokens you are going to exchange.\
-  By clicking on the 🔁, you can choose the ratio of which token to another will be displayed.
+* \*\*\*\*[**許容スリッページ**](how-to/configure-slippage-tolerance.md) \*\*\*\* - トークンの予想価格とトランザクション時の価格差です。この限度幅を変更することで、トランザクションを行う際の最大スリッページ値を設定することができます。トランザクション完了時のトークン価格が指定した割合以上変動した場合、トランザクションは成立しません。
+* **最低獲得量 -** 許容スリッページを考慮して最低限受け取れるトークンの量。
+* **プライスインパクト** - このスワップによって生じる原資産の価格変動。
+* **流動性プロバイダーの手数料** - 交換するペアのプールに流動性を提供した全てのユーザー(流動性プロバイダー)に手数料という形で分配されるトークンの量です。
+* **最適価格**とは、交換しようとするトークンの価格比率です。\
+  🔁をクリックすることで、トークン間の比率を選択できます。
 
 ![](<../../.gitbook/assets/image (67).png>)

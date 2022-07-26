@@ -1,5 +1,5 @@
-# Open in explorer
+# エクスプローラーで開く
 
-Click on the arrow at the top of the [**Pair page**](./) to open the pool page in the Everscale blockchain explorer - [EVER Scan](https://everscan.io).
+****[**ペアページ**](./)の上部にある矢印をクリックすると、Everscaleブロックチェーンエクスプローラーである[EVER Scan](https://everscan.io)でプールページが表示されます。&#x20;
 
 ![](<../../../../.gitbook/assets/image (154).png>)

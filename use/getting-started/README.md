@@ -1,10 +1,7 @@
 ---
-description: >-
-  In this section, you will find explanations of the main concepts, terms, and
-  mechanisms of FlatQube, necessary for understanding the principles of the
-  platform.
+description: ここでは、FlatQubeの原理を理解するために必要な概念や用語、仕組みについて解説しています。
 ---
 
-# Getting started
+# はじめに
 
-If you have never used FlatQube or other DEXes, we highly recommend devoting some time to reading the tips inside.
+FlatQubeや他のDEXを使ったことがない方は、ぜひ一度私たちがご提供している有益なヒントを読んでみてください。

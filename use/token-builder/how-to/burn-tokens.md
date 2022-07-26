@@ -1,23 +1,23 @@
-# Burn tokens
+# トークンのバーン
 
-If you want to reduce token supply, there is an interface for burning them.\
-In order to burn part of created token supply, go to the [token page](../interface/token-page.md) in the [Builder section](../) and click on <mark style="color:green;">**Burn**</mark> in the right block of the page.
+トークンの供給量を減らしたい場合、トークンをバーンするインターフェースから行う必要があります。\
+作成したトークンの一部をバーンするには、[ビルダーセクション](../)の[トークンページ](../interface/token-page.md)に移動し、ページの右側にある<mark style="color:green;">**バーンする**</mark>をクリックします。&#x20;
 
 ![](<../../../.gitbook/assets/image (202).png>)
 
-In the interface window that opens, fill in the appropriate fields:
+開いたインターフェース画面で、該当項目に入力します：
 
-* Enter the address from which the tokens will be burned in the **Target address** field.
-* Enter the **amount to burn**
-* Optionally enter **Callback address** and **Callback payload**\
-  \*\*\*\*(In simple terms, a Сallback address is an address of a smart contract that can use data from a Callback payload when a corresponding message arrives)
+* バーンするトークンアドレスを**ターゲットアドレス**欄に入力します。
+* **バーンする数量**を入力します。
+* 任意で、**コールバックアドレス**と**コールバックペイロード**を入力します。\
+  \*\*\*\*(簡単に言うと、コールバックアドレスとは、該当メッセージが届いた場合に、コールバックペイロードからのデータを使用できるスマートコントラクトのアドレスです)
 
-The bottom part of the window displays the number of tokens stored at the specified Target Address and the total supply of the token.
+画面下部には、指定のターゲットアドレスに保存されているトークンの数と、トークンの総供給量が表示されています。
 
-If you are ready to start the burning process, click **Burn**, confirm the transaction in your EVER Wallet and wait for the process to finish.
+バーン処理を開始する準備ができたら、\[**バーンする**]をクリックし、EVER Walletでトランザクションを確定させ、処理が終了するのを待ちます。
 
 ![](<../../../.gitbook/assets/image (157).png>)
 
-Upon completion, on the [token page](../interface/token-page.md), you will see that the **Supply** has changed:
+完了後、[トークンページ](../interface/token-page.md)で**供給量**が変更されたことを確認します：
 
 ![](<../../../.gitbook/assets/image (31).png>)

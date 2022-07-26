@@ -1,14 +1,13 @@
-# Mint tokens
+# トークンのミント
 
-If you want to increase the supply of the token, then you need to do this through the minting interface on the \*\*\*\* [**token page**](../interface/token-page.md)**.**\
-\*\*\*\*Go to the token page and click **Mint** in the <mark style="color:green;">right block of the page</mark>.
+そのトークンの供給量を増やしたい場合は、[**トークンページ**](../interface/token-page.md)にあるミントインターフェースから行う必要があります。\
+\*\*\*\*トークンページに移動し、ページの<mark style="color:green;">右側</mark>にある**ミント**をクリックします。
 
 ![](<../../../.gitbook/assets/image (95).png>)
 
-Enter the address to which the tokens will be credited in the **Target address** line (by default, this is the address of your [DEX account](../../pools/how-to/connect-dex-account.md)).\
-Enter the amount of tokens for the mint in the **Amount to mint** line and click **Mint**.\
-**Confirm** the transaction in the wallet and wait for the process to complete.\
-Upon completion, you will see the updated <mark style="color:green;">**Supply**</mark> on your token page.
+**ターゲットアドレス**欄に、そのトークンが入るアドレスを入力します(デフォルトでは、[DEXアカウント](../../pools/how-to/connect-dex-account.md)のアドレスです)\
+\[**ミントする数量**]欄にミントするトークンの数量を入力し、**ミント**をクリックします。\
+ウォレットでトランザクションを**確定**させ、処理が完了するのを待ちます。完了すると、トークンページで最新の<mark style="color:green;">**供給量**</mark>が表示されます。
 
 ![](<../../../.gitbook/assets/image (170).png>)
 

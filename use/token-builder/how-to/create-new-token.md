@@ -1,17 +1,17 @@
-# Create new token
+# 新しいトークンの作成
 
-To create a new token, go to the [Builder section](../) and click <mark style="color:green;">**Create new token.**</mark>
+新しいトークンを作成するには、[ビルダーセクション](../)に移動し、<mark style="color:green;">**新しいトークンを作成**</mark>をクリックします。
 
 ![](<../../../.gitbook/assets/image (148).png>)
 
-Enter the token [name, symbol and decimals](../interface/token-page.md) \*\*\*\* and click on **Build.**
+[トークン名称、シンボル、桁数](../interface/token-page.md)を入力し、**作成**をクリックします。
 
 ![](<../../../.gitbook/assets/image (110).png>)
 
-Confirm the transaction in your EVER Wallet and wait for the token deployment to complete. Upon completion, you will see a success message.
+EVERウォレットでトランザクションを確定させ、トークンのデプロイが完了するのを待ちます。完了すると、成功通知が表示されます。
 
 ![](<../../../.gitbook/assets/image (182).png>)
 
-Congratulations!\
-\*\*\*\*Your token has been successfully created. It will now show up in the list of tokens in the Builder section.\
-By clicking on a **token root contract**, you will be redirected to the page of this token in the blockchain explorer.
+おめでとうございます！\
+\*\*\*\*トークンが正常に作成されました。ビルダーセクションのトークン一覧に表示されるようになりました。\
+**トークンルートコントラクト**をクリックすると、ブロックチェーンエクスプローラーのトークンページにリダイレクトされます。

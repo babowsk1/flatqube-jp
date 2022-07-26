@@ -1,17 +1,17 @@
-# Claim reward
+# リワードの請求
 
-As you go through [**vesting**](../concepts/vesting.md), your **Entitled reward** is gradually unlocked from the **Unclaimed reward**, from where it can be withdrawn from your Dex account balance at any time.
+****[**権利確定**](../concepts/vesting.md#f5e5)が進むと、**未請求リワード**から徐々に**権利付きリワード**が解除され、いつでもあなたのDexアカウント残高から引き出すことができるようになります。
 
-The amount of Unclaimed tokens can be seen in the [<mark style="background-color:orange;">**Reward balance block**</mark>](../interface/farm-page-user/farming-perfomance-and-balances.md) on the [**farming pool page.**](../interface/farm-page-user/)\*\*\*\*\
-\*\*\*\*You can withdraw these tokens to your Dex account balance on the same page in the <mark style="color:green;">**Farming balance block**</mark><mark style="color:green;">.</mark>
+未請求トークンの量は、[**ファーミングプールページ**](../interface/farm-page-user/)の[<mark style="background-color:orange;">**リワード残高項目**</mark>](../interface/farm-page-user/farming-perfomance-and-balances.md)に表示されます。\
+\*\*\*\*これらのトークンは、同ページの<mark style="color:green;">**ファーミング残高項目**</mark>にてDexアカウントの残高に引き出すことができます。
 
 ![](<../../../.gitbook/assets/image (87).png>)
 
-### How to claim your reward
+### リワードの請求方法
 
-Сlick <mark style="color:green;">**Claim**</mark> and confirm the transaction in your EVER Wallet.\
-In this case, all Unclaimed tokens will be withdrawn.
+\[<mark style="color:green;">**請求**</mark>]をクリックし、EVER Walletのトランザクションを確定させます。\
+この場合、未請求トークンが全て引き出されます。
 
 ![](<../../../.gitbook/assets/image (93).png>)
 
-Upon completion of the transaction, you will see that the <mark style="color:green;">**Unclaimed reward balance**</mark> will be reset, and the reward will be credited to the Dex account balance.
+トランザクション完了後、<mark style="color:green;">**未請求リワードの残高**</mark>がリセットされ、リワードがDexアカウントの残高に加算されることが確認できます。

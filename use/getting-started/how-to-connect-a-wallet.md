@@ -1,47 +1,47 @@
 ---
-description: Wallet connection guide
+description: ウォレット接続ガイド
 ---
 
-# How to connect a wallet
+# ウォレットの接続方法
 
-To start working with FlatQube, you need to connect a wallet. At the moment, the only wallet available for connection is [EVER Wallet](https://l1.broxus.com/everscale/wallet).
+FlatQubeを使い始めるには、ウォレットを接続する必要があります。現時点で、接続可能なウォレットは[EVER Wallet](https://l1.broxus.com/everscale/wallet)のみです。
 
-If you do not have EVER Wallet yet, we recommend that you go to the [installation instructions](https://docs.tonbridge.io/ever-wallet/getting-started-with-ton-crystal-wallet) or go directly to the [download page](https://l1.broxus.com/everscale/wallet).
+EVER Walletをまだお持ちでない方は、[インストール手順](https://broxus.gitbook.io/ever-wallet/getting-started-with-ton-crystal-wallet)へ進むか、直接[ダウンロードページ](https://l1.broxus.com/everscale/wallet)へ移動してください。
 
-## Steps to connect your wallet on desktop
+## パソコンでのウォレット接続手順
 
-As soon as you enter FlatQube, you will see the **Connect Wallet** button.
+FlatQubeに入るとすぐに、\[**ウォレットを接続する**]ボタンが表示されます。
 
-Click on it to connect your Ever Wallet.
+クリックすると、Ever Walletが接続されます。
 
-!["Connect to a wallet" button at the Swap page](<../../.gitbook/assets/1 (2) (3).png>)
+![スワップページにある \[ウォレットに接続する\]ボタン](<../../.gitbook/assets/1 (2) (3).png>)
 
-If your device does not have EVER Wallet installed, you will see a window with a download link:
+お使いのデバイスにEVER Walletがインストールされていない場合、ダウンロードリンク画面が表示されます：
 
-![Connect to a wallet with download link](../../.gitbook/assets/download.png)
+![ダウンロードリンクでウォレットに接続する](../../.gitbook/assets/download.png)
 
-If EVER Wallet is installed, you will see a window for selecting an account to connect to.
+EVER Walletがインストールされている場合、接続するアカウントを選択する画面が表示されます。
 
 {% hint style="info" %}
-Sometimes other browser extensions block the EVER Wallet window. In such a situation, just click on its icon on your toolbar to display the pending authorizations.
+他のブラウザ拡張機能がEVER Walletのウィンドウをブロックしてしまうことがあります。そのような場合は、ツールバーのアイコンをクリックすると、保留中の認証が表示されます。
 {% endhint %}
 
-Choose one of them (FlatQube will work with the address of this account only) and click **Next**.
+いずれかを選択し(FlatQubeは選択したアカウントのアドレス上でのみで機能します)、\[**次へ**]をクリックします。
 
-![Account selection window](<../../.gitbook/assets/frame\_generic\_dark (2).png>)
+![アカウント選択画面](<../../.gitbook/assets/frame\_generic\_dark (2).png>)
 
-Select all **permissions** and click **Connect**.
+全ての**権限**を選択し、\[**接続**]をクリックします。
 
-![Permissions window](../../.gitbook/assets/permissions.png)
+![アクセス許可画面](../../.gitbook/assets/permissions.png)
 
-If the connection was successful, you will see the wallet address and the amount of EVER in the right upper corner. By clicking on the "Door" icon you can disconnect this wallet from FlatQube.
+接続に成功した場合、右上にウォレットアドレスとEVERの数量が表示されます。\[ドア]アイコンをクリックすると、このウォレットとFlatQubeの接続を解除することができます。
 
-![FlatQube menu with connected wallet](../../.gitbook/assets/Leave.png)
+![ウォレットが接続できた場合のFlatQubeメニュー](../../.gitbook/assets/Leave.png)
 
-## Steps to connect your wallet on mobile
+## 携帯電話でのウォレット接続手順
 
-To connect your EVER Wallet on mobile, open the EVER Wallet app and go to the <mark style="color:green;">**Browser section**</mark> at the bottom of the screen. Go to [FlatQube.io ](https://flatqube.io)and click **Connect Wallet** and then confirm this action by clicking **Allow**.
+携帯電話でEVER Walletを接続するには、EVER Walletアプリを開き、画面下部の<mark style="color:green;">**ブラウザ**</mark>をタップします。[FlatQube.io](https://flatqube.io/)に切り替わると、\[**ウォレットを接続する**]をクリックし、\[**許可**]をクリックしてこの操作を確定します。
 
 ![](<../../.gitbook/assets/image (101).png>)
 
-Well done!
+接続が完了しました！

@@ -1,28 +1,28 @@
 ---
-description: Different kinds of FlatQube users
+description: 様々なFlatQubeユーザー
 ---
 
-# Roles
+# ルール
 
-## Users
+## ユーザー
 
-Users of FlatQube are people who have [connected ](how-to-connect-a-wallet.md)their wallet to the platform.\
-Any user can take advantage of all available functionality without restrictions: they can [swap tokens](../swap/), [provide liquidity](../pairs/interface/pair-page/manage-liquidity.md) to [pools](../pools/), [farm ](../farming/)and [build tokens](../token-builder/).
+FlatQubeユーザーとは、自分のウォレットをプラットフォームに[接続](how-to-connect-a-wallet.md)している人のことです。\
+どんなユーザーでも、[トークンのスワップ](../swap/)、[プールへの流動性供給](../pairs/interface/pair-page/manage-liquidity.md)、トークンの[ファーム](../farming/)や[構築](../token-builder/)などを機能制限なく利用することができます。
 
-## Liquidity providers
+## 流動性プロバイダー
 
-Liquidity providers are users who lock their tokens in [liquidity pools](../pools/). A liquidity provider that locks his liquidity in any [pair ](../tokens/interface/token-page/pairs.md)receives a corresponding LP token, which stores information about the locked liquidity and is proof of ownership of the pool share.
+流動性プロバイダー(リクイディティ・プロバイダー)は、[流動性プール](../pools/)に自分のトークンを預け入れるユーザーです。任意のペアトークンを預け入れる代わりに相当数のLPトークンを受け取り、預け入れられた流動性に関する情報を格納し、プールシェアの所有権の証明となります。
 
-## Farm admins
+## ファーム管理者
 
-Any FlatQube user can create their own Farming pool. In this case, they will be the pool admin. The pool admin has the right to choose the start and end date of farming, set the vesting period, choose tokens for rewarding farmers and farming speed.
+FlatQubeユーザーであれば、誰でも自分のファーミングプールを作成できます。ファーミングプールの作成者がプール管理者となります。プール管理者は、ファーミングの開始日と終了日の選択、権利確定期間の設定、ファーマーへのリワードトークンやファーミングスピードを選択するなどの権利を有しています。
 
-## Farmers
+## ファーマー
 
-Users who have locked their liquidity in a particular pair can use their LP tokens for yield farming (liquidity farming) using the corresponding FlatQube interface.\
-In exchange for locking their LP tokens in a specific farming pool, farmers receive a reward.
+特定ペアの流動性をロックしたユーザーは、対応するFlatQubeインターフェースを使用して、LPトークンをイールドファーミング(流動性ファーミング)に使用できます。\
+特定のファーミングプールのLPトークンをロックするのと引き換えに、ファーマーはリワードを受け取れます。
 
-## Token builders
+## トークンビルダー
 
-FlatQube has a token builder interface.\
-Users who create their own tokens using this interface are called token builders.
+FlatQubeにはトークンビルダーインターフェイスがあります。\
+このインターフェイスを使用して、独自のトークンを作成するユーザーをトークンビルダーと呼びます。

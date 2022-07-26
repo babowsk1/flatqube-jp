@@ -1,8 +1,6 @@
 ---
-description: >-
-  Token swaps are the heart and the essence of the DEX. Read the articles in
-  this section to learn everything about swaps on FlatQube.
+description: トークンスワップは、DEXの中心部であり本質です。この記事を読んで、FlatQubeのスワップに関する全てを学びましょう。
 ---
 
-# Swap
+# スワップ
 

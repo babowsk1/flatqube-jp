@@ -1,18 +1,18 @@
-# Transactions
+# トランザクション
 
-The transaction block displays all transactions of the connected DEX account related to the liquidity of this pool.\
-The types of these transactions are divided into **Adds** and **Removes**.
+トランザクションセクションでは、このプールの流動性に紐付いているDEXアカウントで行われたトランザクションが全て表示されます。\
+これらのトランザクションは、**追加**と**削除**に分けられます。
 
-* Adds - [adding liquidity](../../how-to/add-liquidity.md) to the pool.
-* Removes - [withdrawal ](../../how-to/withdraw-liquidity.md)of liquidity.
+* 追加 - プールに[流動性を追加する](../../how-to/add-liquidity.md)
+* 削除 - 流動性を[削除する](../../how-to/withdraw-liquidity.md)
 
-You can switch between transaction <mark style="color:green;">display filters</mark> in the upper right corner.
+右上から、トランザクションの<mark style="color:green;">表示フィルター</mark>を切り替えることができます。
 
-In addition to transaction types, this block displays related information:
+トランザクションタイプに加え、ここでは関連情報を表示しています：
 
-* **Total Value** - the dollar equivalent of the amount of tokens that were added or withdrawn by this transaction.
-* **Left and Right token** - the amount of the left and right tokens added or withdrawn by this transaction.
-* **Account** - the address of the account that made the transaction.
-* **Time** - time elapsed since the completion of the transaction.
+* **総額** - このトランザクションによって追加または削除されたトークンの合計額(ドル)です
+* **左/右トークン** - このトランザクションで追加または削除されたトークンの数です
+* **アカウント** -このトランザクションを行ったアカウントアドレスです
+* **時間** - トランザクションが完了してからの経過時間です
 
 ![](<../../../../.gitbook/assets/image (141).png>)

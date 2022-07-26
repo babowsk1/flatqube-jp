@@ -1,14 +1,11 @@
 ---
-description: >-
-  Learn about the smart contracts used in FlatQube and how to integrate with
-  them.
+description: FlatQubeで使用されているスマートコントラクトとその連携方法についてご紹介します。
 ---
 
-# Smart contracts
+# スマートコントラクト
 
 {% hint style="warning" %}
-**Unfinished article**\
+**未完成の記事**\
 \
-This page is still in development. We are doing our best to finish it soon.\
-If you are willing to help, feel free to reach us at hello@broxus.com.
+このページは作成中です。早く完成させるために最善を尽くしています。 ご協力いただける方は、hello@broxus.com までお気軽にご連絡ください。
 {% endhint %}

@@ -1,7 +1,7 @@
-# Explorer
+# エクスプローラー
 
-The main page of the **Builder section** displays <mark style="color:green;">all the tokens you have created</mark> and information about them.
+**ビルダーセクション**のメインページには、<mark style="color:green;">作成した全てのトークン</mark>と、そのトークンに関する情報が表示されます。
 
-To [create a new token](../how-to/create-new-token.md), there is a <mark style="color:orange;">button in the right upper part.</mark>
+[新しいトークンを作成する](../how-to/create-new-token.md)場合は、<mark style="color:orange;">右上のボタン</mark>をクリックします。
 
 ![](<../../../.gitbook/assets/image (173).png>)

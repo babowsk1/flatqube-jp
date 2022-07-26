@@ -1,6 +1,6 @@
 ---
-description: Beter understanding of FlatQube tokens.
+description: FlatQubeトークンの理解を深めましょう。
 ---
 
-# Concepts
+# コンセプト
 

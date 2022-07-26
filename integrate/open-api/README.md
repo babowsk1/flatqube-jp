@@ -1,46 +1,44 @@
 ---
-description: >-
-  FlatQube offers a set of read-only APIs to facilitate obtaining data for your
-  applications.
+description: FlatQubeは、アプリケーションのデータ取得を容易にするために、読み取り専用のAPIを提供しています。
 ---
 
-# Open API
+# オープンAPI
 
 ***
 
 {% hint style="warning" %}
-**Unfinished article**\
+**未完成の記事**\
 \
-This page is still in development. We are doing our best to finish it soon.\
-If you are willing to help, feel free to reach us at hello@broxus.com.
+このページは作成中です。早く完成させるために最善を尽くしています。 ご協力いただける方は、hello@broxus.com までお気軽にご連絡ください。
 {% endhint %}
 
-The APIs below are used by FlatQube itself to facilitate user interfaces.\
-Please refer to the attached Swagger schemes.
+以下のAPIは、FlatQube自身がユーザーインターフェイスを容易にするために使用します。\
+添付されているSwaggerスキームをご参照ください。
 
-## FlatQube indexer
+## FlatQubeインデクサー
 
 {% embed url="https://api.flatqube.io/v1/swagger.yaml" %}
 Swagger scheme
 {% endembed %}
 
-## Farming indexer
+## ファーミングインデクサー
 
 {% embed url="https://farming.flatqube.io/v1/swagger.yaml" %}
 Swagger scheme
 {% endembed %}
 
-## Function calls
+## 関数呼び出し
 
 {% hint style="info" %}
-The information below will allow you to familiarize yourself with the various function calls, as well as examples of their use.
+以下で、様々な関数呼び出しとその使用例についてご紹介しています。
 
-All of the API call methods below are divided into 2 sections: FlatQube Dex Indexer (CMC, currencies, pairs and transactions APIs) and FlatQube Farming Indexer (Farming pools, transactions and graphics APIs).
+以下のように、APIコールメソッドは全て2つのセクションに分けられています：FlatQube Dex Indexer (CMC、通貨、ペア、トランザクションAPI)\
+FlatQube Farming Indexer (ファーミングプール、トランザクション、グラフィックスAPI)
 {% endhint %}
 
-## Node.js code snippets
+## Node.js コードスニペット
 
-The following examples use the libraries:
+以下の例で使用しているライブラリです：
 
 * [_Express (Node.js)_ ](https://expressjs.com/en/4x/api.html)\_\_
 * [_**Axios**_](https://axios-http.com/docs/intro)

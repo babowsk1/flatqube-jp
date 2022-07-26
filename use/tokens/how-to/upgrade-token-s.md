@@ -1,22 +1,21 @@
-# Upgrade token(s)
+# トークンのアップグレード
 
-If you have obsolete tokens in your EVER wallet (for example, TIP-3), then when you [connect your wallet](../../getting-started/how-to-connect-a-wallet.md) to FlatQube (or just open FlatQube if the wallet was connected earlier), you will automatically receive an offer to update them.
+EVERウォレットに古くなったトークン(例えばTIP-3)がある場合、FlatQubeに[ウォレットを接続する](../../getting-started/how-to-connect-a-wallet.md)と(ウォレットが先に接続されている場合はFlatQubeを開くだけ)、自動的にアップグレードオファーが表示されるようになっています。
 
-Let's go through all the steps to upgrade tokens:
+それでは、トークンをアップグレードする手順をご説明します：
 
-![This is the token upgrade window. It will automatically open if you have obsolete tokens in your wallet.](<../../../.gitbook/assets/image (13).png>)
+![これはトークンのアップグレード画面です。ウォレットに古くなったトークンがある場合、自動的に開きます。](<../../../.gitbook/assets/image (13).png>)
 
-Click **Upgrade** to start the token upgrade process.
+\[**アップグレード**]をクリックすると、トークンのアップグレード処理が開始されます。
 
 ![](<../../../.gitbook/assets/image (29).png>)
 
-At this point, an EVER Wallet window will open, where you will need to confirm the transaction.\
+この時、EVER Wallet画面が開き、トランザクションの確認を求められます。\
 \
-Click **Send**, and in the next step, enter the password for the wallet account and click **Confirm transaction**.
+\[**送信**]をクリックし、次のステップでウォレットアカウントのパスワードを入力し、\[**トランザクションを確定**]をクリックします。
 
 ![](<../../../.gitbook/assets/image (171).png>)
 
-Upon completion of the upgrade, you will receive a notification from EVER Wallet about the crediting of the corresponding updated token.\
-The transaction itself can be found in the list of transactions in the wallet:
+アップグレードが完了すると、EVER Walletからアップグレードされたトークンに関する通知が届きます。トランザクション自体はウォレットのトランザクション一覧で、ご確認いただけます：
 
 ![](<../../../.gitbook/assets/image (167).png>)

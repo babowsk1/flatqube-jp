@@ -1,6 +1,6 @@
-# Transactions API
+# トランザクションAPI
 
-{% swagger method="post" path="/transactions" baseUrl="http://farming.flatqube.io/v1" summary="Transactions data" %}
+{% swagger method="post" path="/transactions" baseUrl="http://farming.flatqube.io/v1" summary="トランザクションデータ" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -30,51 +30,51 @@
 {% endswagger-response %}
 {% endswagger %}
 
-This method gets transaction data.
+このメソッドで、トランザクションデータを取得します。
 
-It can be used for showing a list of all desired transactions filtered by request body params such as transaction type, user address, pool address, etc. \
-For example, showing detailed information of all the withdrawal transactions of the specific user.
+これは、トランザクションタイプ、ユーザーアドレス、プールアドレスなどのリクエストボディパラメータによってフィルタリングされたトランザクション一覧を表示します。\
+例えば、特定ユーザーの引き出しトランザクションに関する詳細情報を表示します。
 
-### Required data
+### 必要なデータ
 
-Body required. Data used for postman tests:
+ボディが必要です。ポストマンテストに使用するデータです：
 
-| Field name             | Example value                                                                                                                                        | Comment                                                                                                  |
-| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| eventTypes             | deposit                                                                                                                                              | type of transaction (deposit, withdraw…)                                                                 |
-| limit                  | 10                                                                                                                                                   | maximum number of transactions that should be returned                                                   |
-| poolAddress            | 0:39c1ba1305438e59c444267f8887d3ceb7312ab906760b8b891c865217ea8ff0                                                                                   | address of the farming pool in which transactions are being processed                                    |
-| rootAddress            | 0:5c66f770d439212181bb6f62714bc235f754653ad9e2aca5a685ff7979174ea2                                                                                   | address of the LP token                                                                                  |
-| rootTokenAmountGe      | 12400                                                                                                                                                | value used for filtering all transactions with lp token amount greater than or equal to this             |
-| rootTokenAmountLe      | 12600                                                                                                                                                | value used for filtering all transactions with lp token amount less than or equal to this                |
-| timestampBlockGe       | 1647590400000                                                                                                                                        | date time used for filtering all transactions with block timestamp greater than or equal to this         |
-| timestampBlockLe       | 1648195200000                                                                                                                                        | date time used for filtering all transactions with block timestamp less than or equal to this            |
-| tvGe                   | 5800                                                                                                                                                 | value used for filtering all transactions with total value amount (in USD) greater than or equal to this |
-| tvLe                   | 6500                                                                                                                                                 | value used for filtering all transactions with total value amount (in USD) less than or equal to this    |
-| userAddress            | 0:0e7ebac7bdfcec9edb511113774c75e8c4949d2c5ab2b903837bd2ff04128d68                                                                                   | address of the user                                                                                      |
-| whiteCurrencyAddresses | 0:a49cd4e158a9a15555e624759e2e4e766d22600b7800d891e46f9291f044a93d, 0:f2679d80b682974e065e03bf42bbee285ce7c587eb153b41d761ebfd954c45e1               | -                                                                                                        |
-| whiteListUri           | [https://raw.githubusercontent.com/broxus/ton-assets/master/manifest.json](https://raw.githubusercontent.com/broxus/ton-assets/master/manifest.json) | path to the whitelist                                                                                    |
+| フィールド名                 | 例の値                                                                                                                                                  | 説明                                       |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
+| eventTypes             | deposit                                                                                                                                              | トランザクションタイプ(預け入れ、引き出し)                   |
+| limit                  | 10                                                                                                                                                   | 返送すべき最大トランザクション数                         |
+| poolAddress            | 0:39c1ba1305438e59c444267f8887d3ceb7312ab906760b8b891c865217ea8ff0                                                                                   | トランザクションが処理されているファーミングプールのアドレス           |
+| rootAddress            | 0:5c66f770d439212181bb6f62714bc235f754653ad9e2aca5a685ff7979174ea2                                                                                   | LPトークンのアドレス                              |
+| rootTokenAmountGe      | 12400                                                                                                                                                | LPトークン量がこの値以上であるトランザクションをフィルタリングするときの値   |
+| rootTokenAmountLe      | 12600                                                                                                                                                | LPトークン量がこの値以下であるトランザクションをフィルタリングするときの値   |
+| timestampBlockGe       | 1647590400000                                                                                                                                        | ブロックタイムスタンプがこれ以上のトランザクションをフィルタリングするときの日時 |
+| timestampBlockLe       | 1648195200000                                                                                                                                        | ブロックタイムスタンプがこれ以下のトランザクションをフィルタリングするときの日時 |
+| tvGe                   | 5800                                                                                                                                                 | 合計額がこの値以上のトランザクションをフィルタリングするときの値         |
+| tvLe                   | 6500                                                                                                                                                 | 合計額がこの値以下のトランザクションをフィルタリングするときの値         |
+| userAddress            | 0:0e7ebac7bdfcec9edb511113774c75e8c4949d2c5ab2b903837bd2ff04128d68                                                                                   | ユーザーアドレス                                 |
+| whiteCurrencyAddresses | 0:a49cd4e158a9a15555e624759e2e4e766d22600b7800d891e46f9291f044a93d, 0:f2679d80b682974e065e03bf42bbee285ce7c587eb153b41d761ebfd954c45e1               | -                                        |
+| whiteListUri           | [https://raw.githubusercontent.com/broxus/ton-assets/master/manifest.json](https://raw.githubusercontent.com/broxus/ton-assets/master/manifest.json) | ホワイトリストへのパス                              |
 
-### Response field explanation
+### レスポンス欄の解説
 
-| Field name      | Example value                                                      | Comment                                                         |
-| --------------- | ------------------------------------------------------------------ | --------------------------------------------------------------- |
-| totalCount      | 2                                                                  | total transactions number in one pool                           |
-| Transactions    | -                                                                  | list of all the transactions containing following data          |
-| kind            | Withdraw                                                           | what kind of transaction (Deposit, Claim, Withdraw…)            |
-| leftExec        | null                                                               | amount of left currency participating in the transaction        |
-| messegeHash     | 80056a0cb8ea3a2710edd823b9250d8ee717c825079c50667d4c84824138f2d6   | hash of the transaction message                                 |
-| poolAddress     | 0:39c1ba1305438e59c444267f8887d3ceb7312ab906760b8b891c865217ea8ff0 | address of the pool                                             |
-| rightExec       | 148.559845816278                                                   | amount of right currency participating in the transaction       |
-| timestampBlock  | 1649355777000                                                      | date time in UNIX format when the transaction block was created |
-| tokenAddress    | 0:5c66f770d439212181bb6f62714bc235f754653ad9e2aca5a685ff7979174ea2 |  LP token address                                               |
-| tokenCurrency   | FLATQUBE-LP-WEVER-BRIDGE                                           |  LP token symbol                                                |
-| tokenExec       | 6333.372380447000                                                  | token amount in the transaction                                 |
-| transactionHash | b78457c3ca523321bed353567954ded6cd8af94dfff32aae7098f33cd9603bfa   | hash code of the transaction                                    |
-| tvExec          | 2719.899465109213                                                  | total amount (in USD) in the transaction                        |
-| userAddress     | 0:f1f1158fcf4f0725a5a53c4d1ac1d37583b36eb4e9ab542d3a288424f6762fdd | address of the user initiating the transaction                  |
+| フィールド名          | 例の値                                                                | 説明                        |
+| --------------- | ------------------------------------------------------------------ | ------------------------- |
+| totalCount      | 2                                                                  | 1つのプールにおけるトランザクション合計数     |
+| Transactions    | -                                                                  | 次のデータを含むトランザクション一覧        |
+| kind            | Withdraw                                                           | トランザクションタイプ(預け入れ、請求、引き出し) |
+| leftExec        | null                                                               | トランザクションに参加している左の通貨量      |
+| messegeHash     | 80056a0cb8ea3a2710edd823b9250d8ee717c825079c50667d4c84824138f2d6   | トランザクションメッセージのハッシュ        |
+| poolAddress     | 0:39c1ba1305438e59c444267f8887d3ceb7312ab906760b8b891c865217ea8ff0 | プールアドレス                   |
+| rightExec       | 148.559845816278                                                   | トランザクションに参加している右の通貨量      |
+| timestampBlock  | 1649355777000                                                      | トランザクションブロックの生成日時         |
+| tokenAddress    | 0:5c66f770d439212181bb6f62714bc235f754653ad9e2aca5a685ff7979174ea2 | LPトークンアドレス                |
+| tokenCurrency   | FLATQUBE-LP-WEVER-BRIDGE                                           | LPトークンシンボル                |
+| tokenExec       | 6333.372380447000                                                  | トランザクションのトークン量            |
+| transactionHash | b78457c3ca523321bed353567954ded6cd8af94dfff32aae7098f33cd9603bfa   | トランザクションのハッシュコード          |
+| tvExec          | 2719.899465109213                                                  | 取引金額合計(米ドル)               |
+| userAddress     | 0:f1f1158fcf4f0725a5a53c4d1ac1d37583b36eb4e9ab542d3a288424f6762fdd | トランザクションを開始するユーザーのアドレス    |
 
-### Example
+### 例
 
 ```
  app.post('/transactions', (req, res) => {

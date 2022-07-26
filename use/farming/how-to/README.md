@@ -1,6 +1,6 @@
 ---
-description: Learn how to interact with FlatQube farming pools.
+description: FlatQubeファーミングプールの操作方法についてご説明します。
 ---
 
-# How to
+# 方法
 

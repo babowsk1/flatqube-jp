@@ -1,6 +1,6 @@
-# Currencies API
+# 通貨API
 
-{% swagger method="post" path="/{currencies}" baseUrl="https://api.flatqube.io/v1/currencies" summary="Currency data" %}
+{% swagger method="post" path="/{currencies}" baseUrl="https://api.flatqube.io/v1/currencies" summary="通貨データ" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -24,30 +24,30 @@
 {% endswagger-response %}
 {% endswagger %}
 
-This function is used to get currency data info by token root address.\
+この機能は、トークンルートアドレスから通貨データ情報を取得するために使用されます。\
 \
-It can be used for representing data specific to each currency in detail.
+各通貨の固有データを詳細に表示することができます。
 
-### Request parameters
+### リクエストパラメータ
 
-_Currencies parameter required - represents address of a specific currency._
+_通貨パラメータ、つまり特定の通貨アドレスが必要です_
 
-_Value used for testing is WEVER address: 0:a49cd4e158a9a15555e624759e2e4e766d22600b7800d891e46f9291f044a93d_
+_テストに使用するWEVERのアドレスです： 0:a49cd4e158a9a15555e624759e2e4e766d22600b7800d891e46f9291f044a93d_
 
-### Response fields explanation <a href="#response-fields-explanation" id="response-fields-explanation"></a>
+### レスポンス欄の解説
 
-| Field name        | Example value                                                        | Comment                                                  |
-| ----------------- | -------------------------------------------------------------------- | -------------------------------------------------------- |
-| `currency`        | `WEVER`                                                              | currency symbol                                          |
-| `address`         | `0:a49cd4e158a9a15555e624759e2e4e766d22600b7800d891e46f9291f044a93d` | root address of the desired currency price: price in USD |
-| `priceChange`     | `-3.71`                                                              | price change in the last 24h (percentage)                |
-| `tvl`             | `12209750.651450054`                                                 | total value locked (TVL in USD) of the currency          |
-| `tvlChange`       | `-2.45`                                                              | TVL change in the last 24h (percentage)                  |
-| `volume24h`       | `555590.207631653593`                                                | trading volume (in USD) in the last 24h                  |
-| `volumeChange24h` | `22.66`                                                              | trading volume change (percentage) in the last 24h       |
-| `volume7d`        | `3700214.4401861234`                                                 | trading volume (in USD) in the last 7 days               |
+| フィールド名            | 例の値                                                                  | 説明                  |
+| ----------------- | -------------------------------------------------------------------- | ------------------- |
+| `currency`        | `WEVER`                                                              | 通貨シンボル              |
+| `address`         | `0:a49cd4e158a9a15555e624759e2e4e766d22600b7800d891e46f9291f044a93d` | 希望通貨価格(米ドル)のルートアドレス |
+| `priceChange`     | `-3.71`                                                              | 過去24時間の価格変動率        |
+| `tvl`             | `12209750.651450054`                                                 | その通貨のTVL(米ドル)       |
+| `tvlChange`       | `-2.45`                                                              | 過去24時間のTVL変化率       |
+| `volume24h`       | `555590.207631653593`                                                | 過去24時間の取引量(米ドル)     |
+| `volumeChange24h` | `22.66`                                                              | 過去24時間の取引量変化率       |
+| `volume7d`        | `3700214.4401861234`                                                 | 過去7日間の取引量(米ドル)      |
 
-### Example
+### 例
 
 ```java
 app.post('/currencies/:currencies', (req, res) => {
@@ -67,7 +67,7 @@ app.post('/currencies/:currencies', (req, res) => {
   })
 ```
 
-{% swagger method="post" path="" baseUrl="https://api.flatqube.io/v1/currencies" summary="DEX currency USD price" %}
+{% swagger method="post" path="" baseUrl="https://api.flatqube.io/v1/currencies" summary="DEX 通貨 USD価格" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -81,13 +81,13 @@ app.post('/currencies/:currencies', (req, res) => {
 {% endswagger-response %}
 {% endswagger %}
 
-This function is used to get currency prices in USD by token root address/addresses.\
+この機能は、トークンルートアドレスで通貨価格(米ドル)を取得するために使用されます。\
 \
-It can be used anywhere where a conversion value of a certain currency should be shown in USDT.
+ある通貨の換算値をUSDTで表示する場合は、どこでも使用することができます。
 
-### Request parameters
+### リクエストパラメータ
 
-_Body required. Data used for Postman tests:_
+_ボディが必要です。ポストマンテストに使用するデータです：_
 
 ```
 {
@@ -96,7 +96,7 @@ _Body required. Data used for Postman tests:_
 }
 ```
 
-### Example
+### 例
 
 ```
 app.post('/currencies_usdt_prices', (req, res) => {
@@ -119,7 +119,7 @@ app.post('/currencies_usdt_prices', (req, res) => {
   })
 ```
 
-{% swagger method="post" path="/currencies" baseUrl="https://api.flatqube.io/v1" summary="DEX all currencies info" %}
+{% swagger method="post" path="/currencies" baseUrl="https://api.flatqube.io/v1" summary="DEX 全ての通貨情報" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -130,14 +130,14 @@ app.post('/currencies_usdt_prices', (req, res) => {
 {% endswagger-response %}
 {% endswagger %}
 
-This function gets currency data info.\
-It retrieves all desired currencies based on their addresses and other requested body parameters.\
+この機能は、通貨データ情報を取得するために使用されます。\
+アドレスや、他にリクエストされたボディパラメータをもとに、希望通貨を取得します。\
 \
-It can be used to show all currencies and their data in a list format.
+全ての通貨とそのデータを一覧表で表示するために使用します。
 
-### Request parameters
+### リクエストパラメータ
 
-_Body required._ Data used for Postman tests:
+_ボディが必要です。_ポストマンテストに使用するデータです：
 
 ```
   {
@@ -151,26 +151,26 @@ _Body required._ Data used for Postman tests:
 }
 ```
 
-### Response fields explanation
+### レスポンス欄の解説
 
-| Field name             | Example value                                                        | Comment                                                    |
-| ---------------------- | -------------------------------------------------------------------- | ---------------------------------------------------------- |
-| `count`                |                                                                      | number of currencies per page                              |
-| `currencies`           |                                                                      | list of all retrieved currencies with the following data:  |
-| `address`              | `0:b5ff077d8ac0160559bd3c945a2a824cda12ba93ae90c2697c890656d52fc7d0` | root address of the currency                               |
-| `currency`             | `MOON`                                                               | symbol of the currency                                     |
-| `fee24h`               | `2.107170214758`                                                     | currency fees in the last 24h price: currency price in USD |
-| `priceChange`          | `-14.52`                                                             | price change in the last 24h (percentage)                  |
-| `transactionsCount24h` | `18`                                                                 | number of the transactions in the last 24h                 |
-| `tvl`                  | `6304.683075841390`                                                  | TVL (total value locked) amount (in USD)                   |
-| `tvlChange`            | `-8.12`                                                              | TVL change (percentage) in the last 24h                    |
-| `volume24h`            | `713.328162545779`                                                   | trading volume amount (in USD) in the last 24h             |
-| `volume7d`             | `15925.850567579295`                                                 | trading volume amount (in USD) in the last 7 days          |
-| `volumeChange24h`      | `-34.83`                                                             | trading volume change (percentage) in the last 24h         |
-| `offset`               |                                                                      | offset                                                     |
-| `totalCount`           | `19`                                                                 | number of all the currencies retrieved                     |
+| フィールド名                 | 例の値                                                                  | 説明                               |
+| ---------------------- | -------------------------------------------------------------------- | -------------------------------- |
+| `count`                |                                                                      | 1ページあたりの通貨数                      |
+| `currencies`           |                                                                      | 次のデータを含む、取得取得した全通貨一覧(以下のデータを含む)： |
+| `address`              | `0:b5ff077d8ac0160559bd3c945a2a824cda12ba93ae90c2697c890656d52fc7d0` | 通貨のルートアドレス                       |
+| `currency`             | `MOON`                                                               | 通貨シンボル                           |
+| `fee24h`               | `2.107170214758`                                                     | 過去24時間の通貨手数料(米ドル)                |
+| `priceChange`          | `-14.52`                                                             | 過去24時間の価格変動率                     |
+| `transactionsCount24h` | `18`                                                                 | 過去24時間のトランザクション数                 |
+| `tvl`                  | `6304.683075841390`                                                  | TVL量(米ドル)                        |
+| `tvlChange`            | `-8.12`                                                              | 過去24時間のTVL変化率                    |
+| `volume24h`            | `713.328162545779`                                                   | 過去24時間の取引量(米ドル)                  |
+| `volume7d`             | `15925.850567579295`                                                 | 過去7日間の取引量(米ドル)                   |
+| `volumeChange24h`      | `-34.83`                                                             | 過去24時間の取引量変化率                    |
+| `offset`               |                                                                      | オフセット                            |
+| `totalCount`           | `19`                                                                 | 取得した通貨数                          |
 
-### Example
+### 例
 
 ```
 app.post('/currencies', (req, res) => {
@@ -197,7 +197,7 @@ app.post('/currencies', (req, res) => {
   })
 ```
 
-{% swagger method="post" path="/{currencies}/prices" baseUrl="https://api.flatqube.io/v1/currencies" summary="DEX currency price info" %}
+{% swagger method="post" path="/{currencies}/prices" baseUrl="https://api.flatqube.io/v1/currencies" summary="DEX 通貨価格情報" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -221,23 +221,23 @@ app.post('/currencies', (req, res) => {
 {% endswagger-response %}
 {% endswagger %}
 
-This function gets currency price data info based on the timespan given.\
+この機能で、特定期間の通貨価格情報を取得します。\
 \
-It can be used for graphic representation of price change over a certain period of time.
+一定期間の価格変動をグラフィックで表示します。
 
-### Request parameters
+### リクエストパラメータ
 
-Currencies parameter required - represents address of a specific currency.
+通貨パラメータ、つまり特定の通貨アドレスが必要です。
 
-Value used for testing is Dai Stablecoin address: 0:eb2ccad2020d9af9cec137d3146dde067039965c13a27d97293c931dae22b2b9
+テストに使用するDai Stablecoinのアドレスです： 0:eb2ccad2020d9af9cec137d3146dde067039965c13a27d97293c931dae22b2b9
 
-Body required. Example data used for Postman tests:
+ボディが必要です。ポストマンテストに使用するデータ例です：
 
-| Field name  | Example value                                               | Comment                                                                       |
-| ----------- | ----------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| `from`      | `1646741858511` or `March 8, 2022 12:17:38.511 PM GMT time` | Date-time in UNIX format for the start of timeframe                           |
-| `timeframe` | `“H1”, “D1”`                                                | Desired timeframe to retrieve prices data, could be set for hours, days, etc. |
-| `to`        | `1647346658513` or `March 15, 2022 12:17:38.513 PM`         | Date-time in UNIX format for the end of timeframe                             |
+| フィールド名      | 例の値                                                         | 説明                 |
+| ----------- | ----------------------------------------------------------- | ------------------ |
+| `from`      | `1646741858511` or `March 8, 2022 12:17:38.511 PM GMT time` | 期間の開始日時(UNIX形式)    |
+| `timeframe` | `“H1”, “D1”`                                                | 価格データの取得期間を時間と日で設定 |
+| `to`        | `1647346658513` or `March 15, 2022 12:17:38.513 PM`         | 期間の終了日時(UNIX形式)    |
 
 ```
 {
@@ -247,19 +247,19 @@ Body required. Example data used for Postman tests:
 }
 ```
 
-### Response fields explanation
+### レスポンス欄の解説
 
-| Field name       | Example value    | Comment                                                    |
-| ---------------- | ---------------- | ---------------------------------------------------------- |
-| `close`          | `0.997085448681` | number of currencies per page                              |
-| `closeTimestamp` | `1646744400000`  | list of all retrieved currencies with the following data:  |
-| `high`           | `0.997085448681` | root address of the currency                               |
-| `low`            | `0.997085448681` | symbol of the currency                                     |
-| `openTimestamp`  | `1646740800000`  | currency fees in the last 24h price: currency price in USD |
-| `timeStamp`      | `1646740800000`  | price change in the last 24h (percentage)                  |
-| `volume`         | `0`              | number of the transactions in the last 24h                 |
+| フィールド名           | 例の値              | 説明                   |
+| ---------------- | ---------------- | -------------------- |
+| `close`          | `0.997085448681` | 1ページあたりの通貨数          |
+| `closeTimestamp` | `1646744400000`  | 取得した全通貨一覧(以下のデータを含む) |
+| `high`           | `0.997085448681` | 通貨のルートアドレス           |
+| `low`            | `0.997085448681` | 通貨シンボル               |
+| `openTimestamp`  | `1646740800000`  | 過去24時間の通貨手数料(米ドル)    |
+| `timeStamp`      | `1646740800000`  | 過去24時間の価格変化率         |
+| `volume`         | `0`              | 過去24時間のトランザクション数     |
 
-### Example
+### 例
 
 ```
  app.post('/currencies/:currencies/prices', (req, res) => {
@@ -284,7 +284,7 @@ Body required. Example data used for Postman tests:
   })
 ```
 
-{% swagger method="post" path="/{currencies}/volume" baseUrl="https://api.flatqube.io/v1/currencies" summary="DEX currency volume" %}
+{% swagger method="post" path="/{currencies}/volume" baseUrl="https://api.flatqube.io/v1/currencies" summary="DEX通貨取引量" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -309,30 +309,30 @@ Body required. Example data used for Postman tests:
 {% endswagger-response %}
 {% endswagger %}
 
-This function gets currency volume data info.
+この機能で、通貨取引量データ情報を取得します。
 
-It can be used for graphic representation of trading volume (in USD) that has changed over the required period of time.
+特定期間内で変化した取引量(米ドル)をグラフィックで表示します。
 
-### Response fields explanation
+### レスポンス欄の解説
 
-| Field name  | Example value    | Comment                                                                                                       |
-| ----------- | ---------------- | ------------------------------------------------------------------------------------------------------------- |
-| `data`      | `4.471446924792` | trading volume at the given moment inside of the given time span, based on the timeframe (hourly, daily etc.) |
-| `timestamp` | `1647259200000`  | date-time of the retrieved trading volume data                                                                |
+| フィールド名      | 例の値              | 説明                                     |
+| ----------- | ---------------- | -------------------------------------- |
+| `data`      | `4.471446924792` | タイムフレーム（時間足、日足など）に基づく、特定時間における特定時点の取引量 |
+| `timestamp` | `1647259200000`  | 取得した取引量データの日時                          |
 
-### Request parameters
+### リクエストパラメータ
 
-_Currencies parameter required - represents address of a specific currency._
+_通貨パラメータ、つまり特定の通貨アドレスが必要です。_
 
-_Value used for testing is Dai Stablecoin address: 0:eb2ccad2020d9af9cec137d3146dde067039965c13a27d97293c931dae22b2b9_
+テストに使用するDai Stablecoinのアドレスです： _0:eb2ccad2020d9af9cec137d3146dde067039965c13a27d97293c931dae22b2b9_
 
-_Body required. Data example used for Postman tests:_
+_ボディが必要です。ポストマンテストに使用するデータです：_
 
-| Field name  | Example value                                               | Comment                                                                              |
-| ----------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| `from`      | `1646741858511` or `March 8, 2022 12:17:38.511 PM GMT time` | Date-time in UNIX format for the start of desired timespan                           |
-| `timeframe` | `“H1”, “D1”`                                                | Desired timeframe to retrieve trading volume data, could be set for hours, days, etc |
-| `to`        | `1647346658513` or `March 15, 2022 12:17:38.513 PM`         | Date-time in UNIX format for the end of timespan                                     |
+| フィールド名      | 例の値                                                         | 説明                  |
+| ----------- | ----------------------------------------------------------- | ------------------- |
+| `from`      | `1646741858511` or `March 8, 2022 12:17:38.511 PM GMT time` | 期間の開始日時(UNIX形式)     |
+| `timeframe` | `“H1”, “D1”`                                                | 取引量データの取得期間を時間と日で設定 |
+| `to`        | `1647346658513` or `March 15, 2022 12:17:38.513 PM`         | 期間の終了日時(UNIX形式)     |
 
 ```
 {
@@ -342,7 +342,7 @@ _Body required. Data example used for Postman tests:_
 }
 ```
 
-### Example
+### 例
 
 ```javascript
 app.post('/currencies/:currencies/volume', (req, res) => {
@@ -367,7 +367,7 @@ app.post('/currencies/:currencies/volume', (req, res) => {
   })
 ```
 
-{% swagger method="post" path="{currencies}/tvl" baseUrl="https://api.flatqube.io/v1/currencies/" summary="Currency tvl data" %}
+{% swagger method="post" path="{currencies}/tvl" baseUrl="https://api.flatqube.io/v1/currencies/" summary="通貨取引量データ" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -392,22 +392,22 @@ app.post('/currencies/:currencies/volume', (req, res) => {
 {% endswagger-response %}
 {% endswagger %}
 
-This function gets currency volume data info.
+この機能で、通貨取引量データ情報を取得します。
 
-It can be used for graphic representation of trading volume (in USD) that has changed over the required period of time.
+特定期間内で変化した取引量(米ドル)をグラフィックで表示します。
 
-### Request parameters
+### リクエストパラメータ
 
-_Currencies parameter required - represents address of a specific currency._
+_通貨パラメータ、つまり特定の通貨アドレスが必要です。_
 
-_Value used for testing is Dai Stablecoin address: 0:eb2ccad2020d9af9cec137d3146dde067039965c13a27d97293c931dae22b2b9_
+テストに使用するDai Stablecoinのアドレスです：_0:eb2ccad2020d9af9cec137d3146dde067039965c13a27d97293c931dae22b2b9_
 
-_The example data used for Postman tests:_
+_ポストマンテストに使用するデータ例です：_
 
-| Field name | Example value                                               | Comment                                                    |
-| ---------- | ----------------------------------------------------------- | ---------------------------------------------------------- |
-| `from`     | `1646741858511` or `March 8, 2022 12:17:38.511 PM GMT time` | Date-time in UNIX format for the start of desired timespan |
-| `to`       | `1647346658513` or `March 15, 2022 12:17:38.513 PM`         | Date-time in UNIX format for the end of timespan           |
+| フィールド名 | 例の値                                                         | 説明              |
+| ------ | ----------------------------------------------------------- | --------------- |
+| `from` | `1646741858511` or `March 8, 2022 12:17:38.511 PM GMT time` | 期間の開始日時(UNIX形式) |
+| `to`   | `1647346658513` or `March 15, 2022 12:17:38.513 PM`         | 期間の終了日時(UNIX形式) |
 
 ```
 {
@@ -417,14 +417,14 @@ _The example data used for Postman tests:_
 }
 ```
 
-### Response fields explanation
+### レスポンス欄の解説
 
-| Field name  | Example volume        | Comment                                                                                              |
-| ----------- | --------------------- | ---------------------------------------------------------------------------------------------------- |
-| `data`      | `433345.034717907965` | TVL for the given moment inside of the given time span, based on the timeframe (hourly, daily, etc.) |
-| `timestamp` | `1647244800000`       | Date time of the retrieved trading volume data                                                       |
+| フィールド名      | 例の値                   | 説明                                     |
+| ----------- | --------------------- | -------------------------------------- |
+| `data`      | `433345.034717907965` | タイムフレーム（時間足、日足など）に基づく、特定時間における特定時点のTVL |
+| `timestamp` | `1647244800000`       | 取得した取引量データの日時                          |
 
-### Example
+### 例
 
 ```javascript
 app.post('/currencies/:currencies/tvl', (req, res) => {

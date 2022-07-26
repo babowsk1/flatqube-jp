@@ -1,36 +1,34 @@
 ---
-description: >-
-  Select one of the tokens in the Pairs section to go to that pair's page. Below
-  you will find a description of all blocks of this page.
+description: ペアセクションで任意のペアを1つ選択すると、そのペアページに移動します。以下は、このページにある各項目のご説明です。
 ---
 
-# Pair page
+# ペアページ
 
-The page of any pair is divided into several blocks, let's consider each of them.
+どのペアページも、いくつかの項目に分かれているので、それぞれ見てみましょう。
 
-### Upper block
+### 最初の項目
 
 ![](<../../../../.gitbook/assets/image (102).png>)
 
-The following functions are available in this block:
+ここでは、次の機能が利用いただけます：
 
-\*\*\*\*[**Exchange rates**](exchange-rates.md) chart\
-[**Volume** ](trading-volume.md)chart\
-[**Add liquidity**](../../../pools/how-to/add-liquidity.md) \*\*\*\* to this pair in the pools interface\
-\*\*\*\*[**Trade**](trade.md) \*\*\*\* - make a swap with these two tokens\
-\*\*\*\*[**Token page**](../../../tokens/interface/token-page/) - сlick on one of the pair's tokens to go to that token's page\
-\*\*\*\*[**Open in explorer**](open-in-explorer.md) \*\*\*\*
+\*\*\*\*[**為替レート**](exchange-rates.md)チャート\
+[**ボリューム**](trading-volume.md)チャート\
+[**流動性の追加**](../../../pools/how-to/add-liquidity.md) \*\*\*\* プールインターフェイス上にある、このペアに流動性を追加\
+\*\*\*\*[**取引**](trade.md) \*\*\*\* - この2つのトークンでスワップを行います\
+\*\*\*\*[**トークンページ**](../../../tokens/interface/token-page/) - ペアのどちらかのトークンをクリックすると、そのトークンのページに移動します\
+\*\*\*\*[**エクスプローラーで開く**](open-in-explorer.md) \*\*\*\*
 
-Also on the <mark style="color:orange;">left side of this block</mark> you can see information about:
+また、この<mark style="color:orange;">左側の項目</mark>では、以下の情報をご確認いただけます：
 
-\*\*\*\*[**TVL**](tvl.md) **(Total value locked)**\
-**Total Tokens Locked** - The total number of locked tokens in the [pool ](../../../pools/)of this pair\
-\*\*\*\*[**Trading volume**](trading-volume.md) for the last 24 hours\
-[**Trading volume**](trading-volume.md) for the last 7 days\
-The amount of **fees** in dollars that have been [paid to liquidity providers](../../../pools/pool-economics.md) in the last 24 hours
+\*\*\*\*[**TVL**](tvl.md) **(預かり資産)**\
+**預かり資産** - このペアの[プール](../../../pools/)内に預け入れられたトークンの総数\
+\*\*\*\*過去24時間の[**取引量**](trading-volume.md)\
+過去7日間の[**取引量**](trading-volume.md)\
+過去24時間で[流動性プロバイダーに支払われた](../../../pools/pool-economics.md)**手数料**額(ドル換算)
 
 ![](<../../../../.gitbook/assets/image (179).png>)
 
-### \*\*\*\*[**Transactions block**](transactions.md)
+### \*\*\*\*[**トランザクション一覧**](transactions.md)****
 
 ![](<../../../../.gitbook/assets/image (125).png>)

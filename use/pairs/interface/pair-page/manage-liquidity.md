@@ -1,6 +1,6 @@
-# Manage liquidity
+# 流動性の管理
 
-The <mark style="color:red;">**Add liquidity**</mark> button is located in the upper right part of the page.\
-By clicking it, you will go to the [Pools section](../../../pools/) on the page for [**adding liquidity**](../../../pools/how-to/add-liquidity.md) to the pool of this pair.
+グラフの右上にあるのが、\[<mark style="color:red;">**流動性の追加**</mark>]ボタンです。\
+これをクリックすると、そのページの[プールセクション](../../../pools/)に移動し、このペアのプールに[**流動性を追加**](../../../pools/how-to/add-liquidity.md)できます。
 
 ![](<../../../../.gitbook/assets/image (139).png>)

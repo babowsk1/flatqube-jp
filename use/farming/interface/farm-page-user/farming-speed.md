@@ -1,9 +1,9 @@
-# Farming speed
+# ファーミングスピード
 
-This block displays the current **Farming speed**.\
-Recall that farming pool administrators can change the speed, so the history of changes to this parameter is also displayed here.
+ここでは、現在の**ファーミングスピード**を表示しています。\
+ファーミングプール管理者は、ファーミングスピードを変更することができるので、このパラメータへの変更履歴も、ここに表示されることを忘れないようにしてください。
 
-**Farming speed** is the number of tokens that are distributed to all [farmers ](../../../getting-started/roles.md#farmers)every second, in proportion to their [pool share](farming-perfomance-and-balances.md).\
-**Share** percentage means the percentage of the Reward that the farmer receives per second.
+**ファーミングスピード**とは、[プールシェア](farming-perfomance-and-balances.md)に比例して1秒ごとに全[ファーマー](../../../getting-started/roles.md#farmers)に分配されるトークンの数です。\
+**シェア**率とは、ファーマーが1秒間に受け取るリワード割合のことです。
 
 ![](<../../../../.gitbook/assets/image (121).png>)

@@ -1,23 +1,23 @@
-# Token page
+# トークンページ
 
-This is the created token's page. It contains all the basic information about it (<mark style="color:green;">**Description**</mark>), as well as the management interface (<mark style="color:orange;">**Actions**</mark>).
+これは作成されたトークンのページで、トークンの基本情報（<mark style="color:green;">**概要**</mark>）、管理インターフェース（<mark style="color:orange;">**操作**</mark>）が表示されています。
 
-<mark style="color:green;">On the left side</mark>, you will see the following information about the token:\
-**Network** - the network where the token is located\
-**Root** - address of the token in the network\
-**Token name** - full name of the token\
-**Token symbol** - symbolic name of the token. It is roughly equivalent to a stock ticker\
-**Decimal places** - technically speaking, the decimals value is the number of digits that come after the decimal place when displaying token values on-screen. Total supply indicates the total number of tokens in the network.
+<mark style="color:green;">左側</mark>には、トークンに関する以下の情報が表示されています:\
+**ネットワーク** - トークンがあるネットワーク\
+**ルート** - ネットワーク上のトークンアドレス\
+**トークン名** - トークン名称\
+**トークンシンボル** - トークンのシンボル名称で、株価表示とほぼ同じ意味\
+**小数位** - 厳密に言えば、トークン値を画面に表示する際の小数点以下の桁数のことです。総供給量は、ネットワーク内のトークンの総数を示します。
 
-The following actions are available in the <mark style="color:orange;">**Actions**</mark> section:
+<mark style="color:orange;">**操作**</mark>セクションでは、以下の操作が可能です：
 
-#### Manage circulating supply:
+#### 循環供給量の管理
 
-\*\*\*\*[**Mint**](../how-to/mint-tokens.md) \*\*\*\* - Issue additional tokens to a specific address\
-[**Burn** ](../how-to/burn-tokens.md)**-** Burn tokens at a specific address
+\*\*\*\*[**ミント**](../how-to/mint-tokens.md) \*\*\*\* - 指定アドレスにトークンを追加発行する\
+[**バーン**](../how-to/burn-tokens.md) **-** 指定アドレスのトークンをバーンする
 
-#### Danger zones
+#### 危険箇所
 
-\*\*\*\*[**Transfer ownership**](../how-to/transfer-ownership.md) - Set a new token owner
+\*\*\*\*[**所有権の移転**](../how-to/transfer-ownership.md) - 新しいトークン所有者を設定する
 
 ![](<../../../.gitbook/assets/image (163).png>)

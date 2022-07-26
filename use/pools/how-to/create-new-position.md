@@ -1,46 +1,47 @@
-# Create new position
+# 新規ポジションの作成
 
-There are several ways to go to the page for adding liquidity to a pair:
+ペアに流動性を追加するページに移動するには、いくつかの方法があります：
 
-1. Go to the [Pairs section](../../pairs/), go to the [page of the desired pair](../../pairs/interface/pair-page/) by clicking on the appropriate pair and click <mark style="color:orange;">**Add liquidity**</mark>**:**
+1. [ペアセクション](../../tokens/interface/token-page/pairs.md)に移動し、目的のペアをクリックして[そのペアページ](../../pairs/interface/pair-page/)に移動し、\[<mark style="color:orange;">**流動性の追加**</mark>]をクリックします：
 
 ![](<../../../.gitbook/assets/image (143).png>)
 
-2\. In the **Pool** section select <mark style="color:orange;">**New position**</mark>**.**\
-\*\*\*\*Choose the left and right tokens that will form your pair.
+2\. **プール**セクションで、<mark style="color:orange;">**新規ポジション**</mark>を選択します。\
+\*\*\*\*ペアを構成する左右のトークンを選びます。
 
 ![](<../../../.gitbook/assets/image (164).png>)
 
-First of all, you need to connect the pool to your \*\*\*\* [**Dex account**](connect-dex-account.md).\
-To do this, click **Connect Pool** and **confirm the transaction**. This action must be performed once for each new pool.
+まず、[**Dexアカウント**](connect-dex-account.md)にプールを接続する必要があります。\
+これを行うには、\[**プールを接続する**]をクリックして、**トランザクションを確定させます**。\
+この操作は、新しいプールごとに1回行う必要があります。
 
 ![](<../../../.gitbook/assets/image (213).png>)
 
-To get started, enter the amount of tokens you wish to **add to the pool**.\
-You can enter the amount of both the left and right tokens, and the required amount of the second token will be calculated automatically at the current FlatQube rate.
+まずは、**プールに追加**したいトークンの数量を入力します。\
+左右両方のトークンの数量を入力すると、2つ目のトークンの必要量が現在のFlatQubeレートで自動計算されます。
 
-You can also use the **auto exchange** feature if you want to use one token for [**One-sided liquidity provision.**](add-liquidity.md#one-sided-liquidity-provision)\*\*\*\*
+また、[**片側の流動性提供**](add-liquidity.md#one-sided-liquidity-provision)に1つのトークンを使用したい場合は、**自動交換**機能をご使用いただけます。
 
 ![](<../../../.gitbook/assets/image (52).png>)
 
-After entering the amount, you will see how much your [**Pool share**](../pool-economics.md) will change, as well as the ratio of the price of tokens.
+数量を入力すると、自分の[**プールシェア**](../pool-economics.md)がどれだけ変わるか、トークンの価格比率が表示されます。
 
-Now you need to deposit tokens. Click **Deposit** and confirm the transaction in EVER Wallet.
+ここで、トークンを預け入れる必要があります。\[**預け入れ**]をクリックし、EVER Walletでトランザクションを確定させます。
 
 ![](<../../../.gitbook/assets/image (158).png>)
 
-After you successfully deposit the left token, do the same for the right one:
+左トークンの預け入れが成功したら、右トークンも同じようにします：
 
 ![](<../../../.gitbook/assets/image (214).png>)
 
-And here we are almost at the finish line - now it is necessary to produce **Supply**.\
-This operation will also require confirmation.
+まもなく操作が完了します。**流動性の提供**を行うために必要です。\
+この操作も確認が必要です。
 
 ![](<../../../.gitbook/assets/image (209).png>)
 
-After you successfully complete the Supply process, you will see a **Supply receipt window.**
+流動性の提供が正常に完了すると、今回の**提供に関する画面**が表示されます。
 
-Here you will see the current **Pool share** and the percentage by which it was increased by this transaction, as well as the number of received [**LP tokens.**](calculate-the-amount-of-lp-tokens.md)\*\*\*\*
+ここには、現在の**プールシェア**と今回のトランザクションで増加した割合、受け取った[**LPトークン**](calculate-the-amount-of-lp-tokens.md)の数が表示されます。
 
 ![](<../../../.gitbook/assets/image (150).png>)
 

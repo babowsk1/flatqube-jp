@@ -1,6 +1,6 @@
-# Graphics API
+# グラフィックスAPI
 
-{% swagger method="post" path="/graphic/tvl" baseUrl="http://farming.flatqube.io/v1" summary="Farming pool TVL graphic data" %}
+{% swagger method="post" path="/graphic/tvl" baseUrl="http://farming.flatqube.io/v1" summary="ファーミングプールTVLグラフィックデータ" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -18,29 +18,29 @@
 {% endswagger-response %}
 {% endswagger %}
 
-This method gets farming pool TVL graphic data.
+このメソッドで、ファーミングプールTVLグラフィックデータを取得します。
 
-It can be used for graphic representation of total value locked - TVL (in USD) change for the desired period of time. Data required for the request is the farming pool address and the timespan for following the change of total value locked, which is set through the body of the request.
+ある期間におけるTVL変化(米ドル)のグラフィック表示に使用されます。リクエストに必要なデータは、ファーミングプールのアドレスと、リクエストボディで設定されているTVL変化の追跡期間です。
 
-### Request parameters
+### リクエストパラメータ
 
-Body required. Data used for postman tests:
+ボディが必要です。ポストマンテストに使用するデータです：
 
-| Filen name         | Example value                                                      | Comment                                                            |
-| ------------------ | ------------------------------------------------------------------ | ------------------------------------------------------------------ |
-| farmingPoolAddress | 0:39c1ba1305438e59c444267f8887d3ceb7312ab906760b8b891c865217ea8ff0 | address of the desired farming pool                                |
-| from               | 1646741858511                                                      | date time in UNIX format that represents start of desired timespan |
-| timeframe          | H1                                                                 | step of the desired timespan, can be set as hours, days            |
-| to                 | 1647346658513                                                      | date time in UNIX format representing the end of desired timespamp |
+| フィールド名             | 例の値                                                                | 説明                         |
+| ------------------ | ------------------------------------------------------------------ | -------------------------- |
+| farmingPoolAddress | 0:39c1ba1305438e59c444267f8887d3ceb7312ab906760b8b891c865217ea8ff0 | 希望するファーミングプールのアドレス         |
+| from               | 1646741858511                                                      | 望期間の開始日時(UNIX形式)           |
+| timeframe          | H1                                                                 | <p>期間のステップを<br>時間と日で設定</p> |
+| to                 | 1647346658513                                                      | 期間の終了日時(UNIX形式)            |
 
-### Response field explanation
+### レスポンス欄の解説
 
-| Field name | Example value         | Comment                                                                      |
-| ---------- | --------------------- | ---------------------------------------------------------------------------- |
-| data       | 19315318.324282999059 | total balance (in USD) in one farming pool in a concrete moment              |
-| timestamp  | 1652853600000         | date time in UNIX format of a concrete moment in which the data is retrieved |
+| フィールド名    | 例の値                   | 説明                               |
+| --------- | --------------------- | -------------------------------- |
+| data      | 19315318.324282999059 | ある瞬間における、1つのファーミングプール内の合計残高(米ドル) |
+| timestamp | 1652853600000         | データが取得される瞬間の日時(UNIX形式)           |
 
-### Example
+### 例
 
 ```
  app.post('/graphic/tvl', (req, res) => {
@@ -65,7 +65,7 @@ Body required. Data used for postman tests:
   })
 ```
 
-{% swagger method="post" path="/graphic/apr" baseUrl="http://farming.flatqube.io/v1" summary="Farming pool APR graphic data" %}
+{% swagger method="post" path="/graphic/apr" baseUrl="http://farming.flatqube.io/v1" summary="ファーミングプールAPRグラフィックデータ" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -83,29 +83,29 @@ Body required. Data used for postman tests:
 {% endswagger-response %}
 {% endswagger %}
 
-This method gets a farming pool APR graphic data.
+このメソッドで、ファーミングプールAPRグラフィックデータを取得します。
 
-It can be used for graphic representation of Annual Percentage Rate - APR (percentage) change for the desired period of time. Data required for the request is the farming pool address and the timespan for following the annual percentage rate change, which is set through the body of the request.
+ある期間におけるAPR変化率のグラフィック表示に使用されます。リクエストに必要なデータは、ファーミングプールのアドレスと、リクエストボディで設定されているAPR変化率の追跡期間です。
 
-### Request parameters
+### リクエストパラメータ
 
-Body required. Data used for postman tests:
+ボディが必要です。ポストマンテストに使用するデータです：
 
-| Field name         | Example value                                                     | Comment                                                            |
-| ------------------ | ----------------------------------------------------------------- | ------------------------------------------------------------------ |
-| farmingPoolAddress | 0:39c1ba1305438e59c444267f8887d3ceb7312ab906760b8b891c865217ea8ff | address of the desired farming pool                                |
-| from               | 1646741858511                                                     | date time in UNIX format that represents start of desired timespan |
-| timeframe          | H1                                                                | step of the desired timespan, can be set as hours, days            |
-| to                 | 1647346658513                                                     | date time in UNIX format representing the end of desired timespan  |
+| フィールド名             | 例の値                                                               | 説明                            |
+| ------------------ | ----------------------------------------------------------------- | ----------------------------- |
+| farmingPoolAddress | 0:39c1ba1305438e59c444267f8887d3ceb7312ab906760b8b891c865217ea8ff | 希望するファーミングプールのアドレス            |
+| from               | 1646741858511                                                     | 期間の開始日時(UNIX形式)               |
+| timeframe          | H1                                                                | <p>期間のステップを</p><p>時間と日で設定</p> |
+| to                 | 1647346658513                                                     | 期間の終了日時(UNIX形式)               |
 
-### Response field explanation
+### レスポンス欄の解説
 
-| Field name | Example value | Comment                                                                      |
-| ---------- | ------------- | ---------------------------------------------------------------------------- |
-| data       | 74.5300       | APR (percentage) in one farming pool in a concrete moment                    |
-| timestamp  | 1652878800000 | date time in UNIX format of a concrete moment in which the data is retrieved |
+| フィールド名    | 例の値           | 説明                            |
+| --------- | ------------- | ----------------------------- |
+| data      | 74.5300       | ある瞬間における、1つのファーミングプール内のAPR(%) |
+| timestamp | 1652878800000 | データが取得される瞬間の日時(UNIX形式)        |
 
-### Example
+### 例
 
 ```
  app.post('/graphic/apr', (req, res) => {

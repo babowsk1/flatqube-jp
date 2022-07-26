@@ -1,18 +1,18 @@
-# Withdraw farm tokens
+# ファームトークンの削除
 
-In order to withdraw your farming LP tokens from the farming pool, go to the [**farming page**](../interface/farm-page-user/) of the required [**pool**](../interface/farming-pools.md)**.**\
-The total number of your locked farming tokens in this pool and their dollar equivalent are displayed in the <mark style="color:orange;">**Farming balance block**</mark>.
+ファーミングプールからファーミングLPトークンを削除するには、必要な[**プール**](../interface/farming-pools.md)の[**ファーミングページ**](../interface/farm-page-user/)に移動します。\
+このプールでロックされたあなたのファーミングトークンの総数とその額(ドル)は、<mark style="color:orange;">**ファーミング残高項目**</mark>に表示されています。
 
 ![](<../../../.gitbook/assets/image (90).png>)
 
-## How to withdraw farming tokens
+## ファーミングトークンの削除方法
 
-In the <mark style="color:green;">**Withdraw block**</mark>, select **Withdraw LP tokens**.
+\[<mark style="color:green;">**引き出す**</mark>]項目で、\[LPトークンを引き出す]を選択します。
 
-Enter the amount of farming tokens you want to withdraw and click **Withdraw**.
+希望のファーミングトークン数量を入力し、\[**引き出す**]をクリックします。
 
 ![](<../../../.gitbook/assets/image (172).png>)
 
-After **confirming** the transaction in your EVER Wallet, please wait a bit. After completing the transaction, you will see that your Farming balance has changed - LP tokens have been successfully withdrawn and are stored on your DEX account balance.
+EVERウォレットでトランザクションが**確認**した後、少しお待ちください。トランザクション完了後、ファーミング残高が変更されたことが確認できます。LPトークンが正常に引き出され、DEXアカウント残高に格納されています。
 
 ![](<../../../.gitbook/assets/image (83).png>)

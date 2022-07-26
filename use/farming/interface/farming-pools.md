@@ -1,25 +1,25 @@
-# Farming pools
+# ファーミングプール
 
-By going to the [**Farming** ](../concepts/yield-farming.md)section, you will find yourself on a page with a list of currently available Farming pools.\
-If you previously [added liquidity](../how-to/deposit-farm-tokens.md) to one of the farming pools, then this pool will be displayed in the Favorite pools block.
+[**ファーミング**](../concepts/yield-farming.md)セクションに移動すると、現在利用できるファーミングプール一覧が表示されたページが表示されています。\
+以前にファーミングプールのどれか1つに[流動性を追加](../how-to/deposit-farm-tokens.md)していた場合、そのプールはお気に入りプールに表示されます。
 
-This page also displays various columns with farm pool information:
+また、このページでは様々な項目に分けてファームプールの情報を表示しています：
 
-**Farm pool** - those tokens that make up a pair for this farm pool. The [LP tokens](../../pools/how-to/add-liquidity.md) of this particular pair must be locked in the Farming pool in order to start receiving a reward.
+**ファームプール** - このファームプールのペアを構成するトークンです。リワードを受け取るには、この特定ペアの[LPトークン](../../pools/how-to/add-liquidity.md)をファーミングプールに預け入れる必要があります。
 
-**Reward** is the tokens that are awarded as a [reward for farming](../concepts/reward-token.md) in this pool.
+**リワード**とは、このプールでの[ファーミング報酬](../concepts/reward-token.md)として付与されるトークンです。
 
-**TVL** is the total dollar amount of tokens locked in this farming pool.
+**TVL**とは、このファーミングプールにロックされているトークンの合計額(米ドル)です。
 
-**APR** is the annual profit that this pool brings.
+**APR**とは、このプールがもたらす年間利益率です。
 
-**Share** is your share in the farming pool. This is the percentage of the TVL that your locked liquidity constitutes.\
-At the same time, Share also means the percentage of the reward that you will receive for every unit of time.
+**シェア率**とは、ファーミングプールにおけるあなたの保有割合です。あなたがロックした流動性が構成するTVL率です。\
+また、シェア率とはあなたが時間単位ごとに受け取るリワード割合のことです。
 
-**Your reward** is the reward available for the [claim](../how-to/claim-reward.md).
+**あなたのリワード**とは、[請求](../how-to/claim-reward.md)できるリワードです。
 
-**Entitled reward** is a reward that is in the [vesting](../concepts/vesting.md) protocol.
+**権利付きリワード**とは、[権利確定](../concepts/vesting.md)プロトコルにあるリワードです。
 
 ![](<../../../.gitbook/assets/image (176).png>)
 
-Clicking on one of these pools will take you to the [Farming pool page](farm-page-user/).
+これらのプールのいずれかをクリックすると、[ファーミングプールのページ](farm-page-user/)が表示されます。

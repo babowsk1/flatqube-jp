@@ -1,7 +1,7 @@
-# Add custom token
+# カスタムトークンの追加
 
-In order to add a custom token to the list of tokens, in the [Swap section](../../swap/), go to the token selection menu and insert the custom token root address into the field, then select the displayed token.
+カスタムトークンをトークン一覧に追加するには、スワップセクションのトークン選択メニューから、カスタムトークンのルートアドレスをトークン選択欄に入力し、表示されたトークンを選択します。
 
 ![](<../../../.gitbook/assets/image (152).png>)
 
-Now this token will be displayed in the list of tokens in the [Swap ](../../swap/)and [Pools ](../../pools/)sections.
+これで、このトークンが[スワップ](../../swap/)と[プール](../../pools/)セクションのトークン一覧に表示されるようになります。

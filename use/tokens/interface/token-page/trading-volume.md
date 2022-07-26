@@ -1,8 +1,8 @@
-# Trading volume
+# 取引量
 
-**Trading volume** - the number of tokens by dollar value that have participated in exchanges during a certain period of time.
+**取引量** - 一定期間、取引所にあるドル建てトークン数です。
 
-To switch the graph to **Volume**, click the corresponding button on the graph.\
-You can switch between chart display modes: by hours (**H**) and by days (**D**) for more convenient tracking of trading volume changes.
+グラフを**ボリューム**に切り替えるには、グラフ上の\[ボリューム]ボタンをクリックします。\
+グラフ表示は、時間足(**H**)と日足(**D**)の2つのモードで切り替えることができ、取引量の変化をより便利に把握することができます。
 
 ![](<../../../../.gitbook/assets/image (185).png>)

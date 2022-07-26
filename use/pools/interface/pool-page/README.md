@@ -1,21 +1,21 @@
-# Pool page
+# プールページ
 
-The page of each [pool ](../pools-overview.md)is divided into blocks:
+各[プール](../pools-overview.md)ページは、以下の項目別で分かれています：
 
-### [Balances and prices](balances-and-prices.md)
+### [残高と価格](balances-and-prices.md)
 
-The top block contains information about your liquidity locked in this pool and price of pool tokens.
+ページのトップには、このプールにロックした流動性とプールトークンの価格情報が表示されています。
 
 ![](<../../../../.gitbook/assets/image (168).png>)
 
-### \*\*\*\*[**Farming pools**](farming-pools.md)
+### \*\*\*\*[**ファーミングプール**](farming-pools.md)****
 
-This block displays information about the farm pool that works with the LP of this pair.
+ここでは、このペアのLPトークンが動作しているファームプールに関する情報を表示しています。
 
 ![](<../../../../.gitbook/assets/image (47).png>)
 
-### [Transactions](transactions.md)
+### [トランザクション](transactions.md)
 
-The lower section displays all transactions of the connected DEX account related to the liquidity of this pool.
+下段には、接続されたDEXアカウントで行われた、このプールの流動性に関連するトランザクションが表示されています。
 
 ![](<../../../../.gitbook/assets/image (206).png>)

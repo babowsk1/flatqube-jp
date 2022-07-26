@@ -1,8 +1,9 @@
-# Find my transactions
+# トランザクションの確認
 
-In order to find your transactions associated with a specific [**Farming Pool**](../interface/farming-pools.md), go to the [page of that Farming Pool](../interface/farm-page-user/) and navigate to the bottom of the page to the [**Transactions block**](../interface/farm-page-user/transactions.md). \\
+特定の[**ファーミングプール**](../interface/farming-pools.md)に関連するトランザクションを見つけるには、その[ファーミングプールのページ](../interface/farm-page-user/)に移動し、ページ下部にある[**トランザクションセクション**](../interface/farm-page-user/transactions.md)に移動してください。
 
-In the upper-right corner of the block, check the box next to <mark style="color:green;">**Only my transactions**</mark> to display only transactions associated with your [DEX account](../../pools/how-to/connect-dex-account.md).\
-For the convenience of finding the transaction you need, you can [filter them](../interface/farm-page-user/transactions.md) by type <mark style="color:orange;">at the top of the block.</mark>
+ページ右上の、\[<mark style="color:green;">**自分のトランザクションのみ**</mark>]にチェックを入れると、[DEXアカウント](../../pools/how-to/connect-dex-account.md)に関連するトランザクションのみが表示されます。\
+\
+必要なトランザクションを見つけるのに便利なように、<mark style="color:orange;">ページ上部</mark>にあるタイプで[トランザクションをフィルタリング](../interface/farm-page-user/transactions.md)することができます。
 
 ![](<../../../.gitbook/assets/image (119).png>)

@@ -1,6 +1,5 @@
-# See farming performance
+# ファーミングパフォーマンスの確認
 
-In order to see your Farming performance, go to the [**Farming section**](../), and then to the page of the required pool.\
-Information about [**Farming performance and balances**](../interface/farm-page-user/farming-perfomance-and-balances.md) is located in the top block of the page.
+ファーミングパフォーマンスを確認するには、[**ファーミングセクション**](../)に移動し、必要なプールのページに移動してください。[**ファーミングのパフォーマンスと残高**](../interface/farm-page-user/farming-perfomance-and-balances.md)に関する情報は、ページの上部にあります。
 
 ![](<../../../.gitbook/assets/image (70).png>)

@@ -1,21 +1,20 @@
-# Reward token
+# リワードトークン
 
-## Rewards <a href="#f200" id="f200"></a>
+## リワード <a href="#f200" id="f200"></a>
 
-Rewards are paid out in the form of one or more tokens that can then also be deposited in other liquidity pools for users to get further rewards.
+リワードは1つまたは複数のトークンで支払われ、その後ユーザーがさらにリワードを得るために、他の流動性プールに預けることもできます。
 
-The total number of locked-in assets is displayed as the **TVL (Total Value Locked)**, and the number of assets locked into a pool by a single provider is displayed as a **Pool Share**, which is expressed as a percentage of the **TVL** of a given pool.
+ロックされたアセットの総数は**TVL**として表示され、シングルプロバイダーがプールにロックしたアセットの数は、**プールシェア**として表示され、これは特定プールの**TVL**に対する割合として表されます。
 
-Accordingly, the larger the **Pool Share**, the more lucrative farming will be for the user.
+従って、**プールシェア**が大きいほど、ユーザーにとって有利なファーミングができることになります。
 
-Liquidity pools in which providers deposit their tokens support the market. Thanks to them, token swaps and other operations are made possible. Liquidity providers earn a commission on all transactions (usually a .3% commission on the total transaction price, but the exact commission depends on the pool). Commissions are added to pools in real-time and distributed to providers proportionally to their **Pool Shares**. They can be claimed at any time and withdrawn along with the original liquidity provided.
+プロバイダーがトークンを預ける流動性プールが、市場を支えています。そのおかげで、トークンスワップやその他の操作が可能になります。流動性プロバイダーは、全てのトランザクションの手数料を得ます(通常、トランザクション合計額に対して0.3%の手数料がかかりますが、正確な手数料はプールによって異なります)。手数料はリアルタイムでプールに追加され、**プールシェア**に比例してプロバイダーに分配されます。手数料はいつでも請求でき、提供された元の流動性とともに引き出すことができます。
 
-In order to stimulate the provision of liquidity on FlatQube, a number of farming programs have been launched. Liquidity providers can deposit their LP tokens in the **Farming Pool** that corresponds to their token pair and receive additional rewards every second already as a farmer. The remuneration is distributed among all **Farming Pool** members in proportion to their share in **Farming Pool.**
+FlatQubeでは、流動性の提供を促進するために、様々なファーミングプログラムが開始されています。流動性プロバイダーは、自分のトークンペアに対応する**ファーミングプール**にLPトークンを預けることができ、ファーマーとして秒単位で追加リワードを受け取ることができます。リワードは、**ファーミングプール**のシェアに比例して、**ファーミングプール**の全メンバーに分配されます。
 
-Each **Farming Pool** on **FlatQube** has its own **Farming Speed**, which is the number of tokens that get constantly distributed to liquidity providers in proportion to their **Pool Shares**. Essentially, a **Pool Share** is the percentage you will receive of this number at any moment in time.
+**FlatQube**の各**ファーミングプール**には独自の**ファーミングスピード**があり、それは**プールシェア**に比例して、流動性プロバイダーに常に分配されるトークンの数です。基本的に、**プールシェア**とは、ある瞬間にこの数の何パーセントを受け取ることができるかを表しています。
 
-Rewards are constantly being calculated, and the **Farming Speed** for a pool can change.
+リワードは常に計算されており、プールの**ファーミングスピード**は変更されることがあります。
 
-To calculate the profitability of farming on **FlatQube**, the **APR** (annual percentage rate) is used.
+**FlatQube**でのファームの収益性を計算するには、**APR**(年率)が使用されます。
 
-\\

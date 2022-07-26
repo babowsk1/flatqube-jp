@@ -1,20 +1,21 @@
-# Yield farming
+# イールドファーミング
 
 {% embed url="https://youtu.be/2qVWBwafLdE" %}
 
-## What is Yield Farming?
+## イールドファーミングとは？
 
-**Yield farming**, or liquidity mining, is a method of earning rewards as a result of providing tokens for liquidity.\
-For simplicity’s sake, farming can be likened to staking, but there are a few key differences between the two practices.\
-Farming is done by **Liquidity Providers**, who are users that lock their tokens in liquidity pools.\
-In turn, **Liquidity Pools** are smart contracts (**Vaults**), in which a certain number of tokens are located.\
-In exchange for locking in liquidity to a certain pool, providers receive [rewards](reward-token.md).
+**イールドファーミング**または流動性マイニングは、流動性のためにトークンを提供した対価としてリワードを得る方法です。\
+分かりやすくするために、ファーミングはステーキングに例えることができますが、この2つの手法にはいくつかの重要な違いがあります。\
+ファーミングは**流動性プロバイダー**によって行われ、プロバイダーとは流動性プールに自分のトークンをロックするユーザーです。\
+反対に、**流動性プール**はスマートコントラクト(**Vaults**)であり、そこには一定数のトークンがあります。\
+プロバイダーは、特定のプールに流動性をロックするのと引き換えに[リワード](reward-token.md)を受け取ります。
 
-### Risks
+### リスク
 
-One of the most important distinctions between farming and staking is the heightened risk inherent.\
-First and foremost, we are referring to the risk of Impermanent loss. Impermanent loss can occur as a result of price volatility for one or both of the tokens in a farming pool.\
-The higher the volatility is for one token relative to the other, the higher the chances will be of impermanent loss occurring.\
-From this, it stands to reason that the most stable form of earning in Farming Pools comes from the stablecoin pools.\
-We highly recommend that anyone looking to become a liquidity provider familiarize themselves with the risks of Impermanent loss. This will help you make the most out of farming and prevent you from running into any unpleasant surprises.\
-There are also IL calculators that you can use to help in the decision-making process, like this [one](https://dailydefi.org/tools/impermanent-loss-calculator/).
+ファーミングとステーキングの最も重要な違いの1つは、固有リスクの高さです。\
+まず、私たちは変動損失のリスクについて言及します。\
+変動損失は、ファーミングプールにあるトークンの一方または両方の価格変動の結果として発生する可能性があります。\
+一方のトークンのボラティリティが他方に対して高ければ高いほど、変動損失が発生する可能性は高くなります。\
+このことから、ファーミングプールで最も安定した収入を得られるのは、stablecoinプールであることは明らかです。\
+流動性プロバイダーになろうとする方は、変動損失のリスクについて熟知しておくことを強くお勧めします。そうすることで、ファーミングを最大限に活用し、予期せぬ事態に遭遇するのを防ぐことができるからです。\
+また、このような意思決定プロセスに役立つ[IL計算機](https://dailydefi.org/tools/impermanent-loss-calculator/)もあります。

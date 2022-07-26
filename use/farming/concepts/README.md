@@ -1,6 +1,6 @@
 ---
-description: Better understand FlatQube farming concepts .
+description: FlatQubeのファーミングコンセプトをより深く理解しましょう。
 ---
 
-# Concepts
+# コンセプト
 

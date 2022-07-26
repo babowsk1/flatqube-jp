@@ -1,6 +1,6 @@
 # CMC API
 
-{% swagger method="get" path="" baseUrl="https://api.flatqube.io/v1/cmc/dex" summary="CMC DEX pools info" %}
+{% swagger method="get" path="" baseUrl="https://api.flatqube.io/v1/cmc/dex" summary="CMC DEX プール情報" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -36,29 +36,29 @@
 {% endswagger-response %}
 {% endswagger %}
 
-The function is used to get all information about DEX pools.
+この機能を使用すると、DEXプールに関するあらゆる情報を取得できます。
 
-It can be used to tabulate all dex pools with their pairs and desired information about them.
+全てのDEXプール、そのペアやそれらに関する必要な情報を一覧化できます。
 
-### Request parameters
+### リクエストパラメータ
 
-_No parameters are required._
+_パラメータは必要ありません_
 
-### Response fields explanation
+### レスポンス欄の解説
 
-| Field name     | Example value                                                        | Comment                                                         |
-| -------------- | -------------------------------------------------------------------- | --------------------------------------------------------------- |
-| `base_id`      | `0:a519f99bb5d6d51ef958ed24d337ad75a1c770885dcd42d51d6663f9fcdacfb2` | Root address of the base token in the certain dex pool          |
-| `base_name`    | `Tether`                                                             | Full name of the base token                                     |
-| `base_symbol`  | `USDT`                                                               | Full name of the base token                                     |
-| `quote_id`     | 0:c37b3fafca5bf7d3704b081fde7df54f298736ee059bf6d32fac25f5e6085bf6   | Root address of the quote token in the pool                     |
-| `quote_name`   | `USD Coin`                                                           | Full name of the quote token                                    |
-| `quote_symbol` | `USDC`                                                               | Symbol of the quote token                                       |
-| `last_price`   | `1.001259244956`                                                     | Price of 1 base token in quote tokens (ie. 1 USDT = 1.001 USDC) |
-| `base_volume`  | `2210.44204800`                                                      | Trading volume (in USD) of base token                           |
-| `quote_volume` | `2213.22553600`                                                      | Trading volume (in USD) of quote token                          |
+| フィールド名         | 例の値                                                                  | 説明                                          |
+| -------------- | -------------------------------------------------------------------- | ------------------------------------------- |
+| `base_id`      | `0:a519f99bb5d6d51ef958ed24d337ad75a1c770885dcd42d51d6663f9fcdacfb2` | 特定のdexプールにあるベーストークンのルートアドレス                 |
+| `base_name`    | `Tether`                                                             | ベーストークンの正式名称                                |
+| `base_symbol`  | `USDT`                                                               | ベーストークンのシンボル                                |
+| `quote_id`     | 0:c37b3fafca5bf7d3704b081fde7df54f298736ee059bf6d32fac25f5e6085bf6   | プールにあるクォートトークンのルートアドレス                      |
+| `quote_name`   | `USD Coin`                                                           | クォートトークンの正式名称                               |
+| `quote_symbol` | `USDC`                                                               | クォートトークンのシンボル                               |
+| `last_price`   | `1.001259244956`                                                     | 1クォートトークンにおける1ベーストークンの価格(例：1USDT＝1.001USDC) |
+| `base_volume`  | `2210.44204800`                                                      | ベーストークンの取引量(米ドル)                            |
+| `quote_volume` | `2213.22553600`                                                      | クォートトークンの取引量(米ドル)                           |
 
-### Example
+### 例
 
 ```javascript
   app.get('/cmc/dex', (req, res) => {
@@ -76,7 +76,7 @@ _No parameters are required._
   })
 ```
 
-{% swagger method="get" path="/cmc/farming" baseUrl="https://api.flatqube.io/v1" summary="CMC DEX farming pools info" %}
+{% swagger method="get" path="/cmc/farming" baseUrl="https://api.flatqube.io/v1" summary="CMC DEXファーミングプール情報" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -119,30 +119,30 @@ _No parameters are required._
 {% endswagger-response %}
 {% endswagger %}
 
-This function helps you get farming pools information:
+この機能は、ファーミングプール情報を取得するためのものです：
 
-### **Request parameters**
+### リクエストパラメータ
 
-_No parameters required_
+_パラメータは必要ありません_
 
-### Response fields explanation
+### レスポンス欄の解説
 
-| Field name      | Example value                                                                                                                                                                                      | Comment                                                                                           |
-| --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| `provider`      | `FlatQube`                                                                                                                                                                                         | Represents provider of the farming pool                                                           |
-| `provider_logo` | [`https://flatqube.io/favicon.svg`](https://flatqube.io/favicon.svg)\`\`                                                                                                                           | Path to the provider logo provider                                                                |
-| `url`           | https://flatqube.io                                                                                                                                                                                | Url to the provider                                                                               |
-| `links`         |                                                                                                                                                                                                    |                                                                                                   |
-| `pools`         |                                                                                                                                                                                                    | List of all the pools available on the provider, contains following information about each pool   |
-| `name`          | `WEVER/BRIDGE`                                                                                                                                                                                     | Name of the pool in format left pair/right pair                                                   |
-| `pair`          | `WEVER/BRIDGE`                                                                                                                                                                                     | Info about which two tokens are in pair for the given pool                                        |
-| `pairLink`      | [`https://flatqube.io/farming/0:5b297ebf0d4baa84e5e5f2cff61f3563fa94e62e8c93d5a2fd19145d72007bf3`](https://flatqube.io/farming/0:5b297ebf0d4baa84e5e5f2cff61f3563fa94e62e8c93d5a2fd19145d72007bf3) | URL to the farming pool where you can see all the details about that pool and start farming in it |
-| `logo`          | [`https://flatqube.io/favicon.svg`](https://flatqube.io/favicon.svg)\`\`                                                                                                                           |                                                                                                   |
-| `poolRewards`   | `BRIDGE, QUBE`                                                                                                                                                                                     | Tokens that are given as a reward for farming in that pool (ie. BRIDGE, QUBE)                     |
-| `apr`           | `97.9022`                                                                                                                                                                                          | Apr (Annual Percentage Rate) for farming in that pool                                             |
-| `totalStake`    | `53838.449198250683`                                                                                                                                                                               | TVL (Total Value Locked) in USD for the current pool                                              |
+| フィールド名          | 例の値                                                                                                                                                                                                | 説明                                             |
+| --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
+| `provider`      | `FlatQube`                                                                                                                                                                                         | ファーミングプロバイダー                                   |
+| `provider_logo` | [`https://flatqube.io/favicon.svg`](https://flatqube.io/favicon.svg)\`\`                                                                                                                           | プロバイダーロゴプロバイダーへのパス                             |
+| `url`           | https://flatqube.io                                                                                                                                                                                | プロバイダーへのURL                                    |
+| `links`         |                                                                                                                                                                                                    |                                                |
+| `pools`         |                                                                                                                                                                                                    | プロバイダーで利用可能なプールの一覧表には、各プールに関する次の情報が含まれています     |
+| `name`          | `WEVER/BRIDGE`                                                                                                                                                                                     | プール名称(左ペア/右ペア)                                 |
+| `pair`          | `WEVER/BRIDGE`                                                                                                                                                                                     | 指定されたプールで、どのトークンがペアになっているかについての情報              |
+| `pairLink`      | [`https://flatqube.io/farming/0:5b297ebf0d4baa84e5e5f2cff61f3563fa94e62e8c93d5a2fd19145d72007bf3`](https://flatqube.io/farming/0:5b297ebf0d4baa84e5e5f2cff61f3563fa94e62e8c93d5a2fd19145d72007bf3) | そのプールに関する詳細を表示し、ファーミングを開始できるファーミングプールへのURL     |
+| `logo`          | [`https://flatqube.io/favicon.svg`](https://flatqube.io/favicon.svg)\`\`                                                                                                                           |                                                |
+| `poolRewards`   | `BRIDGE, QUBE`                                                                                                                                                                                     | そのプールで行ったファーミングの対価として与えられるトークン(例：BRIDGE、QUBE等) |
+| `apr`           | `97.9022`                                                                                                                                                                                          | そのプールで行ったファーミングのAPR(年率)                        |
+| `totalStake`    | `53838.449198250683`                                                                                                                                                                               | 現在のプールTVL(米ドル)                                 |
 
-### Example
+### 例
 
 ```
 app.get('/cmc/farming', (req, res) => {

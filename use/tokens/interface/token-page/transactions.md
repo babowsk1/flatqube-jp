@@ -1,23 +1,23 @@
-# Transactions
+# トランザクション
 
-This block displays all transactions in which this token has participated.
+ここでは、このトークンが関わったトランザクションを全て表示しています。
 
-Here you will see several columns with information:
+ここでは、下記に分けて情報が表示されています：
 
-**Transaction** - is the type of transaction:
+**トランザクション** - 取引の種類：
 
-* **Swap** - exchange of one token for another
-* **Add** - adding liquidity to one of the pairs
-* **Removes** - taking out liquidity from the corresponding pair.
+* **スワップ** - あるトークンと別のトークンの交換
+* **追加** - ペアのいずれかに流動性を追加する
+* **削除** - ペアから流動性を削除する
 
-![You can switch between the types of transactions that will be displayed](<../../../../.gitbook/assets/image (160).png>)
+![表示されるトランザクションの種類を切り替えることができます](<../../../../.gitbook/assets/image (160).png>)
 
-**Total value** - the total amount of the transaction in dollar terms.\
-**Left and Right token** - the number of corresponding tokens involved in the transaction.\
-**Account** - address of the account that made this transaction.
+**総額** - ドル換算した取引合計額です\
+**左/右トークン** - トランザクションに関わるトークンの数です\
+**アカウント** - このトランザクションを行ったアカウントアドレスです
 
 ![](<../../../../.gitbook/assets/image (12).png>)
 
-At the bottom of this block, you can switch between pages or go directly to a specific one.
+一覧表の下では、ページを切り替えたり特定のページに直接移動できます。
 
 ![](<../../../../.gitbook/assets/image (64).png>)

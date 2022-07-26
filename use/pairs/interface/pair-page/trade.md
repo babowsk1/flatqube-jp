@@ -1,5 +1,5 @@
-# Trade
+# 取引
 
-By clicking on <mark style="color:red;">**Trade**</mark> in the upper right block of the Pairs section, you will be taken to the [**Swap** ](../../../swap/)section, where you can swap between the tokens of this pair.
+グラフの右上にある<mark style="color:red;">**取引**</mark>をクリックすると、[**スワップ**](../../../swap/)セクションに移動し、このペアのトークン同士を交換することができます。
 
 ![](<../../../../.gitbook/assets/image (146).png>)

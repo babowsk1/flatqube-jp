@@ -1,59 +1,59 @@
 ---
-description: Anyone can create and manage their own farming pool.
+description: 誰でも自分のファーミングプールを作り、管理することができます。
 ---
 
-# Farm page (administrator)
+# ファームページ (管理者)
 
-## How to create a farming pool
+## ファーミングプールの作成方法
 
-Go to the Farming section and click Create farming pool in the upper right corner and fill in the required fields:
+ファーミングセクションに移動し、右上の\[ファーミングプールの作成]をクリックし、必要項目を入力します：
 
-* Farm token root - the address of the token that users deposit to participate in farming. It can be the address of the LP token of the pair.
-* Farm start - the date when farming starts.
-* Vesting ratio - percentage of the award that goes to vesting.
-* Vesting period - vesting period in seconds.
-* Reward token root - the address of the token that users farm. There may be several tokens like this one in a farming pool. Use the Add reward token button.
-* Reward per second - ​​farming speed, measured in tokens per second.
+* ファームトークンルート - ユーザーがファーミングに参加するために預けるトークンのアドレスのこと。これは、そのペアのLPトークンのアドレスでもかまいません。
+* ファーム開始日 - ファームが開始される日付のこと。
+* 権利確定率 - 権利確定にかかるリワード割合のこと。
+* 権利確定期間 - 権利確定期間を秒単位で設定します。
+* リワードトークンルート - ユーザーがファーミングするトークンアドレスのこと。ファーミングプールには、このようなトークンが複数存在する場合があります。リワードトークンを追加するボタンを使用しましょう。
+* 1秒あたりのリワード - ​​ファーミングスピードのことで、1秒あたりのトークンで測定されます。
 
-Click Create farming pool, confirm the transaction in your EVER Wallet and wait for the pool creation process to complete.
+\[ファーミングプールの作成]をクリックし、EVER Walletでトランザクションを確定させ、プールの作成が完了するのを待ちます。
 
-## How to go to the page of the created Farming pool?
+## 作成したファーミングプールへの行き方は？
 
-1. Go to the [farming section](../).
-2. In the upper-right part of the **All pools** block, open the filter menu by clicking on the appropriate button and turn on the **With low balance** filter.
-3. Find your pool in the list and go to its page by clicking on it.\
-   Here you can immediately add it to your [favorites ](../../pairs/interface/pair-page/add-to-favorites.md)so that it appears on the main Farming section page.
+1. [ファーミングセクション](../)に移動します。
+2. \[**全てのプール**]セクションの右上にあるフィルターボタンをクリックして、フィルタメニューを開き、\[**少ない残高**]フィルターをオンにします。&#x20;
+3. 一覧表でプールを探してクリックし、そのページに移動します\
+   ここで[お気に入り](../../pairs/interface/pair-page/add-to-favorites.md)に追加すれば、メインのファーミングセクションページに表示されるようになります。
 
 ![](<../../../.gitbook/assets/image (57).png>)
 
-## Farming pool management
+## ファーミングプールの管理
 
-The page of the farming pool for administrators looks exactly like the page of any other [farming pool](farm-page-user/), but with the addition of some management features:
+管理者用のファーミングプールのページは、他の[ファーミングプール](farm-page-user/)のページと全く同じですが、以下のようないくつかの管理機能が追加されています：
 
-### Deposit rewards
+### リワードの預け入れ
 
-The administrator of the farming pool can at any time deposit tokens into the pool that will be used to pay rewards.
+ファーミングプールの管理者は、いつでもトークンをプールに預けてリワードの支払いに充てることができます。
 
-The administrator has to monitor the balance of the farming pool. If there are not enough tokens on the balance to pay all the rewards, the pool will be automatically marked with a danger icon in the general list.
+管理者はファーミングプールの残高を監視する必要があります。全てのリワードを支払うのに十分なトークンが残高にない場合、自動的に一覧上に危険アイコンが表示されます。
 
 ![](<../../../.gitbook/assets/image (9).png>)
 
-### Changing the farming speed
+### ファーミングスピードの変更
 
-The administrator can increase or decrease the farming speed. To do that, one needs to indicate the start of a new farming period and a new farming speed.
+管理者は、ファーミングスピードを調整することができます。そのためには、新しいファーミング期間の開始と新しいファーミングスピードを設定する必要があります。
 
 ![](<../../../.gitbook/assets/image (200).png>)
 
-### Closing the pool
+### プールの閉鎖
 
-The administrator can at any time specify the date when the farming pool closes. At this point, the last unit of the reward will be distributed.
+管理者はいつでも、ファーミングプールの終了日を指定できます。この時点で、最終ユニットのリワードが配布されます。
 
-Attention! You can only set the closing date once. After establishing an end date, you can neither change the date nor add another farming period.
+注意してください！終了日の設定は一度だけです。終了日を設定した後、その日を変更したり、別のファーミング期間を追加したりすることはできません。
 
 ![](<../../../.gitbook/assets/image (50).png>)
 
-### Withdrawal of unclaimed tokens
+### 未請求トークンの引き出し
 
-If the administrator has deposited more reward tokens than necessary, these tokens can be withdrawn. To do so, you need to set the end date for farming, and then wait for the end of vesting + lockdown period (30 days).
+管理者が必要以上のリワードトークンを預けている場合、これらのトークンを引き出すことができます。そのためには、ファーミングの終了日を設定し、権利確定とロックダウン期間（30日間）が終了するのを待つ必要があります。
 
 ![](<../../../.gitbook/assets/image (53).png>)

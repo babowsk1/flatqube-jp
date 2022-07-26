@@ -1,11 +1,11 @@
-# Create new pair
+# 新しいペアの作成
 
-1. In order to create your own pair of tokens, go to the [**Pools section**](../../pools/) and click **New position** in the upper right corner.
-2. Select the desired tokens from the list or [paste the root address of the custom token](../../tokens/how-to/add-custom-token.md) if it is not already in the list.
-3. Click **Create pool** and pay the pool creation fee (10 EVER) in the opened EVER Wallet window and wait for the transaction to complete.
-4. Click **Connect pool** and confirm transaction.
+1. 独自のトークンペアを作成するには、[**プールセクション**](../../pools/)に移動し、右上にある**新規ポジション**をクリックします。
+2. 一覧表から希望するトークンを選択するか、一覧表にない場合は[カスタムトークンのルートアドレスを貼り付けます](../../tokens/how-to/add-custom-token.md)。
+3. **プールを作成する**をクリックし、開いたEVER Wallet画面で、プール作成料(10EVER)を支払い、トランザクションが完了するのを待ちます。
+4. **プールを接続する**をクリックし、トランザクションを確定させます。
 
 ![](<../../../.gitbook/assets/image (165).png>)
 
-After the completion of the transaction, the new pool and the corresponding pair of this pool will begin to exist in the network in the form of contracts and you can add liquidity to it.\
-Now you can [find the pair you created in the list of pairs](see-custom-token-pair.md), and after [adding it to your favorites](../interface/pair-page/add-to-favorites.md), it will also be displayed on the main page of the [Pools section](../../pools/).
+トランザクション完了後、新しいプールと、このプールのペアがコントラクトの形でネットワークに存在し始め、そこに流動性を追加することができます。\
+これで、あなたが[作成したペアをペア一覧で見つけることができ](see-custom-token-pair.md)、[お気に入りに登録した](../interface/pair-page/add-to-favorites.md)後は、[プールセクション](../../pools/)のメインページにも表示されるようになります。
